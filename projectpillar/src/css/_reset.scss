@@ -11,13 +11,16 @@
 html {
   scroll-behavior: smooth;
 }
+ul {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--background-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -36,4 +39,13 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #b3b2b2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }

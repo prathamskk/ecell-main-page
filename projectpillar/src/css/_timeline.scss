@@ -1,9 +1,8 @@
 .timeline-wrapper {
-  max-width: 1440px;
+  width: 100%;
   position: relative;
-  margin: 15px auto;
+  margin: 2.5% auto;
   padding: 0;
-  height: 100%;
 }
 
 .timeline-wrapper .row {
@@ -26,16 +25,18 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 0.5em 0;
+  height: auto;
   position: relative;
   box-shadow: var(--box-shadow);
 }
 
 .timeline-wrapper .row-1 section {
-  gap: 1.5em;
+  gap: 0.9em;
+  background-color: #ff7a7a;
+  color: white;
 }
 
-.timeline-wrapper .row section::before {
+.row section::before {
   background: #ffffff;
   content: "";
   width: 17.5px;
@@ -43,23 +44,26 @@
   position: absolute;
   top: 28px;
   transform: rotate(45deg);
-  z-index: 1;
+  z-index: 0;
+}
+.row-1 section::before {
+  background: #ff7a7a;
 }
 
 .row-1 section::before,
 .row-3 section::before,
 .row-5 section::before {
-  right: -7.5px;
+  right: -9px;
 }
 
 .row-2 section::before,
 .row-4 section::before {
-  left: -7.5px;
+  left: -9px;
 }
 
 .timeline-wrapper .center-line {
   position: absolute;
-  height: 90%;
+  height: 100%;
   width: 5px;
   background: linear-gradient(
     rgba(255, 154, 0, 1) 0%,
@@ -91,10 +95,10 @@
   a {
     text-transform: capitalize;
     text-decoration: none;
-    background: #ff7a7a;
+    background: #fff;
     font-weight: 500;
     padding: 8px 16px;
-    color: #e9fffd;
+    color: var(--font-blk);
     border-radius: 5px;
   }
 }
@@ -104,11 +108,11 @@
 }
 
 .timeline-wrapper .icons {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  left: 48.25%;
+  left: 48.5%;
   top: 10px;
   border-radius: 50%;
   display: flex;
@@ -140,11 +144,17 @@
     height: 100%;
   }
   .timeline-wrapper .center-line {
-    left: 5px;
-    height: 100%;
+    left: 0;
+    height: 87.5%;
   }
+
+  .timeline-wrapper .row-1 section {
+    gap: 1em;
+  }
+
   .timeline-wrapper .icons {
-    left: -50px;
+    top: 15px;
+    left: -55px;
     width: 40px;
     height: 40px;
   }
@@ -191,17 +201,17 @@
     text-transform: capitalize;
   }
   .row p {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 
   .bottom {
     a {
       text-transform: capitalize;
       text-decoration: none;
-      background: #ff7a7a;
+      background: #e9fffd;
       font-weight: 500;
       padding: 8px 12px;
-      color: #e9fffd;
+      color: var(--font-blk);
       border-radius: 5px;
       font-size: 0.95em;
     }

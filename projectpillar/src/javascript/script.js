@@ -1,6 +1,8 @@
+let toggle = document.getElementById("toggle");
+let link = document.getElementById("nav-links");
+let nav = document.getElementById("nav-header");
+
 function nav_toggle() {
-  let toggle = document.getElementById("toggle");
-  let link = document.getElementById("nav-links");
   toggle.classList.toggle("toggle-active");
 
   if (link.className === "nav-links-disable") {
@@ -11,50 +13,21 @@ function nav_toggle() {
     link.classList.add("nav-links-disable");
   }
 }
+toggle.onclick = nav_toggle;
 
-let img = document.querySelectorAll("img");
-// console.log(img);
-const width = 0;
-
-function wresize() {
-  let hero = document.querySelectorAll(".section-wrapper");
-  let flexWrapper = document.querySelectorAll(".wrapper-flex");
-
-  let phase_2 = document.getElementById("phase-2");
-  let phase_4 = document.getElementById("phase-4");
-
-  if (window.innerWidth < 900) {
-    phase_2.setAttribute("data-aos", "fade-right");
-    phase_4.setAttribute("data-aos", "fade-right");
-  } else {
-    phase_2.setAttribute("data-aos", "fade-left");
-    phase_4.setAttribute("data-aos", "fade-left");
+document.onclick = function (e) {
+  console.log(e.target.id);
+  if (
+    e.target.id !== "nav-header" &&
+    e.target.id !== "nav-links" &&
+    e.target.id !== "toggle" &&
+    e.target.id !== "toggle-span"
+  ) {
+    toggle.classList.remove("toggle-active");
+    link.classList.remove("nav-links-active");
+    link.classList.add("nav-links-disable");
   }
-
-  for (let i = 0; i < hero.length; i++) {
-    const element = hero[i];
-    console.log(element);
-
-    if (i == 0) {
-      element.style.height = `${window.innerHeight}px`;
-    } else if (i == 1) {
-      if (window.innerWidth < 900) {
-        element.style.height = `${window.outerHeight * 1.05}px`;
-      } else element.style.height = `${window.outerHeight / 2}px`;
-    } else if (i == 2) {
-      if (window.innerWidth < 900) {
-        element.style.height = `${window.outerHeight * 1.3}px`;
-      } else element.style.height = `${window.outerHeight * 1.15}px`;
-    } else element.style.height = `${window.outerHeight}px`;
-  }
-
-  for (let j = 0; j < flexWrapper.length; j++) {
-    const element = flexWrapper[j];
-    element.style.height = `${window.outerHeight / 2}px`;
-  }
-
-  // flexWrapper.style.height = `${window.outerHeight / 2}px`;
-}
+};
 
 window.addEventListener("scroll", scrollFunction);
 

@@ -2,392 +2,349 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <title>Document</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body onresize="wresize()" onload="wresize()">
-  <nav id="nav">
-    <div class="nav-header">
-      <div class="logo">
-        <a href="../index.html">
-        <img src="./src/assets/svg/Ecell-Sakec-Logo.svg" alt="sakec ecell logo" width="100%" height="100%" />
-        </a>
-      </div>
-      <div id="toggle" class="nav-toggle" onclick="nav_toggle()">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-    <div id="nav-links" class="nav-links-disable">
+<body>
 
-      <ul>
-        <li> <a href="#home">Home </a> </li>
-        <li> <a href="#about">About </a> </li>
-        <li> <a href="#incentives">Incentives</a> </li>
-        <li> <a href="#sponsors">Sponsors </a> </li>
-        <li> <a href="#timeline">Timeline </a> </li>
-        <!-- <li> <a href="#registration">Registration </a> </li> -->
-        <li> <a href="#contact">Contact Us </a> </li>
-      </ul>
-    </div>
-  </nav>
-  <article>
-    <div class="section-wrapper" id="home">
+    <!-- Navigation Bar -->
 
-      <div class="hero-content">
-
-        <div class="hero-img">
-          <img src="./src/assets/svg/Project-Pillar-Logo.svg" alt="" srcset="" width="100%" height="100%">
-
+    <nav id="nav">
+        <div id="nav-header" class="nav-header">
+            <div class="logo">
+                <a href="../index.html">
+                <img src="./src/assets/svg/Ecell-Sakec-Logo.svg" alt="sakec ecell logo" width="100%" height="100%" />
+            </a>
+            </div>
+            <div id="toggle" class="nav-toggle">
+                <span id="toggle-span"></span><span id="toggle-span"></span><span id="toggle-span"></span>
+            </div>
         </div>
+        <ul id="nav-links" class="nav-links-disable">
+            <li> <a id="nav-a" href="#home">Home </a> </li>
+            <li> <a id="nav-a" href="#about">About </a> </li>
+            <li> <a id="nav-a" href="#incentives">Incentives</a> </li>
+            <li> <a id="nav-a" href="#sponsors">Sponsors </a> </li>
+            <li> <a id="nav-a" href="#timeline">Timeline </a> </li>
+            <!-- <li> <a id="nav-a" href="#registration">Registration </a> </li> -->
+            <li> <a id="nav-a" href="#contact">Contact Us </a> </li>
+        </ul>
+    </nav>
 
-        <!-- <p class="project-pillar"> Project Pillar </p> -->
+    <!-- Content Area -->
 
-        <!-- <div class="mouse_scroll">
-          <div class="mouse">
-            <div class="wheel"></div>
-          </div>
-          <div>
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-          </div>
-        </div> -->
+    <article>
+        <section id="home">
+            <div class="hero-img">
+                <img src="./src/assets/svg/Project-Pillar-Logo.svg" alt="" height="100%" width="100%">
+            </div>
+            <ul class="circles">
 
-      </div>
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
 
-    <div class="wrapper-flex" id="about">
-      <div class="content-wrapper" data-aos="fade-up">
-        <h3>
-          What is Project Pillar?
-        </h3>
-        <p>
-          On a quest to look for worthwhile startups that hold the potential to revitalise the business industry by
-          defying
-          stereotypes and pursuing audacious goals. If you have what it takes to transform a good idea into a viable
-          business with
-          the assistance of a mentor/investor, apply for this event and find a pillar that will support your project to
-          the
-          heights you’ve always dreamt of.
-        </p>
-      </div>
-    </div>
+        <!-- Project Pillar -->
 
-    <div class="section-wrapper" id="incentives">
-      <h3 data-aos="fade-up">
-        Incentives
-      </h3>
-      <div class="incentives-wrapper" data-aos="fade-up">
-        <!-- Make connections with VCs -->
-        <div class="cards">
-          <div class="incentives-img-cont">
-            <!-- https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80 -->
-            <img src="./src/assets/svg/vuesax/people.svg" alt="" height="100%" width="100%" />
-          </div>
-          <div class="card-details">
-            <h4>Make connections with VCs</h4>
-
+        <section id="about">
+            <h1>What is Project Pillar?</h1>
             <p>
-              Make connections with leading industrialists and venture capitalists who are willing to help you along the
-              way.
+                On a quest to look for worthwhile startups that hold the potential to revitalise the business industry
+                by
+                defying
+                stereotypes and pursuing audacious goals. If you have what it takes to transform a good idea into a
+                viable
+                business with
+                the assistance of a mentor/investor, apply for this event and find a pillar that will support your
+                project to
+                the
+                heights you’ve always dreamt of.
             </p>
-          </div>
-        </div>
+        </section>
 
-        <!-- Secure funding -->
-        <div class="cards">
-          <div class="incentives-img-cont">
-            <img src="./src/assets/svg/vuesax/bank.svg" alt="" height="100%" width="100%" />
-          </div>
-          <div class="card-details">
-            <h4>Secure funding</h4>
-            <p>
-              Stand a chance to get hold of a potential investor and subsequently secure funding for your startup.
-            </p>
-          </div>
-        </div>
+        <!-- Incentives -->
 
-        <!-- Consult with Mentors -->
-        <div class="cards">
-          <div class="incentives-img-cont">
-            <img src="./src/assets/svg/vuesax/verify.svg" alt="" height="100%" width="100%" />
-          </div>
-          <div class="card-details">
-            <h4>Consult with Mentors</h4>
-            <p>
-              Get the chance to consult with and acquire guidance from an esteemed mentor on our distinguished panel.
-            </p>
-          </div>
-        </div>
+        <section id="incentives">
+            <h1>Incentives</h1>
+            <div class="incentives-wrapper">
+                <!-- Make connections with VCs -->
+                <div class="cards">
+                    <div class="card-img-cont">
+                        <img src="./src/assets/svg/vuesax/people.svg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="cards-details">
+                        <h4>Make connections with VCs</h4>
+                        <p>
+                            Make connections with leading industrialists and venture capitalists who are willing to help
+                            you along the
+                            way.
+                        </p>
+                    </div>
+                    <p> </p>
+                </div>
+                <!-- Secure funding -->
+                <div class="cards">
+                    <div class="card-img-cont">
+                        <img src="./src/assets/svg/vuesax/bank.svg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="cards-details">
+                        <h4>Secure funding</h4>
+                        <p>
+                            Stand a chance to get hold of a potential investor and subsequently secure funding for your
+                            startup.
+                        </p>
+                    </div>
+                </div>
+                <!-- Consult with Mentors -->
+                <div class="cards">
+                    <div class="card-img-cont">
+                        <img src="./src/assets/svg/vuesax/verify.svg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="cards-details">
+                        <h4>Consult with Mentors</h4>
+                        <p>
+                            Get the chance to consult with and acquire guidance from an esteemed mentor on our
+                            distinguished panel.
+                        </p>
+                    </div>
+                </div>
+                <!-- Secure your startup -->
+                <div class="cards">
+                    <div class="card-img-cont">
+                        <img src="./src/assets/svg/vuesax/Group 2.svg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="cards-details">
+                        <h4>Secure your incubators</h4>
+                        <p>Secure a position in reputable incubation that will support you along the way until your
+                            startup takes off and becomes successful. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Secure your startup -->
-        <div class="cards">
-          <div class="incentives-img-cont">
-            <img src="./src/assets/svg/vuesax/Group 2.svg" alt="" height="100%" width="100%" />
-          </div>
-          <div class="card-details">
-            <h4>Secure your startup</h4>
-            <p>
-              Secure a position in reputable incubation that will support you along the way until your startup takes off
-              and becomes
-              successful.
-            </p>
-          </div>
-        </div>
+        <!--Sponors-->
 
-      </div>
-    </div>
+        <section id="sponsors">
+            <h1>Our Sponsors</h1>
+        </section>
 
-    <div class="wrapper-flex" id="sponsors">
-      <h3 data-aos="fade-up" style="font-size:2.5em">
-        Our Sponsors
-      </h3>
-      <div class="sponsors-display" data-aos="fade-up">
-        <div class="sponsors-img">
-          <img src="./src/assets/svg/dunzo-seeklogo.com.svg" alt="" width="100%" height="100%" />
-        </div>
-        <div class="sponsors-img">
-          <img src="./src/assets/svg/zomato-seeklogo.com.svg" alt="" width="100%" height="100%" />
-        </div>
-        <div class="sponsors-img">
-          <img src="./src/assets/svg/swiggy-seeklogo.com.svg" alt="" width="100%" height="100%" />
-        </div>
-        <div class="sponsors-img" style="height: 75px;">
-          <img src="./src/assets/icon/Spotify_Logo_RGB_Green.png" alt="" width="100%" height="100%" />
-        </div>
-      </div>
-    </div>
+        <!-- Timeline -->
 
-    <div class="section-wrapper" id="timeline">
-      <h3 data-aos="fade-up">
-        Timeline
-      </h3>
-      <div class="timeline-wrapper">
-        <div class="center-line" data-aos-delay="70"></div>
-        <!-- Pre Registration -->
-        <div class="row row-1">
-          <div class="icons icons-1">
-            <img src="./src/assets/svg/home-2.svg" alt="" width="100%" height="65%" />
-          </div>
-          <section id="phase-1" data-aos="fade-right" data-aos-delay="70" data-aos-duration="800">
-            <div class="details">
-              <span class="title">Registration</span>
-              <!-- <span>
+        <section id="timeline">
+            <h1>Timeline</h1>
+            <div class="timeline-wrapper">
+                <div class="center-line" data-aos-delay="70"></div>
+                <!-- Pre Registration -->
+                <div class="row row-1">
+                    <div class="icons icons-1">
+                        <img src="./src/assets/svg/home-2.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-1" data-aos-delay="70" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Pre-Registration</span>
+                            <!-- <span>
                 1st oct 2022
               </span> -->
-            </div>
-            <p>
-              Each participant needs to fill out the registration form with primary details and essential documentation.
-            </p>
-            <div class="bottom"><a href="#"> Registration </a> </div>
-          </section>
-        </div>
-        <!-- Verification -->
-        <div class="row row-2">
-          <div class="icons icons-2">
-            <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
-          </div>
-          <section id="phase-2" data-aos="fade-left" data-aos-delay="80" data-aos-duration="800">
-            <div class="details">
-              <span class="title">Verification</span>
-              <!-- <span>
+                        </div>
+                        <p>
+                            Each participant needs to fill out the provisional registration form with primary details
+                            and essential
+                            documentation.
+                        </p>
+                        <div class="bottom"><a href="#">Register Now</a> </div>
+                    </section>
+                </div>
+                <!-- Verification -->
+                <div class="row row-2">
+                    <div class="icons icons-2">
+                        <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-2" data-aos-delay="80" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Verification</span>
+                            <!-- <span>
                 2nd oct 2022
               </span> -->
-            </div>
-            <p>
-              Your pre-registration details will be verified and your startup particulars will be authenticated by our
-              team. Fees will
-              be charged after the authentication.
-            </p>
-            <!-- <div class="bottom"><a href="#">
+                        </div>
+                        <p>
+                            Your pre-registration details will be verified and your startup particulars will be
+                            authenticated by our
+                            team. Fees will
+                            be charged after the authentication.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
                 learn more
               </a> </div> -->
-          </section>
-        </div>
-        <!-- Workshop -->
-        <div class="row row-3">
-          <div class="icons icons-3">
-            <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
-          </div>
-          <section id="phase-3" data-aos="fade-right" data-aos-delay="90" data-aos-duration="800">
-            <div class="details">
-              <span class="title">Workshop</span>
-              <!-- <span>
+                    </section>
+                </div>
+                <!-- Workshop -->
+                <div class="row row-3">
+                    <div class="icons icons-3">
+                        <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-3" data-aos-delay="90" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Workshop</span>
+                            <!-- <span>
                 3rd oct 2022
               </span> -->
-            </div>
-            <p>
-              In this workshop, you will get the required and effective mentorship to dive into funding strategies and
-              pitching tips
-              to attract mentors.
-            </p>
-            <!-- <div class="bottom"><a href="#">
+                        </div>
+                        <p>
+                            In this workshop, you will get the required and effective mentorship to dive into funding
+                            strategies and
+                            pitching tips
+                            to attract mentors.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
                 learn more
               </a> </div> -->
-          </section>
-        </div>
-        <!-- Mock Pitch -->
-        <div class="row row-4">
-          <div class="icons icons-4">
-            <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
-          </div>
-          <section id="phase-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-            <div class="details">
-              <span class="title">Mock Pitch</span>
-              <!-- <span>
+                    </section>
+                </div>
+                <!-- Mock Pitch -->
+                <div class="row row-4">
+                    <div class="icons icons-4">
+                        <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-4" data-aos-delay="100" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Mock Pitch</span>
+                            <!-- <span>
                 2nd oct 2022
               </span> -->
-            </div>
-            <p>
-              A practice/mock round where you will pitch your ideas to the mentors and improve your pitching skills
-              under their
-              guidance.
-              be charged after the authentication.
-            </p>
-            <!-- <div class="bottom"><a href="#">
+                        </div>
+                        <p>
+                            A practice/mock round where you will pitch your ideas to the mentors and improve your
+                            pitching skills
+                            under their
+                            guidance.
+                            be charged after the authentication.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
                 learn more
               </a> </div> -->
-          </section>
-        </div>
-        <!-- Final Pitch -->
-        <div class="row row-5">
-          <div class="icons icons-5">
-            <img src="./src/assets/svg/finish-flag 1.svg" alt="" width="100%" height="65%" />
-          </div>
-          <section id="phase-5" data-aos="fade-right" data-aos-delay="110" data-aos-duration="800">
-            <div class="details">
-              <span class="title">Final Pitch</span>
-              <!-- <span>
+                    </section>
+                </div>
+                <!-- Final Pitch -->
+                <div class="row row-5">
+                    <div class="icons icons-5">
+                        <img src="./src/assets/svg/finish-flag 1.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-5" data-aos-delay="110" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Final Pitch</span>
+                            <!-- <span>
                 2nd oct 2022
               </span> -->
-            </div>
-            <p>
-              Rightly said by Winston Churchill, “The last part, the part you are approaching, it is the courage to
-              continue that
-              counts”. This round is the final round to pitch for funding and to turn your abstract idea and level it up
-              into a worthy
-              venture.
-            </p>
-            <!-- <div class="bottom"><a href="#">
+                        </div>
+                        <p>
+                            Rightly said by Winston Churchill, “The last part, the part you are approaching, it is the
+                            courage to
+                            continue that
+                            counts”. This round is the final round to pitch for funding and to turn your abstract idea
+                            and level it
+                            up
+                            into a worthy
+                            venture.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
                         learn more
                       </a> </div> -->
-          </section>
-        </div>
+                    </section>
+                </div>
 
 
-      </div>
-
-    </div>
-
-
-    <!-- <div class="section-wrapper"></div> -->
-
-  </article>
-  <footer id="contact">
-    <div class="footer-wrapper">
-      <h3>
-        Get in touch with us
-      </h3>
-
-      <div class="footer-contact">
-        <div class="email-footer">
-          <div class="contact-area">
-            <h4>Prof. Milind Khairnar (Faculty Incharge)</h4>
-            <div class="email-area">
-              <i class="bi bi-envelope-fill"></i>
-              <a href="mailto:milind.khairnar@sakec.ac.in" style="color: #292f36;">milind.khairnar@sakec.ac.in</a>
             </div>
-            <div class="phone-area">
-              <i class="bi bi-telephone-fill"></i>
-              <p>+91 93223 19066</p>
-            </div>
-          </div>
-          <div class="contact-area">
-            <h4>Ashish Shetty(Council head)</h4>
-            <div class="email-area">
-              <i class="bi bi-envelope-fill"></i>
-              <a href="mailto:ashish.shetty@sakec.ac.in" style="color: #292f36;">ashish.shetty@sakec.ac.in</a>
-            </div>
-            <div class="phone-area">
-              <i class="bi bi-telephone-fill"></i>
-              <p>+91 77150 22166</p>
-            </div>
-          </div>
-          <div class="contact-area">
-            <h4>For other queries : </h4>
-            <div class="email-area">
-              <i class="bi bi-envelope-fill"></i>
-              <a href="mailto:ecell@sakec.ac.in" style="color: #292f36;">ecell@sakec.ac.in</a>
-            </div>
-            <!-- <div class="phone-area">
-              <i class="bi bi-telephone-fill"></i>
-              <p>+91 74778 38423</p>
-            </div> -->
-          </div>
-        </div>
-      </div>
+        </section>
+    </article>
 
-      <!-- <div class="social-media">
-        <div class="social-media-cont">
-          <i class="bi bi-instagram"></i>
-        </div>
-        <div class="ocial-media-cont">
-          <i class="bi bi-linkedin"></i>
-        </div>
-        <div class="ocial-media-cont">
-          <i class="bi bi-facebook"></i>
-        </div>
-        <div class="ocial-media-cont">
-          <i class="bi bi-youtube"></i>
-        </div>
-      </div> -->
-    </div>
-    <div class="footer-ecell">
-      <div class="social-media">
-        <a class="social-media-cont" href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y">
-          <i class="bi bi-instagram "></i>
-        </a>
-        <a class="social-media-cont" href="https://m.facebook.com/100410025256433/">
-          <!-- <a href=""></a> -->
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a class="social-media-cont" href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ">
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a class="social-media-cont" href="https://www.linkedin.com/showcase/e-cell-sakec">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
-      <h5>
-        entreupreneurship and inovation cell | SAKEC
-      </h5>
-    </div>
-  </footer>
+    <!-- Footer Area -->
 
+    <footer id="contact">
+        <div class="footer-wrapper">
+            <h1>Get in touch with us</h1>
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <h4>Prof. Milind Khairnar (Faculty Incharge)</h4>
+                    <div class="email-area">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:milind.khairnar@sakec.ac.in"
+                            style="color: #292f36;">milind.khairnar@sakec.ac.in</a>
+                    </div>
+                    <div class="phone-area">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>+91 93223 19066</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Ashish Shetty (E-Cell Council head)</h4>
+                    <div class="contact-content">
+                        <div class="email-area">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:ashish.shetty@sakec.ac.in"
+                                style="color: #292f36;">ashish.shetty@sakec.ac.in</a>
+                        </div>
+                        <div class="phone-area">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>+91 77150 22166</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+                    <h4>For other queries :</h4>
+                    <div class="email-area">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:ecell@sakec.ac.in" style="color: #292f36;">ecell@sakec.ac.in</a>
+                    </div>
+                    <div class="phone-area">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>+91 93223 19066</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-ecell">
+            <div class="social-media">
+                <a class="social-media-cont" href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y">
+                    <i class="bi bi-instagram "></i>
+                </a>
+                <a class="social-media-cont" href="https://m.facebook.com/100410025256433/">
+                    <!-- <a href=""></a> -->
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a class="social-media-cont" href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a class="social-media-cont" href="https://www.linkedin.com/showcase/e-cell-sakec">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <h5>
+                entreupreneurship and inovation cell | SAKEC
+            </h5>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./src/javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="./src/javascript/script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 
 </html>
