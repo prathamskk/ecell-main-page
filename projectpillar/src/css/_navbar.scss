@@ -1,0 +1,149 @@
+nav {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  padding: 0.5rem 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: -80px;
+  z-index: 3;
+  transition: top 0.3s;
+  border-bottom: var(--border);
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: 1100px) {
+    height: 75px;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 0.325rem;
+  }
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 0 3em;
+
+  li {
+    text-align: center;
+  }
+  li a {
+    text-decoration: none;
+    color: var(--font-blk);
+    font-weight: 500;
+    font-size: 1.05em;
+  }
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    gap: 2em 0;
+    padding: 1em 0;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #nav-links {
+    width: 100%;
+    transition: var(--transition-nav);
+  }
+
+  .nav-links-active {
+    width: 100%;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-links-disable {
+    visibility: hidden;
+    position: relative;
+    top: -350px;
+    z-index: 1;
+  }
+}
+
+.logo {
+  height: 72.5px;
+  width: 72.5px;
+  @media screen and (max-width: 1100px) {
+    margin-top: 2px;
+    height: 65px;
+    width: 65px;
+  }
+}
+
+.nav-header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    padding: 0rem 1.5rem;
+    background-color: #fff;
+  }
+}
+
+.nav-toggle {
+  height: 25px;
+  width: 30px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: none;
+  cursor: pointer;
+
+  span {
+    padding: 0;
+    margin: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00001a;
+    border-radius: 1rem;
+    transition: var(--transition-nav);
+
+    &:nth-of-type(1) {
+      width: 50%;
+    }
+
+    &:nth-of-type(3) {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+  }
+}
+
+.toggle-active {
+  span {
+    &:nth-of-type(1) {
+      transform: rotateZ(-45deg) translate(-6.5px, 3.2px);
+      transform-origin: top;
+    }
+
+    &:nth-of-type(2) {
+      transform-origin: bottom;
+      transform: rotateZ(45deg);
+    }
+
+    &:nth-of-type(3) {
+      width: 50%;
+      transform-origin: top;
+      transform: rotateZ(-45deg) translate(-5.7px, -12.5px);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.testim-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    gap: 2%;
+}
+
+.testim-text-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // gap: 40px;
+
+    blockquote {
+        font-weight: 400;
+        font-size: 250%;
+        line-height: 1;
+    }
+}
+
+#testim-img {
+    width: 50%;
+    object-fit: cover;
+    height: 50%;
+}
+
+.testim-quote-icon {
+    align-self: flex-end;
+    max-width: 5%;
+    max-height: 5%;
+}

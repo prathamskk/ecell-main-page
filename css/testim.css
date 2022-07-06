@@ -1,0 +1,19 @@
+.testimony h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--font-blk);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.testim-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    gap: 2%;
+}
+
+/* 
+<section class="testimony"id="testimony"><h1 data-aos="fade-up">Testimonials </h1><div class="testim-wrapper "data-aos="fade-up"><img id="testim-img"src="/src/assets/images/testim.jpg"/><div class="testim-text-wrapper"><img class="testim-quote-icon"src="/src/assets/icon/quotes.png"><blockquote>We believe that people can be truly happy on the outside only after reaching happiness within. </blockquote><div><h4>Manav Khimani</h4><p>CEO and Co-Founder</p></div></div></div></div> */
