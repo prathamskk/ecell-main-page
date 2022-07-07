@@ -112,7 +112,7 @@
   height: 50px;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  left: 48.5%;
+  left: calc(50% - 20px);
   top: 10px;
   border-radius: 50%;
   display: flex;
@@ -139,11 +139,11 @@
   border: 5px solid #fb07d9;
 }
 
-@media screen and (min-width: 751px) and (max-width: 1100px) {
-  .timeline-wrapper .icons {
-    left: 47%;
-  }
-}
+// @media screen and (min-width: 751px) and (max-width: 1100px) {
+//   .timeline-wrapper .icons {
+//     left: 47%;
+//   }
+// }
 @media screen and (max-width: 750px) {
   .timeline-wrapper {
     height: 100%;
