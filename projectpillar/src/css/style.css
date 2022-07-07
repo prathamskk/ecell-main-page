@@ -920,6 +920,6 @@ footer {
   }
 
   .footer-ecell {
-    height: 20vh;
+    height: calc(22vh - 10%);
   }
 }/*# sourceMappingURL=style.css.map */
