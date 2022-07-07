@@ -68,6 +68,7 @@ function handleClick() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
+  const submitbtn = document.getElementById("submitbtn");
   let regex = new RegExp(
     "([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|[[\t -Z^-~]*])"
   );
@@ -85,6 +86,8 @@ function handleClick() {
     alert("Fill the form");
     return;
   } else {
+    submitbtn.disabled = true;
+    submitbtn.innerHTML = "<div class='loader'></div>"
     // console.log(token);
     fetch(
       "https://zbba6bfl4k.execute-api.ap-south-1.amazonaws.com/dev/contact/",
@@ -106,7 +109,12 @@ function handleClick() {
         return res.json();
       })
       .then(function (data) {
-        alert(JSON.stringify(data));
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        submitbtn.disabled = false;
+        submitbtn.innerHTML = "Submit";
+        alert(JSON.stringify(data.message));
       });
   }
 }

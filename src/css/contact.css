@@ -107,7 +107,7 @@ form ::placeholder {
     width: 100%;
     border: none;
     border-radius: 5px;
-    background-color: #9dc2ca;
+    background-color: #6ba7b8;
     color: white;
     text-transform: uppercase;
     padding: 5px 0;
@@ -115,6 +115,39 @@ form ::placeholder {
 }
 
 .contact-form-button:hover {
-    background-color: #6ba7b8;
+    background-color:  #9dc2ca;
     cursor: pointer;
 }
+
+.contact-form-button:disabled {
+    background-color: #878787;
+    cursor: not-allowed;
+}
+
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #submitbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
