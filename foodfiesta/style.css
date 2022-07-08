@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Roboto;
+  font-family:  Helvetica;
   
 }
 
@@ -46,7 +46,7 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 70px;
-	background-color: rgba(109, 28, 28, 0.584);
+	background-color: rgba(114, 11, 11, 0.837);
 }
 nav .logo {
 	float: left;
@@ -112,14 +112,14 @@ nav .icon-burger .line {
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 70px;
+		top: 69.9px;
 		bottom: 100%;
     position: fixed;
 		width: auto;
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(113, 25, 25, 0.752);
+		background-color: rgba(114, 11, 11, 0.837);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -183,7 +183,12 @@ nav .icon-burger .line {
 	transform: translateX(-50%) translateY(-50%);      
 }
 
-
+@media screen and (max-width:430px){
+  .content h1{
+    font-size: 110px;}
+    .content h2{
+      font-size: 40px;}
+}
 /** About **/ 
 .about{
   height: 100vh;
@@ -238,6 +243,7 @@ nav .icon-burger .line {
       width: 100%;
       height: auto;
       padding: 60px 0;
+      
   }
   .all-text{
       text-align: center;
@@ -247,6 +253,7 @@ nav .icon-burger .line {
 @media screen and (max-width:650px){
   .about .main img{
       margin-bottom:  35px;
+      
   }
   .all-text h1{
       font-size: 45px;
@@ -325,6 +332,14 @@ nav .icon-burger .line {
   transition: .5s;
 }
 
+@media(max-width: 650px){
+  .spon-in ul li {
+    width: 150px;
+  height: 150px;
+  }
+}
+
+
 /** Jury **/ 
 .title{
   text-align: center;
@@ -333,6 +348,7 @@ nav .icon-burger .line {
   margin-top: 50px;
   position: relative;
   font-size: 50px;
+  font-weight: 600;
 }
 
 .jury hr{
@@ -360,67 +376,48 @@ nav .icon-burger .line {
   cursor: pointer;
   max-width: 400px;
   transition: all 0.3s;
-  border-style: double;
+  
 }
 
-.jury1:hover{
-  box-shadow: 0 10px 20px rgba(98, 7, 7, 0.959);
-  transform: translateY(-20px);
-}
+
 
 .jury1 img{
   display: block;
-  width: 200px; height: 300px;
+  width: 200px; height: 200px;
   object-fit: cover;
   border:4px solid brown;
-  border-radius: 0%;
+  border-radius: 100%;
   margin: 0 auto;
 }
 
-.fa {
+.jinsta{
+  width: 125px;
+  margin: 0 10px;
   padding: 10px;
-  font-size: 50px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 5px;
-  border-radius: 200%;
-  margin-bottom: 1px;
-}
-
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-instagram {
-  background-color: maroon;
-  color: whitesmoke;
-}
-.fa-facebook {
-  background-color: maroon;
-  color: whitesmoke;
-}
-.fa-twitter {
-  background-color: maroon;
-  color: whitesmoke;
+  font-style: italic;
+  border-radius: 60px;
+  color: rgb(125, 110, 110);
+  text-transform: capitalize;
+  transition: all 0.3s ease;
 }
 
 .jury h2{
   text-transform: uppercase;
   font-size: 24px;
   color: maroon;
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 0.9px;
 }
 
 .jury1 p{
+  margin-top: 15px;
   font-size: 15px;
   color: #2c2323;
   line-height: 1.6;
 }
 
 
-/** Participants **/ 
+/** Participants 
 .participants{
   background:rgba(128, 0, 0, 0.81);
   padding:10rem 2rem;
@@ -442,7 +439,7 @@ font-size: 60px;
 color: whitesmoke;
 
 } 
-/* */ 
+ 
 .slick-slide {
 margin: 0px 10px;
 justify-content: center;
@@ -459,10 +456,12 @@ justify-content: center;
     text-align: center;
 }
 }
+**/ 
+
 
 /** Winner **/ 
 .winner{
-	background-color:#ffffff;
+	background-color:rgba(128, 0, 0, 0.81);
 	min-height: 100vh;
 	padding:70px 15px 30px;
 }
@@ -488,7 +487,7 @@ justify-content: center;
 	font-size: 70px;
 	text-align: center;
 	margin:0;
-	color: maroon;
+	color: white;
 	font-weight: 700;
 }
 
@@ -497,7 +496,7 @@ justify-content: center;
 		width: 15%;
 		height: 5px;
 		border: none;
-		background: brown;
+		background: whitesmoke;
 		margin: auto;
 		margin-top: 20px;
 		margin-bottom: 40px;
@@ -524,11 +523,11 @@ justify-content: center;
 
 .winner .winner-ad .item .inner{
 	position: relative;
-	z-index: 11;
+	z-index: 3;
 	padding:0 15px;
 }
 .winner .winner-ad .item .inner .info{
-	background-color: maroon;
+	background-color: white;
 	text-align: center;
 	padding: 20px 5px;
 	border-radius:20px;
@@ -545,12 +544,12 @@ justify-content: center;
 	margin:0;
 	font-size: 18px;
 	font-weight: 600;
-	color:#ffffff;
+	color: maroon;
 }
 .winner .winner-ad .item .inner .info p{
 	font-size: 16px;
 	font-weight: 400;
-	color:#c5c5c5;
+	color: brown;
 	margin:10px 0 0;
 }
 

@@ -1,3 +1,5 @@
+/* JS for participants section
+
 $(document).ready(function () {
     $(".participants-img").slick({
       slidesToShow: 6,
@@ -23,6 +25,7 @@ $(document).ready(function () {
       ]
     });
   });
+  */
   
   
   
