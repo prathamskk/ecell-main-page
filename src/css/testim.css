@@ -11,7 +11,7 @@
     align-items: center;
     padding-top: 3%;
     padding-bottom: 30%;
-    padding-left: 15%;
+    padding-left: 7%;
     gap: 2%;
 }
 
@@ -25,6 +25,8 @@
 }
 
 .testim-text-wrapper {
+    text-align: justify;
+    justify-content: center;
     width: 50%;
     display: inline-block;
     gap: 2%;
@@ -36,17 +38,19 @@
     max-width: 5%;
     max-height: 5%;
 }
-
 .testim-text-wrapper p {
-    font-size: 4vh;
+    text-align: right;
+    font-size: 2.5vh;
 }
 
 .testim-text-wrapper q {
+    justify-content: center;
     font-weight: 400;
-    font-size: 7vh;
+    font-size: 3.2vh;
 }
 
 .testim-text-wrapper h4 {
+    text-align: right;
     font-weight: bolder;
     /* font-size: 150%; */
     font-size: 3vh;
@@ -73,29 +77,26 @@
         width: 100%;
         padding-left: 10%;
     }
-
-
     .testim-text-wrapper {
+        padding-top: 2%;
         width: 100%;
         display: inline-block;
         gap: 2%;
         height: 50%;
     }
 
-
     .testim-text-wrapper p {
         font-size: 4vh;
     }
 
     .testim-text-wrapper q {
-        font-weight: 400;
-        font-size: 4.5vh;
-        line-height: 0.9;
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 0.04;
     }
 
     .testim-text-wrapper h4 {
         font-weight: bolder;
-        /* font-size: 150%; */
         font-size: 3vh;
     }
 }

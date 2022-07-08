@@ -566,7 +566,7 @@ footer {
   align-items: center;
   height: 250px;
   padding: 1em 2em;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 50%, #d7d7d7 100%);
+  background: linear-gradient(180deg, #c4e4e1 50%, #c4e4e1 100%);
 }
 .footer-wrapper h3 {
   font-size: 2.5em;
@@ -713,7 +713,7 @@ footer {
 }
 
 .aims-img-cont {
-  height: 64px;
+  height: 95px;
   border-radius: 10px;
   margin-top: 10px;
   position: relative;
@@ -769,5 +769,3 @@ footer {
   font-weight: 100;
   background: radial-gradient(#294e58, #0f1613);
 }/*# sourceMappingURL=style.css.map */
-
-
