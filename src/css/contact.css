@@ -17,7 +17,7 @@
 }
 
 .contact-in {
-    width: 80%;
+    /* width: 80%; */
     height: auto;
     margin-top: -2%;
     margin-left: auto;
@@ -47,7 +47,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 20px;
+    /* padding: 20px; */
     flex: 50%;
 }
 
@@ -95,10 +95,6 @@ form ::placeholder {
     color: #294e58;
 }
 
-.g-recaptcha {
-    padding-bottom: 5%;
-    padding-left: 20%;
-}
 
 .contact-form-button {
     font-size: 20px;
@@ -164,10 +160,6 @@ form ::placeholder {
 
 @media screen and (max-width: 180em) {
 
-    .g-recaptcha {
-        align-items: left;
-        padding-left: 0%;
-    }
 
     .contact-form {
         position: relative;
