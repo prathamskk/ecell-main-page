@@ -97,8 +97,8 @@ form ::placeholder {
 }
 
 .g-recaptcha {
-    align-items: center;
     padding-bottom: 5%;
+    padding-left: 20%;
 }
 
 .contact-form-button {
@@ -115,7 +115,7 @@ form ::placeholder {
 }
 
 .contact-form-button:hover {
-    background-color:  #9dc2ca;
+    background-color: #9dc2ca;
     cursor: pointer;
 }
 
@@ -131,23 +131,51 @@ form ::placeholder {
     border-top: 2px solid #3498db;
     width: 40px;
     height: 40px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  #submitbtn{
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#submitbtn {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+@media screen and (max-width: 180em) {
+
+    .g-recaptcha {
+        align-items: left;
+        padding-left: 0%;
+    }
+
+    .contact-form {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex: 50%;
+    }
+
+}
