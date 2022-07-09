@@ -360,7 +360,14 @@ nav .icon-burger .line {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/**
+.vertical {
+  border-left: 2px solid brown;
+  position: center;
+  width: 1px;
+  height: 220px;
+  margin-top: 150px;
+}**/
 .jury-row{
   display: flex;
   justify-content: center;
@@ -377,6 +384,7 @@ nav .icon-burger .line {
   max-width: 400px;
   transition: all 0.3s;
   
+  
 }
 
 
@@ -388,6 +396,7 @@ nav .icon-burger .line {
   border:4px solid brown;
   border-radius: 100%;
   margin: 0 auto;
+  
 }
 
 .jinsta{
@@ -396,10 +405,16 @@ nav .icon-burger .line {
   padding: 10px;
   font-style: italic;
   border-radius: 60px;
-  color: rgb(125, 110, 110);
-  text-transform: capitalize;
+  color: rgb(18, 83, 164);
   transition: all 0.3s ease;
 }
+
+.instagram{
+  display: inline;
+  
+
+}
+
 
 .jury h2{
   text-transform: uppercase;
@@ -459,7 +474,7 @@ justify-content: center;
 **/ 
 
 
-/** Winner **/ 
+/** Winner  
 .winner{
 	background-color:rgba(128, 0, 0, 0.81);
 	min-height: 100vh;
@@ -550,7 +565,7 @@ justify-content: center;
 	font-size: 16px;
 	font-weight: 400;
 	color: brown;
-	margin:10px 0 0;
+	margin:20px 0 0;
 }
 
 @media(max-width: 991px){
@@ -567,6 +582,108 @@ justify-content: center;
        max-width: calc(100%);
 
    }
+}
+**/
+
+.Winner{
+  height: 50vh;
+  display:grid;
+  place-items: center;
+  background: white;
+  text-align: center;
+  margin-bottom: 450px;
+}
+.Winner .h1{
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.Winner hr{
+  width: 15%;
+  height: 5px;
+  border: none;
+  background: brown;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.container{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: rgb(254, 254, 254);
+  transition: 0.5s;
+  
+}
+.card:hover{
+  height: 470px;
+  
+}
+.card .img{
+  height: 350px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  padding: 5px;
+}
+.card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+.card .top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  color: brown;
+  line-height: 20px;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: rgb(207, 201, 201);
+  border-radius: 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px 0;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 1180px) {
+  .Winner{
+    height: 180vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+  .card{
+    max-width: 300px;
+    margin: 100px 0;
+  }
 }
 
 
