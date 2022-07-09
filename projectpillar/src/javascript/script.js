@@ -16,7 +16,6 @@ function nav_toggle() {
 toggle.onclick = nav_toggle;
 
 document.onclick = function (e) {
-  console.log(e.target.id);
   if (
     e.target.id !== "nav-header" &&
     e.target.id !== "nav-links" &&
@@ -29,12 +28,45 @@ document.onclick = function (e) {
   }
 };
 
-window.addEventListener("scroll", scrollFunction);
-
-function scrollFunction() {
+window.addEventListener("scroll", () => {
   if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
     document.getElementById("nav").style.top = "0";
   } else {
     document.getElementById("nav").style.top = "-80px";
   }
+});
+
+var observer = new IntersectionObserver(
+  function (entries) {
+    let e = document.getElementById("navbar");
+
+    if (entries[0].isIntersecting === true) {
+      e.onmouseover = () => {
+        document.getElementById("nav").style.top = "0";
+      };
+      e.onmouseout = () => {
+        let exist = link.classList.contains("nav-links-active");
+        if (!exist) {
+          document.getElementById("nav").style.top = "-80px";
+        }
+      };
+    } else {
+      e.onmouseover = () => {
+        document.getElementById("nav").style.top = "0";
+      };
+      e.onmouseout = () => {
+        let exist = link.classList.contains("nav-links-active");
+        if (!exist) {
+          document.getElementById("nav").style.top = "0px";
+        }
+      };
+    }
+  },
+  { threshold: [1] }
+);
+
+if (window.innerWidth > 1100) {
+  observer.observe(document.querySelector("#home"));
 }
+
+

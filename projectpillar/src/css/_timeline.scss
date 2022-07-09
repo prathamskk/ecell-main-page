@@ -91,16 +91,14 @@
   }
 }
 
-.bottom {
-  a {
-    text-transform: capitalize;
-    text-decoration: none;
-    background: #fff;
-    font-weight: 500;
-    padding: 8px 16px;
-    color: var(--font-blk);
-    border-radius: 5px;
-  }
+.btn {
+  text-transform: capitalize;
+  text-decoration: none;
+  background: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  color: var(--font-blk);
+  border-radius: 5px;
 }
 
 .row section p {

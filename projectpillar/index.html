@@ -15,39 +15,87 @@
 
     <!-- Navigation Bar -->
 
-    <nav id="nav">
-        <div id="nav-header" class="nav-header">
-            <div class="logo">
-                <a href="../index.html">
-                <img src="/src/assets/svg/Ecell-Sakec-Logo.svg" alt="sakec ecell logo" width="100%" height="100%" />
-            </a>
+    <nav id="navbar">
+        <div id="nav" class="nav">
+
+
+            <div id="nav-header" class="nav-header">
+                <div class="logo">
+                    <img src="./src/assets/svg/Ecell-Sakec-Logo.svg" alt="sakec ecell logo" width="100%" height="100%" />
+                </div>
+                <div id="toggle" class="nav-toggle">
+                    <span id="toggle-span"></span><span id="toggle-span"></span><span id="toggle-span"></span>
+                </div>
             </div>
-            <div id="toggle" class="nav-toggle">
-                <span id="toggle-span"></span><span id="toggle-span"></span><span id="toggle-span"></span>
-            </div>
+            <ul id="nav-links" class="nav-links-disable">
+                <li> <a id="nav-a" href="../index.html">Home </a> </li>
+                <li> <a id="nav-a" href="#about">About </a> </li>
+                <li> <a id="nav-a" href="#incentives">Incentives</a> </li>
+                <li> <a id="nav-a" href="#sponsors">Sponsors </a> </li>
+                <li> <a id="nav-a" href="#timeline">Timeline </a> </li>
+                <!-- <li> <a id="nav-a" href="#registration">Registration </a> </li> -->
+                <li> <a id="nav-a" href="#contact">Contact Us </a> </li>
+                <li> <a id="nav-a" href="./faq/index.html">FAQ</a> </li>
+            </ul>
         </div>
-        <ul id="nav-links" class="nav-links-disable">
-            <li> <a id="nav-a" href="#home">Home </a> </li>
-            <li> <a id="nav-a" href="#about">About </a> </li>
-            <li> <a id="nav-a" href="#incentives">Incentives</a> </li>
-            <li> <a id="nav-a" href="#sponsors">Sponsors </a> </li>
-            <li> <a id="nav-a" href="#timeline">Timeline </a> </li>
-            <!-- <li> <a id="nav-a" href="#registration">Registration </a> </li> -->
-            <li> <a id="nav-a" href="#contact">Contact Us </a> </li>
-            <li> <a id="nav-a" href="./faq/index.html">FAQ</a> </li>
-        </ul>
     </nav>
 
     <!-- Content Area -->
 
-    <article>
+    <article id="article">
         <section id="home">
-            <div class="hero-img">
-                <img src="./src/assets/svg/Project-Pillar-Logo.svg" alt="" height="100%" width="100%">
+            <div class="home-wrapper">
+                <div class="hero-img">
+                    <img src="./src/assets/svg/Project-Pillar-Logo.svg" alt="" height="100%" width="100%">
+                </div>
+                <div class="counter-wrapper">
+                    <h2>Registration <span>Starts In</span></h2>
+                    <div class="container">
+                        <div class="container-segment">
+                            <div class="segment-title">Hours</div>
+                            <div class="segment">
+                                <div class="flip-card" data-hours-tens>
+                                    <div class="top">2</div>
+                                    <div class="bottom">2</div>
+                                </div>
+                                <div class="flip-card" data-hours-ones>
+                                    <div class="top">4</div>
+                                    <div class="bottom">4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-segment">
+                            <div class="segment-title">Minutes</div>
+                            <div class="segment">
+                                <div class="flip-card" data-minutes-tens>
+                                    <div class="top">0</div>
+                                    <div class="bottom">0</div>
+                                </div>
+                                <div class="flip-card" data-minutes-ones>
+                                    <div class="top">0</div>
+                                    <div class="bottom">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-segment">
+                            <div class="segment-title">Seconds</div>
+                            <div class="segment">
+                                <div class="flip-card" data-seconds-tens>
+                                    <div class="top">0</div>
+                                    <div class="bottom">0</div>
+                                </div>
+                                <div class="flip-card" data-seconds-ones>
+                                    <div class="top">0</div>
+                                    <div class="bottom">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-            
+
             <ul class="circles">
 
                 <li></li>
@@ -64,8 +112,8 @@
         <!-- Project Pillar -->
 
         <section id="about">
-            <h1>What is Project Pillar?</h1>
-            <p>
+            <h1 data-aos="fade-up">What is Project Pillar?</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
                 On a quest to look for worthwhile startups that hold the potential to revitalise the business industry
                 by
                 defying
@@ -82,8 +130,8 @@
         <!-- Incentives -->
 
         <section id="incentives">
-            <h1>Incentives</h1>
-            <div class="incentives-wrapper">
+            <h1 data-aos="fade-up">Incentives</h1>
+            <div class="incentives-wrapper" data-aos="fade-up" data-aos-delay="80">
                 <!-- Make connections with VCs -->
                 <div class="cards">
                     <div class="card-img-cont">
@@ -148,9 +196,9 @@
         <!-- Timeline -->
 
         <section id="timeline">
-            <h1>Timeline</h1>
-            <div class="timeline-wrapper">
-                <div class="center-line" data-aos-delay="70"></div>
+            <h1 data-aos="fade-up">Timeline</h1>
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="center-line"></div>
                 <!-- Pre Registration -->
                 <div class="row row-1">
                     <div class="icons icons-1">
@@ -168,7 +216,7 @@
                             and essential
                             documentation.
                         </p>
-                        <div class="bottom"><a href="#">Register Now</a> </div>
+                        <div class="button"><a href="#" class="btn">Register Now</a> </div>
                     </section>
                 </div>
                 <!-- Verification -->
@@ -345,6 +393,7 @@
     </footer>
     <!-- Scripts -->
     <script src="./src/javascript/script.js"></script>
+    <script src="./src/javascript/countdown.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

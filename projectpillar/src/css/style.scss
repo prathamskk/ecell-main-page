@@ -2,6 +2,7 @@
 @import "./navbar";
 @import "./animatedBackground";
 @import "./timeline";
+@import "./countdown";
 
 :root {
   --background-color: #f7f7f7;
@@ -69,15 +70,45 @@ section:nth-of-type(5) {
   height: auto;
 }
 
-.hero-img {
-  width: 350px;
-  height: 350px;
-  object-fit: contain;
+.home-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.counter-wrapper {
+  height: auto;
+  width: 100%;
+  margin-top: 7.5%;
+  // background-color: pink;
+  text-align: center;
+  h2 {
+    font-size: 3.2em;
+    span {
+      background-color: #f3ec78;
+      background-image: linear-gradient(
+        90deg,
+        rgb(243, 30, 233) 0%,
+        rgb(138, 2, 253) 30%,
+        rgb(80, 3, 255) 60%,
+        rgb(16, 123, 255) 90%,
+        rgb(7, 239, 255) 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+  }
+}
+
+.hero-img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
 }
 
 .incentives-wrapper {
@@ -105,6 +136,7 @@ section:nth-of-type(5) {
 }
 .cards-details {
   margin-top: 15px;
+
   h4 {
     font-size: 1.2em;
   }
@@ -112,6 +144,7 @@ section:nth-of-type(5) {
     // margin-top: 5px;
     color: rgba(41, 47, 54, 0.5);
     font-size: 0.9em;
+    text-align: justify;
   }
 }
 
@@ -159,6 +192,9 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 10px;
+  i {
+    font-size: 18px;
+  }
 }
 
 .contact-wrapper {
