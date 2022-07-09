@@ -441,11 +441,6 @@ ul li a {
 .content-wrapper {
   width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
   height: 100%;
 }
 .content-wrapper h3 {
@@ -456,7 +451,7 @@ ul li a {
 .content-wrapper p {
   font-size: 1.25em;
   line-height: 2;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   .content-wrapper {

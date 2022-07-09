@@ -148,6 +148,9 @@ body {
   padding: 1.5rem;
   background: #fff;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   z-index: 1;
 }
 .blog-card .description h1,

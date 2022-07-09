@@ -106,6 +106,9 @@ $color_grey_dark: #a2a2a2;
     padding: 1.5rem;
     background: $color_white;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     z-index: 1;
     h1,
     h2 {
