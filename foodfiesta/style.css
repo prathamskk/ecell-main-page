@@ -50,8 +50,7 @@ nav {
 }
 nav .logo {
 	float: left;
-	width: 7%;
-	height: 100%;
+	width: 94px;
 	display: flex;
 	align-items: center;
 }
@@ -101,11 +100,6 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
-	nav .logo {
-		float: none;
-		width: auto;
-		justify-content: center;
-	}
 	nav .links {
 		float: none;
 		position: fixed;
