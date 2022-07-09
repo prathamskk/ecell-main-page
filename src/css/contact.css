@@ -1,3 +1,5 @@
+.g-recaptcha {transform: scale(0.85); transform-origin: left top;}
+
 .contact-info h1 {
     font-size: 2.5em;
     font-weight: 600;
@@ -24,11 +26,12 @@
     margin-right: auto;
     margin-bottom: 2%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #666;
+    gap: 20px;
 }
 
 .contact-map {
@@ -47,7 +50,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    /* padding: 20px; */
+    /* padding-left: 20px; */
     flex: 50%;
 }
 
@@ -158,15 +161,48 @@ form ::placeholder {
     align-items: center;
 }
 
-@media screen and (max-width: 180em) {
+@media screen and (max-width: 700px) {
+    .contact-in {
+        flex-wrap: wrap;
+    }
 
 
-    .contact-form {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        flex: 50%;
+}
+
+@media screen and (max-width: 350px) {
+    .contact-in {
+        padding: 0;
+    }
+
+    .form-input {
+        font-family: "Montserrat";
+        width: 90%;
+        font-size: 17px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(15, 22, 19);
+        outline: none;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        padding: 15px;
+    }
+    
+    
+    .form-inputarea {
+        font-family: "Montserrat";
+        width: 90%;
+        height: 100px;
+        border-radius: 5px;
+        font-size: 17px;
+        border: 1px solid rgb(15, 22, 19);
+        outline: none;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        padding: 15px;
+    }
+
+    .g-recaptcha {
+        margin-left: 5%;
     }
 
 }

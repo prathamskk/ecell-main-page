@@ -448,7 +448,7 @@ footer {
 }
 
 .aims-img-cont {
-  height: 95px;
+  width: 95px;
   border-radius: 10px;
   margin-top: 10px;
   position: relative;
@@ -456,7 +456,7 @@ footer {
 
 
   @media screen and (max-width: 900px) {
-    height: 32px;
+    // width: 32px;
     margin-top: 0px;
   }
 }
