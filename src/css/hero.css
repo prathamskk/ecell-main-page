@@ -257,7 +257,7 @@
   text-shadow: 0 0 10px #9dc2ca, 0 0 20px #9dc2ca, 0 0 30px #9dc2ca, 0 0 40px #9dc2ca, 0 0 70px #9dc2ca, 0 0 80px #9dc2ca, 0 0 100px #9dc2ca, 0 0 150px #9dc2ca;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
   .title h1 {
     font-size: 70px;
   }

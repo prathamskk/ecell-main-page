@@ -1,3 +1,5 @@
+.g-recaptcha {transform: scale(0.85); transform-origin: left top;}
+
 .contact-info h1 {
     font-size: 2.5em;
     font-weight: 600;
@@ -6,7 +8,6 @@
     padding-bottom: 5%;
     text-align: center;
 }
-
 
 .contact-info {
     margin-top: -24%;
@@ -18,18 +19,19 @@
 }
 
 .contact-in {
-    width: 80%;
+    /* width: 80%; */
     height: auto;
     margin-top: -2%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #666;
+    gap: 20px;
 }
 
 .contact-map {
@@ -48,7 +50,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 20px;
+    /* padding-left: 20px; */
     flex: 50%;
 }
 
@@ -96,10 +98,6 @@ form ::placeholder {
     color: #294e58;
 }
 
-.g-recaptcha {
-    align-items: center;
-    padding-bottom: 5%;
-}
 
 .contact-form-button {
     font-size: 20px;
@@ -115,7 +113,7 @@ form ::placeholder {
 }
 
 .contact-form-button:hover {
-    background-color:  #9dc2ca;
+    background-color: #9dc2ca;
     cursor: pointer;
 }
 
@@ -131,23 +129,80 @@ form ::placeholder {
     border-top: 2px solid #3498db;
     width: 40px;
     height: 40px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  #submitbtn{
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#submitbtn {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-in {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .contact-in {
+        padding: 0;
+    }
+
+    .form-input {
+        font-family: "Montserrat";
+        width: 90%;
+        font-size: 17px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(15, 22, 19);
+        outline: none;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        padding: 15px;
+    }
+    
+    
+    .form-inputarea {
+        font-family: "Montserrat";
+        width: 90%;
+        height: 100px;
+        border-radius: 5px;
+        font-size: 17px;
+        border: 1px solid rgb(15, 22, 19);
+        outline: none;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        padding: 15px;
+    }
+
+    .g-recaptcha {
+        margin-left: 5%;
+    }
+
+}
