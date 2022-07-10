@@ -128,28 +128,22 @@ nav .icon-burger .line {
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
   }
-
   nav .links a {
     font-size: 20px;
     color: rgb(212, 212, 212);
   }
-
   nav :checked ~ .links {
     bottom: 0;
   }
-
   nav .icon-burger {
     display: block;
   }
-
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
   }
-
   nav :checked ~ .icon-burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg);
   }
-
   nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
   }
@@ -231,12 +225,10 @@ footer {
     font-size: 2.5rem;
     color: var(--font-blk);
   }
-
   .footer-wrapper h1 {
     color: var(--font-blk);
     font-size: 2rem;
   }
-
   .contact-wrapper {
     justify-content: center;
   }
@@ -246,7 +238,6 @@ footer {
     font-size: 2.5rem;
     color: var(--font-blk);
   }
-
   .footer-wrapper {
     padding: 25px 10px;
   }
@@ -254,15 +245,12 @@ footer {
     color: var(--font-blk);
     font-size: 1.5rem;
   }
-
   .contact-wrapper {
     justify-content: center;
   }
-
   .contact-card h4 {
     font-size: 14px;
   }
-
   .footer-ecell h5 {
     font-weight: 400;
     font-size: 12px;

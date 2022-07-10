@@ -117,7 +117,6 @@ nav {
     border: none;
     top: 0;
   }
-
   .nav-header {
     padding: 5px 32px;
     display: flex;
@@ -129,18 +128,15 @@ nav {
     z-index: 3;
     height: auto;
   }
-
   .logo {
     height: 45px;
     width: 50px;
     padding: 0;
   }
-
   #nav-links {
     width: 100%;
     transition: var(--transition-nav);
   }
-
   .nav-links-active {
     width: 100%;
     visibility: visible;
@@ -148,14 +144,12 @@ nav {
     top: 0;
     z-index: 1;
   }
-
   .nav-links-disable {
     visibility: hidden;
     position: relative;
     top: -350px;
     z-index: 1;
   }
-
   .nav-toggle {
     display: flex;
     height: 25px;
@@ -182,7 +176,6 @@ nav {
   .nav-toggle span:nth-of-type(3) {
     width: 75%;
   }
-
   .toggle-active span:nth-of-type(1) {
     transform: rotateZ(-45deg) translate(-6.5px, 3.2px);
     transform-origin: top;
@@ -476,53 +469,42 @@ nav {
   .timeline-wrapper {
     height: 100%;
   }
-
   .timeline-wrapper .center-line {
     left: 0;
     height: 87.5%;
   }
-
   .timeline-wrapper .row-1 section {
     gap: 1em;
   }
-
   .timeline-wrapper .icons {
     top: 15px;
     left: -55px;
     width: 40px;
     height: 40px;
   }
-
   .icons-1 {
     border: 3px solid #ff7a7a;
   }
-
   .icons-2 {
     border: 3px solid #4ddc5e;
   }
-
   .icons-3 {
     border: 3px solid #31cce0;
   }
-
   .icons-4 {
     border: 3px solid #7a12f4;
   }
-
   .icons-5 {
     border: 3px solid #fb07d9;
   }
-
   .timeline-wrapper .row {
     margin: 20px 0 3px 40px;
   }
-
   .timeline-wrapper .row section {
     width: 100%;
     padding: 20px 20px;
     gap: 0.5em 0;
   }
-
   .row-1 section::before,
 .row-2 section::before,
 .row-3 section::before,
@@ -530,17 +512,14 @@ nav {
 .row-5 section::before {
     left: -7.5px;
   }
-
   .row section .details {
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
   }
-
   .row p {
     font-size: 0.75em;
   }
-
   .bottom a {
     text-transform: capitalize;
     text-decoration: none;
@@ -874,22 +853,18 @@ footer {
     font-size: 2.1rem;
     color: var(--font-blk);
   }
-
   section {
     width: 100%;
     padding: 65px 32px;
   }
-
   section:nth-of-type(2) p {
     margin-top: 5%;
     font-size: 15px;
     text-align: justify;
   }
-
   .cards {
     width: 100%;
   }
-
   section:nth-of-type(3) {
     height: calc(100vh + 20%);
   }
@@ -897,11 +872,9 @@ footer {
     padding: 0px 32px;
     padding-top: 65px;
   }
-
   section:nth-of-type(5) {
     height: auto;
   }
-
   .incentives-wrapper {
     width: 100%;
     display: flex;
@@ -909,13 +882,11 @@ footer {
     align-items: baseline;
     padding: 0 32px;
   }
-
   .hero-img {
     height: 350px;
     width: 350px;
     z-index: 1;
   }
-
   .footer-wrapper {
     height: calc(60vh - 10%);
     padding: 25px 32px;
@@ -924,15 +895,12 @@ footer {
     color: var(--font-blk);
     font-size: 2rem;
   }
-
   .footer-ecell {
     height: calc(10vh - 2.5%);
   }
-
   .footer-wrapper {
     text-align: center;
   }
-
   .contact-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
@@ -944,7 +912,6 @@ footer {
     margin-top: 2.5%;
     margin-left: 5%;
   }
-
   .contact-card {
     width: 350px;
     height: auto;
@@ -954,7 +921,6 @@ footer {
     color: rgb(67, 105, 113);
     font-size: 1.01em;
   }
-
   .incentives-wrapper {
     width: 100%;
     flex-direction: column;
@@ -962,12 +928,10 @@ footer {
     gap: 0;
     margin-top: 60px;
   }
-
   .card-img-cont {
     height: 40px;
     width: 40px;
   }
-
   .social-media {
     width: 100%;
   }
@@ -978,33 +942,26 @@ footer {
     width: 275px;
     z-index: 1;
   }
-
   h1 {
     font-size: 2.3rem;
     color: var(--font-blk);
   }
-
   .nav-header {
     padding: 2.5px 16px;
   }
-
   section:nth-of-type(2) {
     height: calc(55vh + 10%);
   }
-
   section:nth-of-type(3) {
     height: calc(105vh + 12.5%);
   }
-
   .footer-wrapper {
     padding: 25px 16px;
     height: calc(55vh + 10%);
   }
-
   .social-media {
     width: 100%;
   }
-
   .footer-ecell {
     height: calc(12vh - 10%);
     width: 100%;
@@ -1015,42 +972,33 @@ footer {
     font-size: 2.3rem;
     color: var(--font-blk);
   }
-
   .nav-header {
     padding: 2.5px 16px;
   }
-
   section:nth-of-type(2) {
     height: calc(70vh + 7.5%);
   }
-
   section:nth-of-type(3) {
     height: calc(120vh + 7.5%);
   }
-
   .hero-img {
     height: 250px;
     width: 250px;
     z-index: 1;
   }
-
   section:nth-of-type(5) {
     height: auto;
   }
-
   .social-media {
     width: 100%;
   }
-
   footer {
     height: auto;
   }
-
   .footer-wrapper {
     padding: 25px 16px;
     height: auto;
   }
-
   .footer-ecell {
     height: calc(22vh - 10%);
   }
