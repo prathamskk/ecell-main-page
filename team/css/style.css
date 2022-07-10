@@ -24,17 +24,6 @@ body {
   position: relative;
 }
 
-h1 {
-
-  text-align: center;
-  color: #fff;
-  position: relative;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
-  font-size: 8rem;
-}
-
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -161,6 +150,7 @@ section {
 
 #team {
   margin-left: 5%;
+  margin-bottom: 50px;
   border-radius: 50px;
   background: #ffffff;
   position: relative;
@@ -252,6 +242,7 @@ section {
   color: #1b1b1b;
   margin: 0px;
   letter-spacing: 0.3px;
+  font-size: 1.17em;
 }
 
 .member-name h5 {
