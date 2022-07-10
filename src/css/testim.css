@@ -1,18 +1,20 @@
+.testimony{
+    background-color: #eefafc;
+    padding: 75px 0px;
+}
 .testimony h1 {
     font-size: 2.5em;
     font-weight: 600;
     color: var(--font-blk);
-    padding-top: 5%;
     text-align: center;
 }
 
 .testim-wrapper {
     display: flex;
-    align-items: center;
-    padding-top: 3%;
-    padding-bottom: 30%;
-    padding-left: 7%;
-    gap: 2%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 .testim-image {
@@ -26,10 +28,10 @@
 
 .testim-text-wrapper {
     text-align: justify;
-    justify-content: center;
     width: 50%;
-    display: inline-block;
-    gap: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     height: 50%;
 }
 
@@ -44,9 +46,8 @@
 }
 
 .testim-text-wrapper q {
-    justify-content: center;
     font-weight: 400;
-    font-size: 3.2vh;
+    font-size: 15px;
 }
 
 .testim-text-wrapper h4 {
@@ -56,11 +57,10 @@
     font-size: 3vh;
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 900px) {
 
     .testim-image {
         width: 100%;
-        padding-bottom: 8%;
     }
 
     #testim-img {
@@ -69,20 +69,12 @@
     }
 
     .testim-wrapper {
-        display: table;
+        flex-direction: column;
+        padding: 10px 20px;
         align-items: center;
-        padding-top: 10%;
-        padding-bottom: 30%;
-        padding-right: 10%;
-        width: 100%;
-        padding-left: 10%;
     }
     .testim-text-wrapper {
-        padding-top: 2%;
         width: 100%;
-        display: inline-block;
-        gap: 2%;
-        height: 50%;
     }
 
     .testim-text-wrapper p {
@@ -92,11 +84,29 @@
     .testim-text-wrapper q {
         font-weight: 300;
         font-size: 2.2vh;
-        line-height: 0.04;
     }
 
     .testim-text-wrapper h4 {
         font-weight: bolder;
         font-size: 3vh;
     }
+}
+
+@media screen and (max-width: 450px) {
+    .testim-text-wrapper q {
+        font-weight: 300;
+        font-size: 1.7vh;
+    }
+
+    
+    .testim-text-wrapper h4 {
+        font-weight: bolder;
+        font-size: 2vh;
+    }
+
+    .testim-text-wrapper p {
+        font-size: 3vh;
+    }
+
+
 }

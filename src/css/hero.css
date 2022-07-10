@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
 .hero-section {
   margin: auto;
   height: 100vh;
@@ -236,7 +237,7 @@
 }
 
 .title {
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   left: 50%;
   top: 50%;

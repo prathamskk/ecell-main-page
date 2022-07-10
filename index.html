@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>ECELL | HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- page specific imports -->
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/contact.css">
-    <link rel="stylesheet" href="./src/css/events.css">
     <link rel="stylesheet" href="./src/css/hero.css">
     <link rel="stylesheet" href="./src/css/testim.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer>
-    </script>
-    <title>ECELL | HOME</title>
-
+    <!--jQuery CDN-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
-<body onresize="wresize()" onload="wresize()">
-    <nav id="nav">
-        <div class="nav-header">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./src/assets/svg/Ecell-Sakec-Logo.svg" alt="sakec ecell logo" width="100%"
-                        height="100%" />
-                </a>
-            </div>
-            <div id="toggle" class="nav-toggle" onclick="nav_toggle()">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div id="nav-links" class="nav-links-disable">
-
-            <ul>
-                <li> <a href="#home">Home </a> </li>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="../index.html">
+        <img src="../common/img/e_cell_logo_BLACK.png" alt="logo" class="logo">
+      </a>
+        <ul class="links">
+            <li> <a href="#home">Home </a> </li>
                 <li> <a href="#about">About us </a> </li>
                 <li> <a href="#aims">Aims</a> </li>
                 <li> <a href="./events/index.html">Events </a> </li>
                 <li> <a href="#testimony">Testimony</a> </li>
                 <li> <a href="#contactus">Contact Us </a> </li>
                 <li> <a href="./team/index.html">Our Team</a> </li>
-            </ul>
-        </div>
-    </nav>
-    <article>
-        <!-- HERO SECTION -->
+          
 
-        <div class="section-wrapper" id="home">
-            <div class="hero-section">
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+        <!-- HERO SECTION -->
+      <section class="hero-section" id="home">
                 <div class='light x1'></div>
                 <div class='light x2'></div>
                 <div class='light x3'></div>
@@ -72,13 +64,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+    </section>
 
 
         <!-- ABOUT SECTION -->
-        <div class="wrapper-flex" id="about">
-            <div class="content-wrapper" data-aos="fade-up">
+    <section class="about-section" id="about">
                 <h3>
                     What is E-CELL?
                 </h3>
@@ -93,16 +83,15 @@
                     POSSIBLE.
                     Join us on this endeavour now!!
                 </p>
-            </div>
-        </div>
+    </section>
 
 
         <!-- AIMS SECTION  -->
-        <div class="section-wrapper" id="aims">
-            <h3 data-aos="fade-up">
+        <section class="aims-section" id="aims">
+            <h3>
                 Aims
             </h3>
-            <div class="aims-wrapper" data-aos="fade-up">
+            <div class="aims-wrapper">
 
                 <!-- Awareness -->
                 <div class="cards">
@@ -160,39 +149,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!-- EVENTS SECTION -->
-        <!-- 
-        <section class="Roles" id="events">
-            <h1 class="head2">Events</h1>
-            <div class="event-row">
-                <div class="roles-col animate__animated wow animate__fadeInUp">
-                    <a class="card" href="./foodfiesta/index.html">
-                        <div class="card__background"
-                            style="background-image: url(./src/assets/images/FoodFiesta.jpeg)"></div>
-                    </a>
-                </div>
-                <div class="roles-col animate__animated wow animate__fadeInUp">
-                    <a class="card" href="#">
-                        <div class="card__background" style="background-image: url(./src/assets/images/Podcast.png)">
-                        </div>
-                    </a>
-                </div>
-                <div class="roles-col animate__animated wow animate__fadeInUp">
-                    <a class="card" href="./projectpillar/index.html">
-                        <div class="card__background"
-                            style="background-image: url(./src/assets/images/projectpillar.jpg)"></div>
-                    </a>
-                </div>
-            </div>
-        </section> -->
+        </section>
+            
 
         <!-- TESTIMONY SECTION  -->
         <section class="testimony" id="testimony">
-            <h1 data-aos="fade-up">Testimonials </h1>
-            <div class="testim-wrapper " data-aos="fade-up">
+            <h1>Testimonials </h1>
+            <div class="testim-wrapper">
                 <div class="testim-image">
                     <img id="testim-img" src="./src/assets/images/Testimony.JPG" />
                 </div>
@@ -207,8 +170,11 @@
 
 
                     </q>
-                    <h4>Rushikesh Gaikwad</h4>
-                    <p>Shark Tank 2020 participant</p>
+                    <div>
+                        <h4>Rushikesh Gaikwad</h4>
+                        <p>Shark Tank 2020 participant</p>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -245,79 +211,74 @@
                 </div>
             </div>
         </section>
-    </article>
 
 
-
-    <footer id="contact">
-        <div class="footer-wrapper">
-            <h3>
-                Get in touch with us
-            </h3>
-
-            <div class="footer-contact">
-                <div class="email-footer">
-                    <div class="contact-area">
+        <footer id="contact">
+            <div class="footer-wrapper">
+                <h1>Get in touch with us</h1>
+                <div class="contact-wrapper">
+                    <div class="contact-card">
                         <h4>Prof. Milind Khairnar (Faculty Incharge)</h4>
                         <div class="email-area">
                             <i class="bi bi-envelope-fill"></i>
-                            <a href="mailto:milind.khairnar@sakec.ac.in"
-                                style="color: #292f36;">milind.khairnar@sakec.ac.in</a>
+                            <a href="mailto:milind.khairnar@sakec.ac.in" style="color: #292f36;">milind.khairnar@sakec.ac.in</a>
                         </div>
                         <div class="phone-area">
                             <i class="bi bi-telephone-fill"></i>
                             <p>+91 93223 19066</p>
                         </div>
                     </div>
-                    <div class="contact-area">
-                        <h4>Ashish Shetty(Council head)</h4>
-                        <div class="email-area">
-                            <i class="bi bi-envelope-fill"></i>
-                            <a href="mailto:ashish.shetty@sakec.ac.in"
-                                style="color: #292f36;">ashish.shetty@sakec.ac.in</a>
+    
+                    <div class="contact-card">
+                        <h4>Ashish Shetty (E-Cell Council head)</h4>
+                        <div class="contact-content">
+                            <div class="email-area">
+                                <i class="bi bi-envelope-fill"></i>
+                                <a href="mailto:ashish.shetty@sakec.ac.in" style="color: #292f36;">ashish.shetty@sakec.ac.in</a>
+                            </div>
+                            <div class="phone-area">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>+91 77150 22166</p>
+                            </div>
                         </div>
-                        <div class="phone-area">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>+91 77150 22166</p>
-                        </div>
+    
                     </div>
-                    <div class="contact-area">
-                        <h4>For other queries : </h4>
+    
+                    <div class="contact-card">
+                        <h4>For Other Queries Contact Us At :</h4>
                         <div class="email-area">
                             <i class="bi bi-envelope-fill"></i>
                             <a href="mailto:ecell@sakec.ac.in" style="color: #292f36;">ecell@sakec.ac.in</a>
                         </div>
+                        <div class="phone-area">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>+91 93223 19066</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-ecell">
-            <div class="social-media">
-                <a class="social-media-cont" href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y">
-                    <i class="bi bi-instagram "></i>
-                </a>
-                <a class="social-media-cont" href="https://m.facebook.com/100410025256433/">
-                    <!-- <a href=""></a> -->
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a class="social-media-cont" href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a class="social-media-cont" href="https://www.linkedin.com/showcase/e-cell-sakec">
-                    <i class="bi bi-linkedin"></i>
-                </a>
+            <div class="footer-ecell">
+                <div class="social-media">
+                    <a class="social-media-cont" href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y">
+                        <i class="bi bi-instagram "></i>
+                    </a>
+                    <a class="social-media-cont" href="https://m.facebook.com/100410025256433/">
+                        <!-- <a href=""></a> -->
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="social-media-cont" href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a class="social-media-cont" href="https://www.linkedin.com/showcase/e-cell-sakec">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <h5>
+                    entreupreneurship and innovation cell | SAKEC
+                </h5>
             </div>
-            <h5>
-                entreupreneurship and innovation cell | SAKEC
-            </h5>
-        </div>
-    </footer>
+        </footer>
 
 </body>
-<script src="./src/javascript/script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
+<script src="./src/javascript/contactus.js"></script>
 </html>
