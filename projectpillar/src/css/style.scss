@@ -3,6 +3,7 @@
 @import "./animatedBackground";
 @import "./timeline";
 @import "./countdown";
+@import "./scrollDownArrow";
 
 :root {
   --background-color: #f7f7f7;
@@ -38,7 +39,7 @@ section {
 section:nth-of-type(1) {
   height: 100vh;
   background-color: #fff;
-  background: linear-gradient(180deg, #e7e7e7, #ffffff);
+  background: linear-gradient(180deg, #e1e1e1, #ffffff);
 }
 
 section:nth-of-type(2) {
@@ -81,11 +82,11 @@ section:nth-of-type(5) {
 .counter-wrapper {
   height: auto;
   width: 100%;
-  margin-top: 7.5%;
+  margin-top: 1.5%;
   // background-color: pink;
   text-align: center;
   h2 {
-    font-size: 3.2em;
+    font-size: 5vh;
     span {
       background-color: #f3ec78;
       background-image: linear-gradient(
@@ -103,12 +104,17 @@ section:nth-of-type(5) {
       -moz-text-fill-color: transparent;
     }
   }
+  @media screen and (max-width: 900px) {
+    width: 100vw;
+  }
 }
 
 .hero-img {
   width: 100%;
-  height: 350px;
+  height: 40vh;
   object-fit: contain;
+
+  z-index: 1;
 }
 
 .incentives-wrapper {
@@ -125,13 +131,19 @@ section:nth-of-type(5) {
 }
 
 .cards {
-  height: 200px;
+  height: 275px;
   width: 325px;
 }
 
+.cards:nth-of-type(4) {
+  .card-img-cont {
+    width: 225px;
+  }
+}
+
 .card-img-cont {
-  height: 55px;
-  width: 55px;
+  height: 150px;
+  width: 150px;
   object-fit: contain;
 }
 .cards-details {
@@ -141,10 +153,13 @@ section:nth-of-type(5) {
     font-size: 1.2em;
   }
   p {
-    // margin-top: 5px;
+    margin-top: 2.5px;
     color: rgba(41, 47, 54, 0.5);
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: justify;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: .9em;
   }
 }
 
@@ -201,7 +216,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   // margin: 2.5% 7.5%;
   margin-top: 2.25%;
   margin-left: 7.5%;
@@ -257,10 +272,11 @@ footer {
   }
   .cards {
     width: 100%;
+    height: 300px;
   }
 
   section:nth-of-type(3) {
-    height: calc(100vh + 20%);
+    height: calc(100vh + 50%);
     h1 {
       padding: 0px 32px;
       padding-top: 65px;
@@ -283,8 +299,9 @@ footer {
 
   .hero-img {
     height: 350px;
-    width: 350px;
+    width: 100%;
     z-index: 1;
+    object-fit: contain;
   }
 
   .footer-wrapper {
@@ -334,8 +351,8 @@ footer {
     margin-top: 60px;
   }
   .card-img-cont {
-    height: 40px;
-    width: 40px;
+    height: 150px;
+    width: 150px;
   }
   .social-media {
     width: 100%;
@@ -345,13 +362,18 @@ footer {
 @media screen and (min-width: 395px) and (max-width: 501px) {
   .hero-img {
     height: 275px;
-    width: 275px;
+    width: 100%;
     z-index: 1;
   }
   h1 {
     font-size: 2.3rem;
     //   text-align: center;
     color: var(--font-blk);
+  }
+
+  .cards {
+    width: 100%;
+    height: 325px;
   }
 
   .nav-header {
@@ -389,6 +411,11 @@ footer {
     color: var(--font-blk);
   }
 
+  .cards {
+    width: 100%;
+    height: 325px;
+  }
+
   .nav-header {
     padding: 2.5px 16px;
   }
@@ -398,11 +425,11 @@ footer {
   }
 
   section:nth-of-type(3) {
-    height: calc(120vh + 7.5%);
+    height: calc(130vh + 7.5%);
   }
   .hero-img {
     height: 250px;
-    width: 250px;
+    width: 100%;
     z-index: 1;
   }
   section:nth-of-type(5) {

@@ -18,7 +18,8 @@
   color: #5ad67d;
 }
 .blog-card:hover .photo {
-  transform: scale(1.3) rotate(3deg);
+  filter: grayscale(0%);
+  transition: 500ms;
 }
 .blog-card .meta {
   position: relative;
@@ -26,6 +27,7 @@
   height: 200px;
 }
 .blog-card .photo {
+  filter: grayscale(100%);
   position: absolute;
   top: 0;
   right: 0;
