@@ -259,10 +259,10 @@ nav .icon-burger .line {
 
 .spon{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: grid;
   place-items: center;
-  background: rgba(128, 0, 0, 0.81);
+  background: maroon;
 }
 
 .spon-wrap{
@@ -308,32 +308,26 @@ nav .icon-burger .line {
   height: 100%;
 }
 
-.spon-in ul li img:nth-child(1){
-  transform: translateY(0);
-  transition: .5s;
-}
-.spon-in ul li img:nth-child(2){
-  transform: translateY(0);
-  transition: .5s;
-}
 
-.spon-in ul li:hover img:nth-child(1){
-  transform: translateY(-100%);
-  transition: .5s;
-}
-.spon-in ul li:hover img:nth-child(2){
-  transform: translateY(-100%);
-  transition: .5s;
-}
 
-@media(max-width: 650px){
+@media(max-width: 1120px){
   .spon-in ul li {
     width: 150px;
   height: 150px;
   }
 }
 
+@media(max-width: 350px){
+  .spon-in ul li {
+    width: 110px;
+  height: 110px;
+  }
 
+  .spon-wrap h1{
+    font-size: 30px;
+    color: whitesmoke;
+  }
+}
 /** Jury **/ 
 .title{
   text-align: center;
@@ -580,28 +574,22 @@ justify-content: center;
 **/
 
 .Winner{
-  height: 50vh;
-  display:grid;
+  display:flow-root;
+  height: 130vh;
   place-items: center;
-  background: white;
+  background: maroon;
   text-align: center;
-  margin-bottom: 450px;
-}
-.Winner .h1{
-  margin-top: 10px;
-  margin-bottom: 1px;
-}
-
-.Winner hr{
-  width: 15%;
-  height: 5px;
-  border: none;
-  background: brown;
-  margin-top: 10px;
   margin-bottom: 0px;
 }
+.Winner .title{
+  margin-top: 70px;
+  margin-bottom: 1px;
+  font-size: 80px;
+  color: #fff;
+}
+
 .container{
-  padding: 0 40px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -610,7 +598,7 @@ justify-content: center;
   height: 280px;
   max-width: 350px;
   margin: 0 20px;
-  background: rgb(254, 254, 254);
+  background: #fff;
   transition: 0.5s;
   
 }
@@ -633,18 +621,18 @@ justify-content: center;
 .card .top-text .name{
   font-size: 25px;
   font-weight: 600;
-  color: #202020;
+  color: gray;
 }
 .card .top-text p{
   font-size: 20px;
   font-weight: 600;
-  color: brown;
+  color: rgb(204, 194, 57);
   line-height: 20px;
 }
 .card .bottom-text{
   padding: 0 20px 10px 20px;
   margin-top: 5px;
-  background: rgb(207, 201, 201);
+  background: #fff;
   border-radius: 5%;
   opacity: 0;
   visibility: hidden;
@@ -663,9 +651,9 @@ justify-content: center;
 }
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1100px) {
   .Winner{
-    height: 180vh;}
+    height: 170vh;}
   
   .container{
     margin-top: 0%;
@@ -680,11 +668,58 @@ justify-content: center;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .Winner{
+    height: 230vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
+
+  .card{
+    max-width: 300px;
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Winner{
+    height: 280vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+  .card{
+    max-width: 300px;
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 355px) {
+  .Winner{
+    height: 185vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+  .card{
+    max-width: 300px;
+    margin: 100px 0;
+  }
+}
 /** Gallery **/
 
 .Gallery h1{
-  margin-top: 2cm;
+  margin-top: 1cm;
   margin-bottom: 20px;
   font-size: 70px;
 	text-align: center;
@@ -1012,7 +1047,7 @@ footer {
           align-items: center;
   height: 250px;
   padding: 1em 2em;
-  background: rgba(128, 0, 0, 0.81);
+  background: maroon;
 }
 
 .footer-wrapper h3 {
