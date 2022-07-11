@@ -1,36 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2.5%;
+  gap: 1em;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    gap: 0.7em;
+  }
+}
+
+.container-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  @media screen and (max-width: 900px) {
+    gap: 0.7em;
+  }
+}
+
+.segment {
+  display: flex;
+  gap: 0.7em;
+}
+
 .flip-card {
-  position: relative;
   display: inline-flex;
   flex-direction: column;
+  position: relative;
+  color: #ff7a7a;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0.1em;
+}
+
+.segment-title {
+  font-size: 3vh;
+  text-align: left;
+  margin-bottom: 2.5%;
+  font-weight: 500;
+  text-transform: capitalize;
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
 }
 
 .top,
 .bottom,
 .flip-card .top-flip,
 .flip-card .bottom-flip {
-  height: 0.75em;
+  font-size: 4vh;
   line-height: 1;
-  padding: 0.25em;
+  padding: 10px;
+  height: 3.3vh;
+  text-align: center;
   overflow: hidden;
+  width: 55px;
+  @media screen and (max-width: 900px) {
+    font-size: 32px;
+    height: 0.82em;
+  }
 }
+
+// #fdaaaa
 
 .top,
 .flip-card .top-flip {
   background-color: #f7f7f7;
-  border-top-right-radius: 0.1em;
-  border-top-left-radius: 0.1em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.05);
 }
-
 .bottom,
 .flip-card .bottom-flip {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   align-items: flex-end;
-  border-bottom-right-radius: 0.1em;
-  border-bottom-left-radius: 0.1em;
+  justify-content: center;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .flip-card .top-flip {
@@ -52,6 +101,7 @@
   width: 100%;
   animation: flip-bottom 250ms ease-out 250ms;
   transform-origin: top;
+  overflow: hidden;
   transform: rotateX(90deg);
 }
 
@@ -61,24 +111,22 @@
   }
 }
 
-.container {
-  display: flex;
-  gap: 0.5em;
-  justify-content: center;
-}
+// [data-days-tens],
+// [data-days-ones] {
+//   color: #e51aec;
+// }
 
-.container-segment {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1em;
-  align-items: center;
-}
+// [data-hours-tens],
+// [data-hours-ones] {
+//   color: #8d03fc;
+// }
 
-.segment {
-  display: flex;
-  gap: 0.1em;
-}
+// [data-minutes-tens],
+// [data-minutes-ones] {
+//   color: #1f5fff;
+// }
 
-.segment-title {
-  font-size: 1rem;
-}
+// [data-seconds-tens],
+// [data-seconds-ones] {
+//   color: #0ac9ff;
+// }

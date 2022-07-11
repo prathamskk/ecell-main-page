@@ -1,0 +1,56 @@
+.scroll-down {
+  width: 100%;
+  text-align: center;
+  margin-top: 7.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(203, 203, 203);
+  font-weight: 400;
+  font-size: 1.1em;
+  a,
+  a:visited {
+    color: rgb(203, 203, 203);
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.mouse {
+  margin-top: 4%;
+  width: 5vh;
+  height: 8vh;
+  border: 3px solid rgb(203, 203, 203);
+  border-radius: 60px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(203, 203, 203);
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 7.5vh;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 6.5vh;
+  }
+}
