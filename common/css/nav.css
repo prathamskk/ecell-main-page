@@ -84,22 +84,28 @@ nav .icon-burger .line {
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
   }
+
   nav .links a {
     font-size: 20px;
     color: rgb(212, 212, 212);
   }
+
   nav :checked ~ .links {
     bottom: 0;
   }
+
   nav .icon-burger {
     display: block;
   }
+
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
   }
+
   nav :checked ~ .icon-burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg);
   }
+
   nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
   }
