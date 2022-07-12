@@ -1,4 +1,7 @@
 .testimony{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     background-color: #eefafc;
     padding: 75px 0px;
 }

@@ -4,11 +4,15 @@ footer {
 }
 
 .footer-wrapper {
-  padding: 25px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 75px 100px;
   background: rgb(255, 255, 255);
 }
 .footer-wrapper h1 {
   font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
