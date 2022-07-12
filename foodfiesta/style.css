@@ -226,7 +226,7 @@ nav .icon-burger .line {
 
 
 .all-text p{
-  font-size: 16px;
+  font-size: 19px;
   color: #544f4f;
   line-height: 30px;
 
@@ -250,7 +250,7 @@ nav .icon-burger .line {
       
   }
   .all-text h1{
-      font-size: 45px;
+      font-size: 50px;
       margin-bottom: 20px;
   }
 }
@@ -651,9 +651,47 @@ justify-content: center;
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .Winner{
-    height: 170vh;}
+    height: 150vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items: center;
+  justify-content: space-between;
+  }
+
+
+  .card{
+    max-width: 300px;
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .Winner{
+    height: 300vh;}
+  
+  .container{
+    margin-top: 0%;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+
+
+  .card{
+    height: 280px;
+    max-width: 300px;
+    margin: 80px 0;
+  }
+
+
+}
+@media screen and (max-width: 475px) {
+  .Winner{
+    height: 330vh;}
   
   .container{
     margin-top: 0%;
@@ -667,10 +705,9 @@ justify-content: center;
     margin: 100px 0;
   }
 }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 325px) {
   .Winner{
-    height: 230vh;}
+    height: 345vh;}
   
   .container{
     margin-top: 0%;
@@ -683,38 +720,7 @@ justify-content: center;
     max-width: 300px;
     margin: 100px 0;
   }
-}
-@media screen and (max-width: 400px) {
-  .Winner{
-    height: 280vh;}
-  
-  .container{
-    margin-top: 0%;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-
-  .card{
-    max-width: 300px;
-    margin: 100px 0;
-  }
-}
-@media screen and (max-width: 355px) {
-  .Winner{
-    height: 185vh;}
-  
-  .container{
-    margin-top: 0%;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-
-  .card{
-    max-width: 300px;
-    margin: 100px 0;
-  }
+ 
 }
 /** Gallery **/
 
