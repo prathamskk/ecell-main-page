@@ -1,6 +1,8 @@
 nav {
   position: -webkit-sticky;
   position: sticky;
+  display: flex;
+  justify-content: space-between;
   z-index: 10;
   left: 0;
   right: 0;
@@ -11,14 +13,19 @@ nav {
 }
 
 nav .logo {
-  float: left;
-  width: 75px;
-  display: flex;
-  align-items: center;
+  height: 70px;
+  padding: 10px 0px;
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    padding: 10px 10px;
+  }
+  .sakec-logo {
+    display: none;
+  }
+}
 nav .links {
-  float: right;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -46,7 +53,7 @@ nav .links a:hover {
 
 #nav-toggle {
   position: absolute;
-  top: -100px;
+  display: none;
 }
 
 nav .icon-burger {

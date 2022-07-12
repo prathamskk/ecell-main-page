@@ -1,7 +1,10 @@
 .about-section {
   background-color: #eefafc;
-  padding: 5% 10em;
+  padding: 75px 10em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .about-section h3 {
   font-size: 2.5em;
@@ -25,7 +28,7 @@
   }
 }
 
-.aims-section {
+.objective-section {
   padding: 75px 0;
   background-color: #f8fafd;
   display: flex;
@@ -35,12 +38,12 @@
   justify-content: space-between;
   gap: 40px;
 }
-.aims-section h3 {
+.objective-section h3 {
   font-size: 2.5em;
   font-weight: 600;
 }
 
-.aims-wrapper {
+.objective-wrapper {
   gap: 0 2em;
   display: flex;
   flex-direction: row;
@@ -57,7 +60,7 @@
   align-items: center;
 }
 
-.aims-img-cont {
+.objective-img-cont {
   width: 95px;
 }
 
