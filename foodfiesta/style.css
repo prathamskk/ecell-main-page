@@ -54,6 +54,14 @@ nav .logo {
 	display: flex;
 	align-items: center;
 }
+nav .logo1 {
+	float: left;
+  margin-top: 5px;
+	width: 60px;
+	display: flex;
+	align-items: center;
+}
+
 nav .links {
 	float: right;
 	padding: 0;
