@@ -1,6 +1,6 @@
 const flipCard = document.querySelector(".flip-card");
 const time = { hour: 12, minute: 00 };
-const countToDate = new Date("Jul 11, 2022 14:00:00").getTime();
+const countToDate = new Date("Aug 10, 2022 12:00:00").getTime();
 
 setInterval(() => {
   const currentDate = new Date().getTime();
