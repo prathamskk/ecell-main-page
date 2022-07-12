@@ -398,6 +398,7 @@ nav .icon-burger .line {
 .jinsta{
   width: 125px;
   margin: 0 10px;
+  margin-left: 2px;
   padding: 10px;
   font-style: italic;
   border-radius: 60px;
@@ -407,9 +408,7 @@ nav .icon-burger .line {
 
 .instagram{
   display: inline;
-  
-
-}
+  }
 
 
 .jury h2{
@@ -612,6 +611,7 @@ justify-content: center;
 }
 .card:hover{
   height: 470px;
+  background-color: #000;
   
 }
 .card .img{
@@ -629,7 +629,7 @@ justify-content: center;
 .card .top-text .name{
   font-size: 25px;
   font-weight: 600;
-  color: gray;
+  color: white;
 }
 .card .top-text p{
   font-size: 20px;
