@@ -126,6 +126,7 @@ nav .icon-burger .line {
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
 	}
+
 	nav .links a {
 		font-size: 20px;
 	}
@@ -135,6 +136,9 @@ nav .icon-burger .line {
 	nav .icon-burger {
 		display: block;
 	}
+  nav .logo1 {
+    display: none;
+  }
 	nav :checked ~ .icon-burger .line:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
 	}
@@ -325,7 +329,7 @@ nav .icon-burger .line {
   }
 }
 
-@media(max-width: 350px){
+@media(max-width: 400px){
   .spon-in ul li {
     width: 110px;
   height: 110px;
