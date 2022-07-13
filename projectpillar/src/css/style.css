@@ -536,14 +536,34 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2.5%;
-  gap: 1em;
+  flex-wrap: nowrap;
+  margin-top: 2%;
+  gap: 2em;
   width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 0px 32px;
+  }
+}
+@media screen and (max-width: 501px) {
+  .container {
+    padding: 0px 8px;
+  }
 }
 @media screen and (max-width: 900px) {
   .container {
-    gap: 0.7em;
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 365px) {
+  .container {
+    transform: scale(0.85);
+  }
+}
+@media screen and (min-width: 1000px) and (max-height: 775px) {
+  .container {
+    transform: scale(0.65);
   }
 }
 
@@ -562,6 +582,11 @@ nav {
 .segment {
   display: flex;
   gap: 0.7em;
+}
+@media screen and (max-width: 425px) {
+  .segment {
+    gap: 0.3em;
+  }
 }
 
 .flip-card {
@@ -589,10 +614,10 @@ nav {
 .bottom,
 .flip-card .top-flip,
 .flip-card .bottom-flip {
-  font-size: 4vh;
+  font-size: 48px;
   line-height: 1;
   padding: 10px;
-  height: 3.3vh;
+  height: 0.715em;
   text-align: center;
   overflow: hidden;
   width: 55px;
@@ -604,6 +629,15 @@ nav {
 .flip-card .bottom-flip {
     font-size: 32px;
     height: 0.82em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .top,
+.bottom,
+.flip-card .top-flip,
+.flip-card .bottom-flip {
+    font-size: 20px;
+    width: 35px;
   }
 }
 
@@ -669,7 +703,7 @@ nav {
 .scroll-down {
   width: 100%;
   text-align: center;
-  margin-top: 7.5%;
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -682,24 +716,19 @@ nav {
 .scroll-down a:visited {
   color: rgb(203, 203, 203);
 }
-@media screen and (max-width: 900px) {
-  .scroll-down {
-    display: none;
-  }
-}
 
 .mouse {
   margin-top: 4%;
-  width: 5vh;
-  height: 8vh;
-  border: 3px solid rgb(203, 203, 203);
+  width: 40px;
+  height: 65px;
+  border: 2px solid rgb(203, 203, 203);
   border-radius: 60px;
   position: relative;
 }
 .mouse::before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   top: 10px;
   left: 50%;
@@ -710,17 +739,27 @@ nav {
   animation: wheel 2s infinite;
   -webkit-animation: wheel 2s infinite;
 }
+@media screen and (max-width: 768px) {
+  .mouse {
+    transform: scale(0.75);
+  }
+}
+@media screen and (min-width: 1000px) and (max-height: 775px) {
+  .mouse {
+    transform: scale(0.75);
+  }
+}
 
 @keyframes wheel {
   to {
     opacity: 0;
-    top: 7.5vh;
+    top: 50px;
   }
 }
 @-webkit-keyframes wheel {
   to {
     opacity: 0;
-    top: 6.5vh;
+    top: 50px;
   }
 }
 :root {
@@ -799,7 +838,7 @@ section:nth-of-type(5) {
 .counter-wrapper {
   height: auto;
   width: 100%;
-  margin-top: 1.5%;
+  margin-top: 1%;
   text-align: center;
 }
 .counter-wrapper h2 {
@@ -813,6 +852,11 @@ section:nth-of-type(5) {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .counter-wrapper {
+    width: 75vw;
+  }
 }
 @media screen and (max-width: 900px) {
   .counter-wrapper {
@@ -974,7 +1018,7 @@ footer {
     text-align: justify;
   }
   .cards {
-    width: 100%;
+    width: 300px;
     height: 300px;
   }
   section:nth-of-type(3) {
@@ -990,9 +1034,11 @@ footer {
   .incentives-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
     padding: 0 32px;
+    padding-bottom: 50px;
   }
   .hero-img {
     height: 350px;
@@ -1036,9 +1082,6 @@ footer {
     font-size: 1.01em;
   }
   .incentives-wrapper {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
     gap: 0;
     margin-top: 60px;
   }
