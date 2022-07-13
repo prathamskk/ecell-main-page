@@ -17,12 +17,15 @@ nav .logo {
 	padding: 10px 0px;
 }
 
+nav .logo-wrapper{
+display: flex;
+gap: 20px;
+
+}
+
 @media screen and (max-width: 500px) {
 	.logo{
 		padding: 10px 10px;
-	}
-	.sakec-logo{
-		display: none;
 	}
 }
 
