@@ -238,7 +238,7 @@ nav .icon-burger .line {
 
 
 .all-text p{
-  font-size: 19px;
+  font-size: 17px;
   color: #544f4f;
   line-height: 30px;
 
@@ -813,7 +813,7 @@ width: 100%;
   transform: rotate(45deg);
 }
 .lightbox .lightbox-close:hover {
-  opacity: 1;
+  opacity: -3;
 }
 .lightbox .lightbox-slides-wrapper {
   flex-grow: 1;
