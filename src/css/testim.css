@@ -45,12 +45,13 @@
 }
 .testim-text-wrapper p {
     text-align: right;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
 }
 
 .testim-text-wrapper q {
     font-weight: 400;
-    font-size: 25px
+    font-size: 25px;
+    padding-bottom: 6vh;
 }
 
 .testim-text-wrapper h4 {
@@ -81,7 +82,7 @@
     }
 
     .testim-text-wrapper p {
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
     .testim-text-wrapper q {
@@ -108,7 +109,7 @@
     }
 
     .testim-text-wrapper p {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
 
