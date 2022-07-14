@@ -590,6 +590,7 @@ justify-content: center;
 
 .Winner h1{
   color: white;
+  margin-bottom: 40px;
 }
 
 .winner-container{
@@ -619,6 +620,15 @@ display: block;
 width: 100%;
 }
 
+.top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  color: rgb(204, 194, 57);
+  line-height: 20px;
+}
+
 .name{
   font-size: 25px;
   font-weight: 600;
@@ -627,6 +637,10 @@ width: 100%;
 
 .bottom-text{
   display: none;
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: #fff;
+  border-radius: 5%;
 }
 
 
