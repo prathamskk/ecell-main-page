@@ -962,6 +962,11 @@ footer {
 .social-media i {
   font-size: 20px;
 }
+@media screen and (max-width: 900px) {
+  .social-media i {
+    font-size: 22px;
+  }
+}
 
 .contact-wrapper {
   display: flex;
