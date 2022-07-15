@@ -980,6 +980,16 @@ footer {
   color: rgb(67, 105, 113);
   font-size: 1.01em;
 }
+@media screen and (max-width: 500px) {
+  .contact-card h4 {
+    padding-bottom: 5px;
+    font-size: 1em;
+  }
+}
+
+.contact-card:nth-of-type(2) {
+  width: 500px;
+}
 
 .phone-area,
 .email-area {
