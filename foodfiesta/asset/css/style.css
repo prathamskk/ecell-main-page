@@ -586,6 +586,7 @@ justify-content: center;
 .Winner{
   padding: 100px 50px;
   background-color: maroon;
+  
 }
 
 .Winner h1{
@@ -604,6 +605,7 @@ justify-content: center;
 
 .card:hover .bottom-text{
 display: block;
+
 }
 .card img{
   width: 100%;
@@ -618,6 +620,7 @@ display: block;
   flex-direction: column;
   align-items: center;
 width: 100%;
+background: #000;
 }
 
 .top-text p{
@@ -641,6 +644,7 @@ width: 100%;
   margin-top: 5px;
   background: #fff;
   border-radius: 5%;
+  transition-duration: 10s;
 }
 
 
@@ -726,7 +730,6 @@ width: 100%;
   background-size: 1.85rem;
   background-repeat: no-repeat;
   transition: opacity 250ms;
-  z-index: 10;
 }
 
 
@@ -908,7 +911,7 @@ footer {
 }
 
 .social-media-cont .bi {
-  font-size: 1.2em;
+  font-size: 2.2em;
 }
 
 .email-footer {
@@ -1046,201 +1049,6 @@ footer {
 .footer-ecell h5 {
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
-.register-btn {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: maroon;
-  padding: 16px 32px;
-  border-radius: 0.7rem;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-.register-btn:hover {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: maroon;
-  padding: 16px 32px;
-  border-radius: 0.7rem;
-  font-size: 1.2em;
-}
-
-.hero-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 1;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2em 0;
-}
-
-.content-area {
-  width: 75%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 0.7rem;
-  padding: 0 5rem;
-  overflow-y: hidden;
-}
-
-@media screen and (max-width: 900px) {
-  .content-area {
-    width: 100%;
-    padding: 0 1rem;
-  }
-}
-
-.registration-area {
-  width: 100%;
-  height: 100%;
-  background-color: pink;
-  overflow-y: auto;
-  margin-top: 60px;
-}
-
-.hero-img {
-  width: 450px;
-  height: 450px;
-}
-
-@media screen and (max-width: 900px) {
-  .hero-img {
-    width: 350px;
-    height: 450px;
-  }
-}
-
-.incentives-wrapper {
-  width: 100%;
-  height: 65%;
-  padding: 0 7em;
-  gap: 0 4em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media screen and (max-width: 900px) {
-  .incentives-wrapper {
-    gap: 1em 0;
-    padding: 0 1em;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.cards {
-  border-radius: 12px;
-  width: auto;
-  height: auto;
-  gap: 1em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media screen and (max-width: 900px) {
-  .cards {
-    width: 100%;
-    gap: 0.5em 0;
-  }
-}
-
-.incentives-img-cont {
-  height: 64px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 900px) {
-  .incentives-img-cont {
-    height: 32px;
-    margin-top: 0px;
-  }
-}
-
-.card-details {
-  margin-bottom: 25px;
-}
-
-.card-details h4 {
-  font-size: 1.3em;
-  color: var(--font-blk);
-  padding-bottom: 4px;
-}
-
-.card-details p {
-  color: rgba(8, 20, 34, 0.5);
-  font-size: 0.9em;
-}
-
-@media screen and (max-width: 750px) {
-  .card-details {
-    padding: 8px;
-  }
-}
-
-.card-details:nth-of-type(4) {
-  padding-left: -10px;
-}
-
-.sponsors-display {
-  width: 100%;
-  height: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.sponsors-img {
-  height: 100%;
-  width: 250px;
-}
- 
