@@ -58,7 +58,7 @@ footer {
 }
 
 .social-media-cont .bi {
-  font-size: 2em;
+  font-size: 22px;
 }
 
 .phone-area,
@@ -76,6 +76,7 @@ footer {
 }
 .footer-ecell h5 {
   font-weight: 500;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 900px) {
