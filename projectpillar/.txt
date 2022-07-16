@@ -1,0 +1,50 @@
+  <!-- Workshop -->
+
+                <div class="row row-3">
+                    <div class="icons icons-3">
+                        <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-3" data-aos-delay="90" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Workshop</span>
+                            <!-- <span>
+                3rd oct 2022
+              </span> -->
+                        </div>
+                        <p>
+                            In this workshop, you will get the required and effective mentorship to dive into funding
+                            strategies and
+                            pitching tips
+                            to attract mentors.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
+                learn more
+              </a> </div> -->
+                    </section>
+                </div>
+
+                <!-- Mock Pitch -->
+
+                <div class="row row-4">
+                    <div class="icons icons-4">
+                        <img src="./src/assets/icon/location.svg" alt="" width="100%" height="65%" />
+                    </div>
+                    <section id="phase-4" data-aos-delay="100" data-aos-duration="800">
+                        <div class="details">
+                            <span class="title">Mock Pitch</span>
+                            <!-- <span>
+                2nd oct 2022
+              </span> -->
+                        </div>
+                        <p>
+                            A practice/mock round where you will pitch your ideas to the mentors and improve your
+                            pitching skills
+                            under their
+                            guidance.
+                            be charged after the authentication.
+                        </p>
+                        <!-- <div class="bottom"><a href="#">
+                learn more
+              </a> </div> -->
+                    </section>
+                </div>

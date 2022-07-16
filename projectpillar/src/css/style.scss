@@ -137,7 +137,11 @@ section:nth-of-type(5) {
   height: 275px;
   width: 325px;
 }
+.cards:nth-of-type(1) {
+ width: 327px;
+}
 
+.cards:nth-of-type(3),
 .cards:nth-of-type(4) {
   .card-img-cont {
     width: 210px;
