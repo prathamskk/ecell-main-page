@@ -62,12 +62,14 @@ section:nth-of-type(3) {
   }
 }
 
-section:nth-of-type(4) {
-  height: 50vh;
-  background-color: #ffffff;
-}
+// Sponsors section:nth-of-type(4)
+// section:nth-of-type(4) {
+//   height: 50vh;
+//   background-color: #ffffff;
+// }
 
-section:nth-of-type(5) {
+// Incentives section:nth-of-type(5)
+section:nth-of-type(4) {
   height: auto;
 }
 
@@ -200,8 +202,8 @@ section:nth-of-type(5) {
       padding-top: 65px;
     }
   }
-
-  section:nth-of-type(5) {
+  // timeline section :nth-of-type(5)
+  section:nth-of-type(4) {
     height: auto;
   }
 
@@ -294,7 +296,8 @@ section:nth-of-type(5) {
     width: 100%;
     z-index: 1;
   }
-  section:nth-of-type(5) {
-    height: auto;
-  }
+  // Incentives section:nth-of-type(5)
+  // section:nth-of-type(5) {
+  //   height: auto;
+  // }
 }

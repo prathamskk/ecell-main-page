@@ -549,6 +549,7 @@ nav {
 @media screen and (max-width: 501px) {
   .container {
     padding: 0px 8px;
+    transform: scale(0.75);
   }
 }
 @media screen and (max-width: 900px) {
@@ -936,11 +937,6 @@ section:nth-of-type(3) h1 {
 }
 
 section:nth-of-type(4) {
-  height: 50vh;
-  background-color: #ffffff;
-}
-
-section:nth-of-type(5) {
   height: auto;
 }
 
@@ -1065,7 +1061,7 @@ section:nth-of-type(5) {
     padding: 0px 32px;
     padding-top: 65px;
   }
-  section:nth-of-type(5) {
+  section:nth-of-type(4) {
     height: auto;
   }
   .incentives-wrapper {
@@ -1139,8 +1135,5 @@ section:nth-of-type(5) {
     height: 250px;
     width: 100%;
     z-index: 1;
-  }
-  section:nth-of-type(5) {
-    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
