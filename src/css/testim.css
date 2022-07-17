@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: inherit;
   }
-  
+
   html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -156,7 +156,7 @@
   
   .testimonial__photo {
     grid-row: 1 / span 2;
-    width: 6.5rem;
+    width: 15rem;
     border-radius: 50%;
   }
   
