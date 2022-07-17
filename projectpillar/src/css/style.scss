@@ -4,7 +4,7 @@
 @import "./timeline";
 @import "./countdown";
 @import "./scrollDownArrow";
-
+@import "../../../common/css/footer.scss";
 :root {
   --background-color: #f7f7f7;
   --font-blk: #292f36;
@@ -62,12 +62,14 @@ section:nth-of-type(3) {
   }
 }
 
-section:nth-of-type(4) {
-  height: 50vh;
-  background-color: #ffffff;
-}
+// Sponsors section:nth-of-type(4)
+// section:nth-of-type(4) {
+//   height: 50vh;
+//   background-color: #ffffff;
+// }
 
-section:nth-of-type(5) {
+// Incentives section:nth-of-type(5)
+section:nth-of-type(4) {
   height: auto;
 }
 
@@ -107,6 +109,7 @@ section:nth-of-type(5) {
   @media screen and (min-width: 901px) and (max-width: 1100px) {
     width: 75vw;
   }
+
   @media screen and (max-width: 900px) {
     width: 100vw;
   }
@@ -130,17 +133,21 @@ section:nth-of-type(5) {
   padding: 0 100px;
   margin-top: 2.5%;
   gap: 0 1.5em;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 
 .cards {
   height: 275px;
   width: 325px;
 }
+.cards:nth-of-type(1) {
+  width: 327px;
+}
 
+.cards:nth-of-type(3),
 .cards:nth-of-type(4) {
   .card-img-cont {
-    width: 225px;
+    width: 210px;
   }
 }
 
@@ -163,95 +170,6 @@ section:nth-of-type(5) {
   }
   @media screen and (max-width: 900px) {
     font-size: 0.9em;
-  }
-}
-
-footer {
-  width: 100%;
-  height: auto;
-  background-color: #292f36;
-}
-
-.footer-wrapper {
-  width: 100%;
-  height: calc(45vh - 10%);
-  padding: 25px 100px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(226, 226, 226, 1) 100%
-  );
-  h1 {
-    color: var(--font-blk);
-    font-size: 2.5rem;
-    text-align: center;
-  }
-}
-
-.footer-ecell {
-  height: calc(10vh - 4%);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  a {
-    color: rgb(127, 192, 187);
-    font-size: 16px;
-  }
-}
-
-.social-media {
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 10px;
-  i {
-    font-size: 18px;
-  }
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  // margin: 2.5% 7.5%;
-  margin-top: 2.25%;
-  margin-left: 7.5%;
-}
-
-.contact-card {
-  width: 350px;
-  height: auto;
-  h4 {
-    color: rgb(67, 105, 113);
-    font-size: 1.01em;
-  }
-}
-
-.phone-area,
-.email-area {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 0 1em;
-}
-.contact-content {
-  display: block;
-}
-
-.footer-ecell {
-  text-align: center;
-  text-transform: capitalize;
-  color: rgb(127, 192, 187);
-  padding: 20px 16px;
-  h5 {
-    font-weight: 500;
   }
 }
 
@@ -285,8 +203,8 @@ footer {
       padding-top: 65px;
     }
   }
-
-  section:nth-of-type(5) {
+  // timeline section :nth-of-type(5)
+  section:nth-of-type(4) {
     height: auto;
   }
 
@@ -308,45 +226,6 @@ footer {
     object-fit: contain;
   }
 
-  .footer-wrapper {
-    height: calc(60vh - 10%);
-    padding: 25px 32px;
-    h1 {
-      color: var(--font-blk);
-      font-size: 2rem;
-    }
-  }
-  .footer-ecell {
-    height: calc(10vh - 2.5%);
-  }
-
-  .footer-wrapper {
-    text-align: center;
-  }
-
-  .contact-wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 2em 0;
-    padding: 0 10px;
-    margin: 0;
-    margin-top: 2.5%;
-    margin-left: 5%;
-  }
-
-  .contact-card {
-    width: 350px;
-    height: auto;
-    text-align: left;
-
-    h4 {
-      color: rgb(67, 105, 113);
-      font-size: 1.01em;
-    }
-  }
-
   .incentives-wrapper {
     gap: 0;
     margin-top: 60px;
@@ -354,9 +233,6 @@ footer {
   .card-img-cont {
     height: 150px;
     width: 150px;
-  }
-  .social-media {
-    width: 100%;
   }
 }
 
@@ -391,18 +267,6 @@ footer {
   //   section:nth-of-type(5) {
   //     height: 2vh;
   //   }
-
-  .footer-wrapper {
-    padding: 25px 16px;
-    height: calc(55vh + 10%);
-  }
-  .social-media {
-    width: 100%;
-  }
-  .footer-ecell {
-    height: calc(12vh - 10%);
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 392px) {
@@ -433,23 +297,8 @@ footer {
     width: 100%;
     z-index: 1;
   }
-  section:nth-of-type(5) {
-    height: auto;
-  }
-  .social-media {
-    width: 100%;
-  }
-
-  footer {
-    height: auto;
-  }
-
-  .footer-wrapper {
-    padding: 25px 16px;
-    height: auto;
-  }
-
-  .footer-ecell {
-    height: calc(22vh - 10%);
-  }
+  // Incentives section:nth-of-type(5)
+  // section:nth-of-type(5) {
+  //   height: auto;
+  // }
 }

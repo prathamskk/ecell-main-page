@@ -1,129 +1,127 @@
-
 footer {
-    // width: 100%;
-    height: auto;
-    background-color: #292f36;
-  }
-  
-  .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 75px 100px;
-    background: rgb(255, 255, 255);
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      text-align: center;
-    }
-  }
-  
-  .footer-ecell {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a {
-      color: rgb(127, 192, 187);
-      font-size: 16px;
-    }
-  }
-  
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 50px;
-  }
-  
-  .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px 60px;
-    flex-wrap: wrap;
-  }
-  
-  .contact-card {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    h4 {
-      color: rgb(67, 105, 113);
-      font-size: 16px;
-      text-align: left;
-    }
-  }
-  
-  .phone-area,
-  .email-area {
-    display: flex;
-    flex-direction: row;
-    gap: 0 1em;
-  }
-  
-  
-  .footer-ecell {
+  // width: 100%;
+  height: auto;
+  background-color: #292f36;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 75px 100px;
+  background: rgb(255, 255, 255);
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
     text-align: center;
-    text-transform: capitalize;
+  }
+}
+
+.footer-ecell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
     color: rgb(127, 192, 187);
-    padding: 20px 16px;
+    font-size: 16px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 50px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px 60px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  h4 {
+    color: rgb(67, 105, 113);
+    font-size: 16px;
+    text-align: left;
+  }
+}
+.social-media-cont .bi {
+  font-size: 22px;
+}
+
+.phone-area,
+.email-area {
+  display: flex;
+  flex-direction: row;
+  gap: 0 1em;
+}
+
+.footer-ecell {
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(127, 192, 187);
+  padding: 20px 16px;
+  h5 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+    color: var(--font-blk);
+  }
+
+  .footer-wrapper {
+    h1 {
+      color: var(--font-blk);
+      font-size: 2rem;
+    }
+  }
+  .contact-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 2.5rem;
+    color: var(--font-blk);
+  }
+
+  .footer-wrapper {
+    padding: 25px 10px;
+    h1 {
+      color: var(--font-blk);
+      font-size: 1.5rem;
+    }
+  }
+  .contact-wrapper {
+    justify-content: center;
+  }
+
+  .contact-card {
+    h4 {
+      font-size: 14px;
+    }
+  }
+  .footer-ecell {
     h5 {
-      font-weight: 500;
+      font-weight: 400;
+      font-size: 12px;
     }
   }
-  
-  @media screen and (max-width: 900px) {
-    h1 {
-      font-size: 2.5rem;
-      color: var(--font-blk);
-    }
-  
-    .footer-wrapper {
-      h1 {
-        color: var(--font-blk);
-        font-size: 2rem;
-      }
-    }
-    .contact-wrapper{
-      justify-content: center;
-    }
-  
-  }
-  
-  
-  @media screen and (max-width: 550px) {
-    h1 {
-      font-size: 2.5rem;
-      color: var(--font-blk);
-    }
-  
-    .footer-wrapper {
-      padding: 25px 10px;
-      h1 {
-        color: var(--font-blk);
-        font-size: 1.5rem;
-      }
-    }
-    .contact-wrapper{
-      justify-content: center;
-    }
-  
-    .contact-card {
-      h4 {
-        font-size: 14px;
-      }
-    }
-    .footer-ecell{
-      h5{
-        font-weight: 400;
-        font-size: 12px;
-  
-      }
-    }
-  }
-  
+}
