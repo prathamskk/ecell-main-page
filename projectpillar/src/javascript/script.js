@@ -29,7 +29,12 @@ document.onclick = function (e) {
 };
 
 window.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+  let exist = link.classList.contains("nav-links-active");
+  if (
+    document.body.scrollTop > 15 ||
+    document.documentElement.scrollTop > 15 ||
+    exist
+  ) {
     document.getElementById("nav").style.top = "0";
   } else {
     document.getElementById("nav").style.top = "-80px";
@@ -68,5 +73,3 @@ var observer = new IntersectionObserver(
 if (window.innerWidth > 1100) {
   observer.observe(document.querySelector("#home"));
 }
-
-
