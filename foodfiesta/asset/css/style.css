@@ -597,7 +597,7 @@ justify-content: center;
 }
 
 .Winner h1{
-  color: white;
+  color: rgba(255, 238, 7, 0.877);
   margin-bottom: 40px;
 }
 
@@ -627,7 +627,6 @@ display: block;
   flex-direction: column;
   align-items: center;
 width: 100%;
-background: #000;
 }
 
 .top-text p{
@@ -635,7 +634,7 @@ background: #000;
   font-weight: 600;
   align-items: center;
   justify-content: center;
-  color: rgb(204, 194, 57);
+  color: rgba(255, 238, 7, 0.877);
   line-height: 20px;
 }
 
