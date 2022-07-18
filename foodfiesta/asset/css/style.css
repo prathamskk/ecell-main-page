@@ -38,6 +38,8 @@ body {
 	display: block;
 	width: 100%;
 }
+
+
 nav {
 	position: fixed;
 	z-index: 10;
@@ -81,12 +83,12 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
+  
 }
 
 nav .links a:hover {
   opacity: 0.7;
 }
-
 
 #nav-toggle {
 	position: absolute;
@@ -107,7 +109,7 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
 	nav .links {
 		float: none;
 		position: fixed;
@@ -148,7 +150,7 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
-	
+
 }
 
 /** Home **/ 
@@ -253,7 +255,7 @@ nav .icon-burger .line {
   }
   .all-text{
       text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
   }
 }
 @media screen and (max-width:650px){
@@ -262,8 +264,13 @@ nav .icon-burger .line {
       
   }
   .all-text h1{
-      font-size: 50px;
+      font-size: 40px;
       margin-bottom: 20px;
+  }
+  .all-text p{
+    font-size: 15px;
+    line-height: 25px;
+  
   }
 }
 
