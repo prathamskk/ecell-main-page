@@ -15,6 +15,23 @@ body , html {
   overflow-y:auto;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c8c8;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b2b2;
+}
 
 .hero{
   width: 100%;
