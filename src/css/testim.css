@@ -10,6 +10,7 @@
   } */
 
   .testimony h1{
+    min-height: 13rem;
     padding-top: 60px;
     font-size: 2.5em;
     font-weight: 600;
@@ -27,8 +28,8 @@
   /* SLIDER */
   .slider {
     max-width: 100rem;
-    height: 50rem;
-    margin: 0 auto;
+    height: 60rem;
+    margin: 10px auto;
     position: relative;
   
     /* IN THE END */    
@@ -39,7 +40,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 50rem;
+    height: 60rem;
   
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@
   .slider__btn {
     position: absolute;
     top: 50%;
-    z-index: 10;
+    z-index: 1;
   
     border: none;
     background: rgba(255, 255, 255, 0.7);
@@ -128,19 +129,20 @@
     z-index: auto;
   }
   .testimonial__text{
-    font-size: .7rem;
+    font-size: .8rem;
+    margin-bottom: 2rem;
   }
   .testimonial__header{
-    text-align: center;
+    text-align: left;
     font-size: 1.7rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
   }
   .testimonial::before {
     content: '\201C';
     position: absolute;
-    top: -4rem;
-    left: -1rem;
+    top: -2.5rem;
+    left: -1.2rem;
     line-height: 1;
     font-size: 10rem;
     font-family: inherit;
@@ -152,7 +154,7 @@
   }
   .testimonial__name {
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
   }
@@ -164,7 +166,7 @@
   }
   
   .testimonial__position {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: right;
   }
   
@@ -205,59 +207,59 @@
       margin: 0;
     }
     
-  .testimonial__author {
+    .testimonial__author {
     margin-left: 3rem;
     font-style: normal;
     justify-content: flex-end;
     display: flex;
-  }
+    }
   
-  .testimonial__position {
+    .testimonial__position {
     font-size: 1.5rem;
-  }
+    }
   
-  .section__title--testimonials {
+    .section__title--testimonials {
     margin-bottom: 4rem;
-  }
+    }
   }
 
   @media (min-width:1024px){
-    .testimony{
-      height: 58em;
-    }
-    .testimonial {
-      width: 70%;
-      flex-direction: row;
-      gap: 25px;
-      align-items: flex-start;
-    }
+  .testimony{
+    height: 58em;
+  }
+  .testimonial {
+    width: 70%;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+  }
     
-    .testimonial::before {
-      top: -2.5rem;
-      left: -4.8rem;
-      font-size: 13rem;
-    }
+  .testimonial::before {
+    top: -2.5rem;
+    left: -4.8rem;
+    font-size: 13rem;
+  }
     
-    .testimonial__header {
-      font-size: 1.8em;
-      padding-bottom: 3%;
-    }
+  .testimonial__header {
+    font-size: 1.8em;
+    padding-bottom: 3%;
+  }
     
-    .testimonial__text {
-      font-size: 1em;
-      color: #666;
-      padding-bottom: 10%;
-    }
+  .testimonial__text {
+    font-size: 1em;
+    color: #666;
+    padding-bottom: 5%;
+  }
   
-    .testimonial__photo {
-      width: 275px;
-    }
+  .testimonial__photo {
+    width: 275px;
+  }
   
-    .testimonial__name {
-      font-size: 2em;
-      font-weight: 500;
-      margin: 0;
-    }
+  .testimonial__name {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+  }
     
   .testimonial__author {
     margin-left: 3.5rem;
@@ -269,15 +271,29 @@
   .testimonial__position {
     font-size: 1.5rem;
   }
-  
+    
   .section__title--testimonials {
     margin-bottom: 4rem;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
   }
   
   .slider__btn {
     position: absolute;
-    top: 50%;
-    z-index: 10;
+    top: 28%;
+    z-index: 1;
   
     border: none;
     background: rgba(255, 255, 255, 0.7);
@@ -301,11 +317,19 @@
     transform: translate(50%, -50%);
     font-size: 2.3em;
   }
+
+  .dots {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
 }
 
 @media (min-width:1440px){
   .testimony{
-    height: 58em;
+    height: 65em;
   }
   .testimonial {
     width: 65%;
@@ -315,11 +339,11 @@
   }
   
   .testimonial::before {
-    top: -2.5rem;
+    top: -3rem;
     left: -4.8rem;
     font-size: 13.5rem;
   }
-  
+ 
   .testimonial__header {
     font-size: 2.1em;
     padding-bottom: 5%;
@@ -341,46 +365,68 @@
     margin: 0;
   }
   
-.testimonial__author {
-  margin-left: 4rem;
-  font-style: normal;
-  justify-content: flex-end;
-  display: flex;
-}
+  .testimonial__author {
+    margin-left: 4rem;
+    font-style: normal;
+    justify-content: flex-end;
+    display: flex;
+  }
 
-.testimonial__position {
-  font-size: 1.7rem;
-}
+  .testimonial__position {
+    font-size: 1.7rem;
+  }
 
-.section__title--testimonials {
-  margin-bottom: 4rem;
-}
+  .section__title--testimonials {
+    margin-bottom: 4rem;
+  }
 
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
+  .dots {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
 
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  font-size: 3.5rem;
-  cursor: pointer;
-}
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
 
-.slider__btn--left {
-  left: 6%;
-  transform: translate(-50%, -50%);
-  font-size: 2.3em;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.slider__btn--right {
-  right: 6%;
-  transform: translate(50%, -50%);
-  font-size: 2.3em;
-}
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 28%;
+    z-index: 1;
+
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+  }
+
+  .slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+    font-size: 2.3em;
+  }
+
+  .slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+    font-size: 2.3em;
+  }
 }
