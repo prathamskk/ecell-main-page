@@ -471,7 +471,7 @@ nav {
   }
   .timeline-wrapper .center-line {
     left: 0;
-    height: 87.5%;
+    height: 100%;
   }
   .timeline-wrapper .row-1 section {
     gap: 1em;
@@ -829,7 +829,7 @@ footer {
 }
 
 .social-media-cont .bi {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .phone-area,
