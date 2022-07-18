@@ -158,7 +158,7 @@
   .testimonial__author {
     margin-left: 3rem;
     font-style: normal;
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
   }
   
@@ -207,7 +207,7 @@
   .testimonial__author {
     margin-left: 3rem;
     font-style: normal;
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
   }
   
