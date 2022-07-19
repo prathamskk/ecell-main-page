@@ -7,7 +7,7 @@ body , html {
 /* only overriding colors of nav bar here  */
 nav{
   position: fixed;
-  background-color: rgba(114, 11, 11, 0.837);
+  background-color: maroon;
 }
 nav .icon-burger .line {
   background-color: white;
@@ -76,6 +76,10 @@ nav .links a {
 }
 
 @media screen and (max-width:430px){
+  nav{
+    background-color: maroon;
+  }
+
   .content h1{
     font-size: 110px;}
     .content h2{
@@ -564,9 +568,22 @@ justify-content: center;
   }
 
   .winners-wrap{
-    width: 80%;
+    width: 40%;
     height:60%;
     margin-top: 75px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .main-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .winners-wrap{
+    width: 70%;
+    height:60%;
+    margin-top: 55px;
   }
 }
 
