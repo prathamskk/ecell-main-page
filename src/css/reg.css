@@ -1,7 +1,7 @@
 .registration{
     background-color:rgb(255, 255, 255);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     /* height: 50rem; */
 }
 
@@ -14,7 +14,7 @@
 }
 
 .description{
-    width: 30em;
+    width: 100%;
     gap: 40px;
 }
 
@@ -53,28 +53,26 @@
     transition: 500ms;
 }
 
-.blog-card .meta {
+.blog-card .photo-cont {
     position: relative;
-    z-index: 0;
     height: 200px;
+    width: 200px;
 }
 
 .blog-card .photo {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.2s;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
 }
 
 
 .blog-card .description {
     padding: 1.5rem;
-    background: #fff;
+    background: rgb(255, 255, 255);
     position: relative;
     display: flex;
     flex-direction: column;
