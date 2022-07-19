@@ -464,10 +464,14 @@ justify-content: center;
   background-color: maroon;
 }
 
+.win .main-box{
+  max-width: 300px;
+}
+
 .win .flex{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .win .inner{
@@ -477,7 +481,7 @@ justify-content: center;
 
 
 
-.win .container{
+.win .contain{
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -495,7 +499,6 @@ justify-content: center;
 }
 
 .winners-wrap{
-  width: 28%;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -503,7 +506,7 @@ justify-content: center;
 .winners-img img{
     -webkit-transition: all .2s ease-in-out;
     overflow: hidden;
-    width: 100%;
+    width: 300px;
     height: 350px;
     object-fit: cover;
 }
@@ -523,7 +526,6 @@ justify-content: center;
 .award{
   font-size: 20px;
   color: rgba(255, 238, 7, 0.877);
-  margin-bottom: 30px;
 }
 .overlay{
   background-color: rgba(20,20,20,0.7);
@@ -560,18 +562,14 @@ justify-content: center;
 .winners-img:hover .overlay{
   opacity: 1;
 }
-
+ 
 @media screen and (max-width:1200px) {
   .main-box{
     display: flex;
     flex-direction: column;
   }
 
-  .winners-wrap{
-    width: 40%;
-    height:60%;
-    margin-top: 75px;
-  }
+  
 }
 
 @media screen and (max-width:550px) {
@@ -580,11 +578,6 @@ justify-content: center;
     flex-direction: column;
   }
 
-  .winners-wrap{
-    width: 0%;
-    height:60%;
-    margin-top: 55px;
-  }
 }
 
 /** 
