@@ -491,8 +491,9 @@ justify-content: center;
 }
 
 .winners-wrap{
-  width: 22%;
+  width: 28%;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .winners-img img{
@@ -518,6 +519,7 @@ justify-content: center;
 .award{
   font-size: 20px;
   color: rgba(255, 238, 7, 0.877);
+  margin-bottom: 30px;
 }
 .overlay{
   background-color: rgba(20,20,20,0.7);
