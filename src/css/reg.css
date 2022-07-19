@@ -99,6 +99,9 @@
         max-width: 1200px;
         min-height: 400px;
     }
+    .blog-card .photo {
+        background-size: cover;
+    }
     .blog-card .meta {
         flex-basis: 40%;
         height: auto;
@@ -130,6 +133,7 @@
     }
 }
 
+
 .button {
     color: white;
     padding: 16px 32px;
@@ -155,6 +159,7 @@
 }
 
 .button2 {
+    width: 100%;
     background-color: white;
     color: black;
     border: 2px solid #008CBA;
