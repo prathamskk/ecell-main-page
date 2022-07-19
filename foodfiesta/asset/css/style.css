@@ -561,7 +561,7 @@ justify-content: center;
   opacity: 1;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
   .main-box{
     display: flex;
     flex-direction: column;
@@ -581,7 +581,7 @@ justify-content: center;
   }
 
   .winners-wrap{
-    width: 70%;
+    width: 0%;
     height:60%;
     margin-top: 55px;
   }
