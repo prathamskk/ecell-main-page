@@ -260,7 +260,11 @@ section {
   border-radius: 10px;
   transition: 0.5s;
   background-color: #A0E7E5;
+  width: 350px;
+  height: 500px;
+  object-fit: contain;
 }
+
 
 .card:hover .profile {
   transform: translateY(-50px);
@@ -349,6 +353,9 @@ section {
   border-radius: 10px;
   transition: 0.5s;
   background-color: #A0E7E5;
+  width: 350px;
+  height: 500px;
+  object-fit: contain;
 }
 
 .mcard .content {
