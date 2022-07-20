@@ -65,7 +65,7 @@
     right: 0;
     bottom: 0;
     left: 0;*/
-    width: 100%;s
+    width: 100%;
     height: 100%;
 }
 
@@ -110,7 +110,7 @@
     .reg-title{
         padding-top: 1em;
     }
-    /* .blog-card {
+    .blog-card {
         flex-direction: row;
         max-width: 1200px;
         min-height: 400px;
@@ -146,7 +146,7 @@
     }
     .blog-card.alt .details {
         padding-left: 25px;
-    } */
+    }
 }
 
 
