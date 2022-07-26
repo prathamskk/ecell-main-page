@@ -41,7 +41,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 10vh;
+  height: 11vh;
   background: rgb(0, 0, 0);
   z-index: 1;
   position: absolute;
@@ -52,10 +52,11 @@
 .hero-card h5 {
   display: block;
   position: absolute;
-  bottom: 10vh;
+  bottom: 9vh;
   padding: 20vh 20px 0 20px;
   text-align: center;
   width: 100%;
+  z-index: 5;
   background: rgb(10, 28, 47);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   color: #fff;
