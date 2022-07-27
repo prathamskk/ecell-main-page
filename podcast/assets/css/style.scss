@@ -1,4 +1,8 @@
 
+.section {
+  height: 100%;
+  width: 100%;
+}
 
 .hero-section {
   width: 100%;
@@ -15,6 +19,16 @@
   width: 100%;
   //   outline: 1px solid #e7e7e7;
   position: relative;
+}
+
+.img-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 425px;
+  bottom: 10vh;
 }
 
 .hero-card:nth-of-type(1) {
@@ -45,6 +59,9 @@
   left: 0;
 }
 
+h5 {
+  font-size: 1.3rem;
+}
 
 .hero-card::after {
   content: "";
@@ -108,7 +125,7 @@
    * typography
    */
 
-  --ff-josefin: 'Josefin sans', sans-serif;
+  --ff-josefin: 'Poppins', sans-serif;
 
   --fs-1: 25px;
   --fs-2: 18px;
@@ -132,6 +149,61 @@
 
 }
 
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+input,
+button,
+ion-icon { display: block; }
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+  border: none;
+  width: 100%;
+}
+
+:focus { outline-offset: 4px; }
+
+html {
+  font-family: var(--ff-josefin);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark-violet);
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: var(--dark-violet);
+  border-left: 1px solid var(--space-cadet);
+}
+
+::-webkit-scrollbar-thumb { background: hsla(0, 0%, 100%, 0.8); }
+
+::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.6); }
 
 
 
@@ -167,6 +239,8 @@
 
 .btn-primary > span { margin-top: 3px; }
 
+.container { padding: 0 15px; }
+
 .hero-container { 
   padding: 0 15px; 
   background: var(--dark-violet);
@@ -178,10 +252,6 @@
   font-size: var(--fs-2);
   line-height: 1.5;
 }
-
-
-
-
 
 
 
@@ -332,9 +402,6 @@
 .podcast-card:is(:hover, :focus) .card-title { background-size: 100% 2px; }
 
 
-
-
-
 /*-----------------------------------*\
   #NEWSLETTER
 \*-----------------------------------*/
@@ -342,9 +409,13 @@
 .newsletter { padding: var(--section-padding) 0; }
 
 .newsletter-card {
-  background: url("../images/newsletter-bg.jpg") center no-repeat;
+  background: url(../images/newsletter\ \(2\).jpg) center no-repeat;
   background-size: cover;
-  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  // padding: 60px 20px;
   border-radius: 12px;
 }
 
@@ -389,9 +460,6 @@
   cursor: not-allowed;
   background-position: right;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -478,8 +546,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #GO TO TOP
 \*-----------------------------------*/
@@ -511,14 +577,259 @@
 .go-top:is(:hover, :focus) { --blue-ryb: hsl(221, 100%, 40%); }
 
 
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 550px
+ */
+
+ @media (min-width: 550px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+}
 
 
 
 
 
+/**
+ * responsive for larger than 768px
+ */
+
+@media (min-width: 768px) {
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 30px;
+    --fs-2: 20px;
+    --fs-4: 18px;
+
+  }
 
 
 
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 680px; }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero-title { width: 90%; }
+
+  .hero :is(.btn-primary, .btn-title, .btn-link) {
+    --fs-4: 16px;
+    margin-bottom: 0;
+  }
+
+  .hero-btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .btn-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+
+
+  /**
+   * PODCAST
+   */
+
+  .podcast-list { grid-template-columns: 1fr 1fr; }
+
+
+
+  /**
+   * NEWSLETTER
+   */
+
+  .newsletter-card { padding: 50px; }
+
+  .card-form { position: relative; }
+
+  .newsletter-card .btn-primary {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    width: 140px;
+  }
+
+  .newsletter-card .input-field { padding-right: 155px; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+
+  .footer-list { margin-bottom: 0; }
+
+}
+
+
+
+
+/**
+ * responsive for larger than 1024px
+ */
+
+@media (min-width: 1024px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 980px; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  header { top: -120px; }
+
+  .nav-toggle-btn { display: none; }
+
+  .navbar {
+    position: static;
+    visibility: visible;
+    box-shadow: none;
+    padding: 0;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-link { position: relative; }
+
+  .navbar-link::after {
+    --scale: 0;
+
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(var(--scale));
+    transform-origin: left;
+    width: calc(100% - 20px);
+    height: 2px;
+    background: var(--gradient);
+    transition: var(--transition);
+  }
+
+  .navbar-link:is(:hover, :focus) {
+    background: var(--gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .navbar-link:is(:hover, :focus)::after { --scale: 1; }
+
+  .navbar-actions { gap: 10px; }
+
+  .navbar-actions .btn {
+    background: var(--blue-ryb);
+    padding: 15px 25px;
+    transition: background var(--transition);
+  }
+
+  .navbar-actions .btn:is(:hover, :focus) { background: hsl(221, 100%, 40%); }
+
+  .navbar::before,
+  .overlay { display: none; }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero-content {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+
+
+  /**
+   * PODCAST
+   */
+
+  .podcast-list { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * NEWSLETTER
+   */
+
+  .newsletter-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .newsletter-card .card-content,
+  .card-form { width: 50%; }
+
+  .newsletter-card .card-text,
+  .newsletter-card .input-field { margin-bottom: 0; }
+
+}
 
 
 /**
@@ -595,7 +906,7 @@
     display: block;
     width: 100%;
     padding-top: 100%;
-    background: url("../images/hero-banner.png") no-repeat;
+    background: url("../images/epitome-of-leaders.jfif") no-repeat;
     background-size: cover;
     border-radius: 100px;
   }
