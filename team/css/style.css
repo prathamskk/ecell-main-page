@@ -231,18 +231,15 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 50px;
-  margin-top: 50px;
-  margin-right: 50px;
   gap: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .members{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 50px;
   margin-top: 50px;
-  margin-right: 50px;
   gap: 10px;
 }
 /* Style the counter cards */
@@ -264,7 +261,6 @@ section {
   height: 500px;
   object-fit: contain;
 }
-
 
 .card:hover .profile {
   transform: translateY(-50px);
@@ -351,6 +347,8 @@ section {
 }
 .mcard h2{
   font-size: 25px;
+  padding: 15px;
+  margin-bottom: 0px;
 }
 .mcard .profile {
   border-radius: 10px;
