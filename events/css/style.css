@@ -76,7 +76,7 @@ body , html {
 }
 
 @media screen and (max-width:768px){
-  .content h1 {
+  .content h3 {
     font-size: 800%;
   }
   
@@ -91,7 +91,7 @@ body , html {
   justify-content: center;
   padding: 0 1.5rem;
   background-color: #F1F1F1;
-  margin-top: 18rem;
+  margin-top: 8rem;
   margin-bottom: 8rem;
 }
 
@@ -225,7 +225,7 @@ body , html {
   width: 100%;
   max-width: 130rem;
   padding: 5rem;
-  background-image: linear-gradient(to right,#71c5ee 0%, #08375e 100%);
+  background-image: linear-gradient(to right,#7197ee 0%, #022679 80%);
   box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
   display: flex;
   align-items: center;
@@ -246,7 +246,7 @@ body , html {
   object-fit: cover;
   display: block;
   border-radius: 1.5rem;
-  background-color: rgb(3, 5, 59)
+  background-color: rgba(1, 0, 0, 0.919)
 }
 
 .sharktank_img::before{
@@ -291,7 +291,7 @@ body , html {
 }
 
 .sharktank_cta:hover{
-  background-image:linear-gradient(to right,#025091 0%, #71c5ee 90%); 
+  background-image:linear-gradient(to right,#022679 0%, #7197ee 90%); 
   color: whitesmoke;
 }
 
@@ -352,7 +352,7 @@ body , html {
   width: 100%;
   max-width: 130rem;
   padding: 5rem;
-  background-image: linear-gradient(to right,#94fd53 0%, #035637 100%);
+  background-image: linear-gradient(to right,#6a50d1 0%, #0C003D 100%);
   box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
   display: flex;
   align-items: center;
@@ -417,7 +417,7 @@ body , html {
 }
 
 .podcast_cta:hover{
-  background-image:linear-gradient(to right, #035637 0%, #94fd53  90%); 
+  background-image:linear-gradient(to right, #0C003D 0%, #6a50d1  90%); 
   color: whitesmoke;
 }
 
@@ -466,7 +466,7 @@ body , html {
   height: 30vh;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(to right,#1c0e53 0%, #74299f 80%);
+  background-image: linear-gradient(to right,#28ff07c8 0%,   #037907 100%);
 }
 
 .hed h1{
@@ -693,3 +693,4 @@ font-size: 8rem;
     font-weight: 600;
   }
 }
+
