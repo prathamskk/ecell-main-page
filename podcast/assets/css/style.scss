@@ -440,7 +440,8 @@ header .container {
 .podcast { padding: var(--section-padding) 0; }
 
 .podcast-list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
