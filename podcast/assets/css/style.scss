@@ -789,7 +789,11 @@ header .container {
    * PODCAST
    */
 
-  .podcast-list { grid-template-columns: 1fr 1fr; }
+  .podcast-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
 
 
@@ -937,7 +941,11 @@ header .container {
    * PODCAST
    */
 
-  .podcast-list { grid-template-columns: repeat(3, 1fr); }
+  .podcast-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
 
 
@@ -1049,7 +1057,11 @@ header .container {
    * PODCAST
    */
 
-  .podcast-list { grid-template-columns: repeat(4, 1fr); }
+  .podcast-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
 
 
