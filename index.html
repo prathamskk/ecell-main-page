@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./src/css/reg.css">
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./src/javascript/video.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         </label>
     </nav>
     <!-- HERO SECTION -->
-    <section class="hero-section" id="home">
+    <!-- <section class="hero-section" id="home">
         <div class='light x1'></div>
         <div class='light x2'></div>
         <div class='light x3'></div>
@@ -81,7 +82,23 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    
+    <section class="hero-section">
+        <video autoplay muted plays-inline class="back-video" id="hero-video">
+            <source src="./src/assets/video/Main_Page_Phone.mp4" type="video/mp4">
+          </video>
     </section>
+    <script>
+        if(window.innerWidth>500){
+            console.log("less than 500px");
+            var video = document.getElementById('hero-video')
+            console.log(video);
+            
+            video.innerHTML =  '<source src="./src/assets/video/homevideo.mp4" type="video/mp4">'
+        }
+        console.log(window.innerWidth);
+    </script>
 
 
     <!-- ABOUT SECTION -->
