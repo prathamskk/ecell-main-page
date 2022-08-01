@@ -121,6 +121,7 @@ nav{
 }
 
 .FoodFiesta_img{
+  margin-left: 8em;
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -187,6 +188,8 @@ nav{
   }
 
   .FoodFiesta_img{
+    margin-top: 8em;
+    margin-right: 8em;
     min-width: 30rem;
     max-width: 30rem;
   }
@@ -245,6 +248,7 @@ nav{
 }
 
 .sharktank_img{
+  margin-left: 8em;
   min-width: 35rem;
   max-width: 35rem;
   height: 35rem;
@@ -331,6 +335,8 @@ nav{
   }
 
   .sharktank_img{
+    margin-top: 8em;
+    margin-right: 8em;
     min-width: 100%;
     max-width: 100%;
     transform: translate(0,-8rem);
@@ -372,6 +378,7 @@ nav{
 }
 
 .podcast_img{
+  margin-left: 8em;
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -439,6 +446,8 @@ nav{
   }
 
   .podcast_img{
+    margin-top: 8em;
+    margin-right: 8em;
     min-width: 30rem;
     max-width: 30rem;
   }
@@ -516,6 +525,7 @@ font-size: 8rem;
 }
 
 .women_img{
+  margin-left: 8em;
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -565,6 +575,8 @@ font-size: 8rem;
   }
 
   .women_img{
+    margin-top: 8em;
+    margin-right: 8em;
     min-width: 30rem;
     max-width: 30rem;
   }
@@ -624,6 +636,7 @@ font-size: 8rem;
 }
 
 .beach_img{
+  margin-left: 8em;
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -690,6 +703,8 @@ font-size: 8rem;
   }
 
   .beach_img{
+    margin-top: 8em;
+    margin-right: 8em;
     min-width: 100%;
     max-width: 100%;
     transform: translate(0,-8rem);
