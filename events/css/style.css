@@ -50,14 +50,14 @@ nav{
 }
 
 .hero img{
-  width: 80vh;
+  
   height: 80vh;
 }
 
 .content h3{
   font-size: 140px;
   color: black;
-  background-color: rgba(255, 253, 253, 0.89);
+  background-color: rgba(255, 253, 253, 0.795);
   background-size: 90rem;
   box-shadow: black;
   padding: 2rem 2rem 2rem 2rem;
@@ -76,10 +76,10 @@ nav{
 
 .collage{ 
   position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 50%;
 	min-width: 100%;
-	min-height: 89.6%;
+	min-height: 99.4%;
 	width: auto;
 	height: auto;
 	z-index: -2;
@@ -181,6 +181,12 @@ nav{
   color: whitesmoke;
 }
 
+@media screen and (max-width:1500px){
+  .FoodFiesta{
+    max-width: 80%;
+  }
+}
+
 @media screen and (max-width:1068px){
   .FoodFiesta{
     max-width: 80rem;
@@ -258,7 +264,7 @@ nav{
   object-fit: cover;
   display: block;
   border-radius: 1.5rem;
-  background-color: rgba(1, 0, 0, 0.919)
+  background-color: rgb(1, 0, 0)
 }
 
 .sharktank_img::before{
@@ -306,6 +312,13 @@ nav{
   background-image:linear-gradient(to right,#022679 0%, #7197ee 90%); 
   color: whitesmoke;
 }
+
+@media screen and (max-width:1500px){
+  .sharktank{
+    max-width: 80%;
+  }
+}
+
 
 @media screen and (max-width:1068px){
   .sharktank{
@@ -433,6 +446,13 @@ nav{
   color: whitesmoke;
 }
 
+@media screen and (max-width:1500px){
+  .podcast{
+    max-width: 80%;
+  }
+}
+
+
 @media screen and (max-width:1068px){
   .podcast{
     max-width: 80rem;
@@ -558,6 +578,11 @@ font-size: 8rem;
   font-weight: 600;
 }
 
+@media screen and (max-width:1500px){
+  .women{
+    max-width: 80%;
+  }
+}
 
 @media screen and (max-width:1068px){
   .women{
@@ -573,6 +598,11 @@ font-size: 8rem;
 @media screen and (max-width:868px){
   .women{
    max-width: 70rem;
+  }
+
+  .women_title{
+    font-size: 3.5rem;
+    
   }
 }
 
@@ -665,6 +695,13 @@ font-size: 8rem;
   color: #f3e039;
   font-weight: 600;
 }
+
+@media screen and (max-width:1500px){
+  .beach{
+    max-width: 80%;
+  }
+}
+
 
 @media screen and (max-width:1068px){
   .beach{
