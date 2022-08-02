@@ -258,7 +258,7 @@ nav{
 .sharktank_img{
   min-width: 35rem;
   max-width: 35rem;
-  height: 35rem;
+  height: 30rem;
   transform: translateX(-8rem);
   position: relative;
 }
@@ -266,8 +266,7 @@ nav{
 .sharktank_img img{
   width: 100%;
   height: 100%;
-  padding: 3rem 3rem 3rem 3rem;
-  object-fit: cover;
+  object-fit:fill;
   display: block;
   border-radius: 1.5rem;
   background-color: rgb(255, 255, 255)
@@ -281,7 +280,7 @@ nav{
   top: 0;
   left: 0;
   box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
-  border-radius: 8rem;
+  border-radius: 1rem;
 }
 
 .sharktank_info p{
@@ -413,7 +412,7 @@ nav{
 .podcast_img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
   display: block;
   border-radius: 1.5rem;
 }
@@ -571,7 +570,7 @@ font-size: 8rem;
 .women_img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
   display: block;
   border-radius: 1.5rem;
 }
