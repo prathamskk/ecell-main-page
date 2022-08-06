@@ -211,13 +211,13 @@ nav{
   }
 
   .FoodFiesta_img{
-    min-width: 80%;
-    max-width: 80%;
-    height: 80%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 50%;
   }  
   .FoodFiesta_img{
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 80%;
+    max-width: 90%;
     transform: translate(0,-6rem);
   }
   
@@ -227,8 +227,8 @@ nav{
   }
 
   .FoodFiesta_info p{
-    font-size: 130%;
-    font-weight: 200;
+    font-size: 140%;
+    font-weight: 300;
   }
 }
 
@@ -248,7 +248,7 @@ nav{
   width: 100%;
   max-width: 130rem;
   padding: 5rem;
-  background-image: linear-gradient(to right,#7197ee 0%, #022679 80%);
+  background-image: linear-gradient(to right,#07c4b7 0%, #022679 80%);
   box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
   display: flex;
   align-items: center;
@@ -314,7 +314,7 @@ nav{
 }
 
 .sharktank_cta:hover{
-  background-image:linear-gradient(to right,#022679 0%, #7197ee 90%); 
+  background-image:linear-gradient(to right,#022679  0%, #15cfc3  90%); 
   color: whitesmoke;
 }
 
@@ -361,8 +361,8 @@ nav{
   }
 
    .sharktank_img{
-     min-width: 100%;
-     max-width: 100%;
+      min-width: 80%;
+     max-width: 90%;
      transform: translate(0,-6rem);
    }
    
@@ -372,8 +372,8 @@ nav{
    }
  
    .sharktank_info p{
-     font-size: 130%;
-     font-weight: 200;
+    font-size: 140%;
+    font-weight: 300;
    }
  }
 
@@ -494,15 +494,15 @@ nav{
    }
  
    .podcast_img{
-     min-width: 80%;
-     max-width: 80%;
-     height: 80%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 50%;
    }  
 
    
    .podcast_img{
-     min-width: 100%;
-     max-width: 100%;
+     min-width: 80%;
+     max-width: 90%;
      transform: translate(0,-6rem);
    }
    
@@ -512,8 +512,8 @@ nav{
    }
  
    .podcast_info p{
-     font-size: 130%;
-     font-weight: 200;
+    font-size: 140%;
+    font-weight: 300;
    }
  }
 
@@ -552,7 +552,7 @@ font-size: 8rem;
   width: 100%;
   max-width: 130rem;
   padding: 5rem;
-  background-image: linear-gradient(to right,#90d8ff 0%, #c82339 80%);
+  background-image: linear-gradient(to right,#4eabdd 0%, #c82339 80%);
   box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
   display: flex;
   align-items: center;
@@ -637,13 +637,13 @@ font-size: 8rem;
    }
  
    .women_img{
-     min-width: 80%;
-     max-width: 80%;
-     height: 80%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 50%;
    }  
    .women_img{
-     min-width: 100%;
-     max-width: 100%;
+    min-width: 80%;
+    max-width: 90%;
      transform: translate(0,-6rem);
    }
    
@@ -653,8 +653,8 @@ font-size: 8rem;
    }
  
    .women_info p{
-     font-size: 130%;
-     font-weight: 200;
+     font-size: 140%;
+     font-weight: 300;
    }
  }
 
@@ -675,7 +675,7 @@ font-size: 8rem;
   width: 100%;
   max-width: 130rem;
   padding: 5rem;
-  background-image: linear-gradient(to right,#62dede 0%, #095454 100%);
+  background-image: linear-gradient(to right,#09C3DB 0%, 	#8a0959 80%);
   box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
   display: flex;
   align-items: center;
@@ -756,9 +756,9 @@ font-size: 8rem;
    }
  
    .beach_img{
-     min-width: 80%;
-     max-width: 80%;
-     height: 80%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 50%;
    } 
    .beach_img::before{
     width: 100%;
@@ -767,8 +767,8 @@ font-size: 8rem;
   }
    
    .beach_img{
-     min-width: 100%;
-     max-width: 100%;
+    min-width: 80%;
+    max-width: 90%;
      transform: translate(0,-6rem);
    }
    
@@ -778,7 +778,7 @@ font-size: 8rem;
    }
  
    .beach_info p{
-     font-size: 130%;
-     font-weight: 200;
+    font-size: 140%;
+    font-weight: 300;
    }
  }
