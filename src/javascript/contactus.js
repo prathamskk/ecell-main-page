@@ -1,6 +1,6 @@
 const button = document.getElementById("submitbtn");
 button.addEventListener("click", handleClick);
-console.log(button);
+
 function handleClick() {
   const token = grecaptcha.getResponse();
   const name = document.getElementById("name").value;
@@ -15,17 +15,13 @@ function handleClick() {
     return;
   }
 
-  if (
-    token.length === 0 ||
-    name.length === 0 ||
-    message.length === 0
-  ) {
-    console.log("empty");
+  if (token.length === 0 || name.length === 0 || message.length === 0) {
+    // console.log("empty");
     alert("Fill the form");
     return;
   } else {
     submitbtn.disabled = true;
-    submitbtn.innerHTML = "<div class='loader'></div>"
+    submitbtn.innerHTML = "<div class='loader'></div>";
     // console.log(token);
     fetch(
       "https://zbba6bfl4k.execute-api.ap-south-1.amazonaws.com/dev/contact/",
