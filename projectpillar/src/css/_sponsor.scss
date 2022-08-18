@@ -4,12 +4,17 @@
   align-items: center;
   justify-content: center;
   gap: 0 5em;
-
+  @media screen and (max-width: 900px) {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    .sponsor-img {
+      width: 110px;
+    }
+  }
   @media screen and (max-width: 450px) {
     height: 100%;
     flex-flow: column nowrap;
     justify-content: flex-start;
-
     .sponsor-img {
       width: 100px;
     }

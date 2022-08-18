@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 425) {
+  if (window.innerWidth <= 900) {
     let darea = document.querySelector(".display-area");
     let card = document.querySelectorAll("[data-card]");
     console.log(darea.clientWidth);
