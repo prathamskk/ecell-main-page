@@ -438,8 +438,8 @@ nav {
           box-shadow: var(--box-shadow);
 }
 
-.timeline-wrapper .row-1 section {
-  gap: 0.9em;
+.timeline-wrapper .row-4 section {
+  gap: 0.5em;
   background-color: #ff7a7a;
   color: white;
 }
@@ -456,7 +456,7 @@ nav {
   z-index: 0;
 }
 
-.row-1 section::before {
+.row-4 section::before {
   background: #ff7a7a;
 }
 
