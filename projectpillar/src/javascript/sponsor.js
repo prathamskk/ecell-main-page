@@ -9,6 +9,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 900) {
+    let darea = document.querySelector(".display-area");
+    let card = document.querySelectorAll("[data-card]");
+    // console.log(darea.clientWidth);
+    card.forEach((item) => {
+      item.style.width = `${darea.clientWidth}px`;
+    });
+  }
+});
+
 let left = document.querySelector("[data-left]");
 let right = document.querySelector("[data-right]");
 
