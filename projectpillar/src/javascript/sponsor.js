@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth <= 900) {
     let darea = document.querySelector(".display-area");
     let card = document.querySelectorAll("[data-card]");
-    console.log(darea.clientWidth);
+    // console.log(darea.clientWidth);
     card.forEach((item) => {
       item.style.width = `${darea.clientWidth}px`;
     });
@@ -16,16 +16,16 @@ let slideIndex = 0;
 let cardIndex = document.querySelectorAll("[data-card]").length;
 
 left.addEventListener("click", () => {
-  console.log("left clicked");
+  // console.log("left clicked");
 
   slideIndex = slideIndex - 1;
   prevSlide(slideIndex);
 
-  console.log(slideIndex);
+  // console.log(slideIndex);
 });
 
 right.addEventListener("click", () => {
-  console.log("right clicked");
+  // console.log("right clicked");
   if (cardIndex - 1 > slideIndex) {
     slideIndex = slideIndex + 1;
     nextSlide(slideIndex);
@@ -44,7 +44,7 @@ function nextSlide(slideIndex) {
 
   slider.style.transform = `translateX(${slide})`;
 
-  console.log(slider);
+  // console.log(slider);
 }
 
 function prevSlide(slideIndex) {
@@ -97,7 +97,7 @@ function prevSlide(slideIndex) {
 // infiniteLoop();
 
 setInterval(() => {
-  console.log(slideIndex, cardIndex - 1);
+  // console.log(slideIndex, cardIndex - 1);
   if (cardIndex - 1 > slideIndex) {
     slideIndex = slideIndex + 1;
     nextSlide(slideIndex);
