@@ -569,10 +569,6 @@ nav {
   }
 }
 
-.counter-wrapper {
-  margin-block: 60px;
-}
-
 .container-segment {
   display: flex;
   flex-direction: column;
@@ -1170,7 +1166,7 @@ section:nth-of-type(5) {
 .counter-wrapper {
   height: auto;
   width: 100%;
-  margin-top: 1%;
+  margin-block: 25px;
   text-align: center;
 }
 .counter-wrapper h2 {
