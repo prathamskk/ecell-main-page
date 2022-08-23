@@ -195,7 +195,6 @@ nav .links a {
   display: inline-block;
   width: 20rem;
   height: 20rem;
-  margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -213,12 +212,16 @@ nav .links a {
     width: 30%;
   height: 30%;
   }
+  .spon-wrap h1{
+    font-size: 300%;
+    color: whitesmoke;
+  }
 }
 
 @media(max-width: 530px){
   .spon-in ul li {
-    width: 50%;
-  height: 40%;
+    width: 90%;
+  height: 90%;
   }
 
   .spon-wrap h1{
