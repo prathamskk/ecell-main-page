@@ -21,7 +21,7 @@
   <body>
     <!-- Navigation Bar -->
 
-    <nav id="navbar">
+    <nav role="navigation"  id="navbar">
       <div id="nav" class="nav">
         <div id="nav-header" class="nav-header">
           <div style="display: flex; gap: 0 2em">
@@ -81,20 +81,21 @@
 
     <article id="article">
       <!-- Hero Area -->
-      <section id="home">
+      <section id="home"  >
         <div class="home-wrapper">
           <!-- Hero Image -->
           <div class="hero-img">
             <img
-              src="./src/assets/svg/project_pillar_logo_black.svg"
+              src="./src/assets/icon/project_pillar__1.png"
               alt=""
               height="100%"
               width="100%"
             />
           </div>
+          
           <!-- Count Down to Event  -->
-          <div class="counter-wrapper">
-            <h2><span>Sucessfully concluded</span></h2>
+          <!-- <div class="counter-wrapper">
+            <h2><span>Sucessfully concluded</span></h2> -->
             <!-- <div class="container">
               <div class="container-segment"> -->
             <!-- Days Card -->
@@ -153,16 +154,14 @@
                 <div class="segment-title">seconds</div>
               </div>
             </div> -->
-          </div>
+          <!-- </div> -->
 
           <!-- Scroll down Animation -->
-
-          <div class="scroll-down">
-            <p>Scroll Down</p>
-            <div class="mouse"></div>
-          </div>
         </div>
-
+        <div class="scroll-down">
+          <p>Scroll Down</p>
+          <div class="mouse"></div>
+        </div>
         <!-- Background Animation -->
 
         <ul class="circles">
@@ -179,7 +178,7 @@
 
       <!-- Project Pillar -->
 
-      <section id="about">
+      <section id="about"  >
         <h1 data-aos="fade-up">What is Project Pillar?</h1>
         <p data-aos="fade-up" data-aos-delay="100">
           On a quest to look for worthwhile startups that hold the potential to
@@ -293,84 +292,64 @@
         </div>
 
         <div class="sponsor-container">
-          <!-- Left Button -->
-          <div class="slide-btn" data-left>
-            <i class="bi bi-arrow-left"></i>
-          </div>
-
-          <div class="display-area">
-            <div class="sponsor-slider" data-slider>
               <!-- Food Partner -->
-              <div class="sponsor-card" data-card>
+              <div class="sponsor-card" data-card  >
                 <h2 class="sponsor-title">food partner</h2>
                 <img
                   src="./src/assets/icon/Smokey_Dough_wed.webp"
                   alt="Rcf-Logo"
-                  class="sponsor-img"
+                  class="food-partner"
                 />
               </div>
-              <!-- <div class="sponsor-card" data-card>
-                <h2 class="sponsor-title">sponsors</h2>
-                <img
-                  src="./src/assets/icon/canara_bank.png"
-                  alt="Rcf-Logo"
-                  class="canara_bank"
-                />
-              </div> -->
+              
               <!-- Sponsors -->
               <div class="sponsor-card" data-card>
                 <h2 class="sponsor-title">sponsors</h2>
-                <div class="sponsor-img-container">
-                  <img
-                    src="./src/assets/icon/Kano_web.webp"
-                    alt="Rcf-Logo"
-                    class="sponsor-img"
-                  />
-                  <img
-                    src="./src/assets/icon/rcf-logo-B646B14094-seeklogo.com.webp"
-                    alt="Rcf-Logo"
-                    class="sponsor-img"
-                  />
-                  <img
-                    src="./src/assets/icon/Desire_web.webp"
-                    alt="Desire Logo"
-                    class="sponsor-img"
-                  />
-                </div>
-              </div>
-              <!--Other Sponsors -->
-              <div class="sponsor-card" data-card>
-                <h2 class="sponsor-title">sponsors</h2>
-                <div class="sponsor-img-container four-sponsor">
+                <div class="sponsor-img-container" style="padding-top: 2rem;" >
                   <img
                     src="./src/assets/icon/canara_bank.png"
                     alt="canara bank Logo"
-                    class="canara_bank"
+                    class="sponsor-img"
                   />
+                  <img
+                   src="./src/assets/icon/rcf-logo-B646B14094-seeklogo.com.webp"
+                  alt="Rcf-Logo"
+                  class="rcf-logo"
+                />
 
-                  <img
-                    src="./src/assets/icon/chembur74_web.webp"
-                    alt="Rcf-Logo"
-                    class="sponsor-img"
-                  />
+                <img
+                src="./src/assets/icon/Desire_web.webp"
+                alt="Desire Logo"
+                class="sponsor-img"
+              />
 
+                </div>
+                
+                <div class="sponsor-img-container" style="padding-bottom: 2rem;">
                   <img
-                    src="./src/assets/icon/Contractor_web.webp"
-                    alt="M/S JT Construction"
-                    class="sponsor-img"
-                  />
+                  src="./src/assets/icon/Kano_web.webp"
+                  alt="Kano Logo"
+                  class="sponsor-img"
+                />
                   <img
-                    src="./src/assets/icon/Xhair_Web.webp"
-                    alt="X hair studio Logo"
-                    class="sponsor-img"
-                  />
+                  src="./src/assets/icon/chembur74_web.webp"
+                  alt="chembur74 logo"
+                  class="sponsor-img"
+                />
+
+                <img
+                  src="./src/assets/icon/Xhair_Web.webp"
+                  alt="X hair studio Logo"
+                  class="xhair-logo"
+                />
+
+                <img
+                src="./src/assets/icon/Contractor_web.webp"
+                alt="M/S JT Construction"
+                class="sponsor-img"
+              />
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Right Button -->
-          <div class="slide-btn" data-right>
-            <i class="bi bi-arrow-right"></i>
           </div>
         </div>
       </section>
@@ -505,6 +484,11 @@
           </div>
         </div>
       </section>
+
+      <section id="gallery">
+
+      </section>
+      
     </article>
 
     <!-- Footer Area -->
@@ -604,7 +588,7 @@
     <!-- Scripts -->
     <script src="./src/javascript/script.js"></script>
     <script src="./src/javascript/countdown.js"></script>
-    <script src="./src/javascript/sponsor.js"></script>
+    <!-- <script src="./src/javascript/sponsor.js"></script> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

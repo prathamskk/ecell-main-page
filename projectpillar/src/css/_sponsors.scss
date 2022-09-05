@@ -1,0 +1,79 @@
+.pattern-right {
+  height: auto;
+  width: 9.375rem;
+  position: absolute;
+  top: -4.69rem;
+  left: 4.69rem;
+  z-index: 0;
+
+  @media screen and (max-width: 900px) {
+    width: 4.69rem;
+    top: -2.31rem;
+    left: 1.9rem;
+  }
+}
+.pattern-left {
+  height: auto;
+  width: 59.75rem;
+  position: absolute;
+  bottom: -43.75rem;
+  right: -30%;
+  z-index: 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 45rem;
+    right: -40%;
+    bottom: -31.25rem;
+  }
+  @media screen and (max-width: 850px) {
+    bottom: -22rem;
+    width: 32rem;
+    right: -25%;
+  }
+  @media screen and (max-width: 450px) {
+    right: -55%;
+  }
+}
+.sponsor-title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.sponsor-card {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.food-partner,
+.sponsor-img {
+  height: auto;
+  width: 10rem;
+}
+.rcf-logo {
+  width: 8rem;
+  height: 10rem;
+}
+
+.sponsor-img-container {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media screen and (max-width: 450px) {
+    gap: 2rem 5rem;
+  }
+
+  .sponsor-img {
+    width: 12rem;
+  }
+}
+.food-partner {
+  padding-block: 2rem;
+}
+
+.xhair-logo {
+  height: 9.2rem;
+  width: auto;
+}
