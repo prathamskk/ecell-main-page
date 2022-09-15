@@ -107,6 +107,7 @@
         autoplay
         muted
         plays-inline
+        playsinline
         class="back-video"
         id="hero-video"
         preload="auto"
@@ -329,7 +330,7 @@
         <div class="dots"></div>
       </div>
     </section>
-<!-- 
+    <!-- 
     <section class="registration" id="registration">
       <h1 class="reg-title" id="reg-title">For Students</h1>
       <div class="blog-card">
@@ -513,24 +514,23 @@
       </div>
     </footer>
     <script src="./common/js/nav.js"></script>
-    <script >
+    <script>
       const desktopUrl = "./src/assets/video/homevideo.mp4";
-const mobileUrl = "./src/assets/video/Main_Page_Phone.mp4";
+      const mobileUrl = "./src/assets/video/Main_Page_Phone.mp4";
 
-window.addEventListener("DOMContentLoaded", () => {
-  let video = document.querySelector("#hero-video");
+      window.addEventListener("DOMContentLoaded", () => {
+        let video = document.querySelector("#hero-video");
 
-  let source = document.createElement("source");
-  source.type = "video/mp4";
-  if (window.innerWidth > 900) {
-    source.src = desktopUrl;
-  }
-  if (window.innerWidth < 900) {
-    source.src = mobileUrl;
-  }
-  video.appendChild(source);
-});
-
+        let source = document.createElement("source");
+        source.type = "video/mp4";
+        if (window.innerWidth > 900) {
+          source.src = desktopUrl;
+        }
+        if (window.innerWidth < 900) {
+          source.src = mobileUrl;
+        }
+        video.appendChild(source);
+      });
     </script>
     <script src="./src/javascript/contactus.js"></script>
     <script src="/src/javascript/testim.js"></script>

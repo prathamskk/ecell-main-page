@@ -11,7 +11,7 @@
     justify-content: flex-start;
 
     .sponsor-img {
-      width: 110px;
+      width: 6rem;
     }
   }
   @media screen and (max-width: 450px) {
@@ -19,14 +19,14 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     .sponsor-img {
-      width: 100px;
+      width: 6.25rem;
     }
   }
 }
 
 .sponsor-img {
   height: auto;
-  width: 185px;
+  width: 9.375rem;
   margin-top: 2%;
 }
 
@@ -161,22 +161,25 @@
 
 .canara_bank {
   height: auto;
-  width: 250px;
+  width: 12.5rem;
   @media screen and (max-width: 900px) {
-    width: 170px;
+    width: 10.625rem;
   }
   @media screen and (max-width: 430px) {
-    width: 200px;
+    width: 12.5rem;
   }
 }
 
 .four-sponsor {
+  .sponsor-img {
+    width: 8rem;
+  }
   @media screen and (max-width: 900px) {
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-e;
     margin-top: 15px;
     .sponsor-img {
-      width: 110px;
+      width: 6.25rem;
     }
   }
 }
