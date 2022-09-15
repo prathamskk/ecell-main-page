@@ -33,6 +33,10 @@ h1 {
   color: var(--font-blk);
 }
 
+[data-counter-title]{
+  text-transform: capitalize;
+}
+
 section {
   width: 100%;
   padding: 4.375rem 6.25rem;
@@ -135,17 +139,31 @@ section:nth-of-type(5) {
   }
 }
 
+.home-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .hero-img {
   height: auto;
   width: 50rem;
   object-fit: contain;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   @media screen and (min-width: 1000px) and (max-height: 775px) {
     display: block;
-    height: 17.2rem;
+    width: 30rem;
   }
 }
 

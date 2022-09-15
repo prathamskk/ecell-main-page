@@ -1,11 +1,13 @@
 const flipCard = document.querySelector(".flip-card");
 const time = { hour: 12, minute: 00 };
-const countToDate = new Date("Aug 20, 2022 12:00:00").getTime();
+const countToDate = new Date("Sept 17, 2022 14:30:00").getTime();
+
+console.log(countToDate);
 
 setInterval(() => {
   const currentDate = new Date().getTime();
   const timeLeft = countToDate - currentDate;
-
+  // document.querySelector(".container").style.visibility = "visible";
   const daysSetter = 1000 * 60 * 60 * 24;
   const hoursSetter = 1000 * 60 * 60;
   const minutesSetter = 1000 * 60;
@@ -33,14 +35,37 @@ setInterval(() => {
   //     seconds
   // );
 
-  flip(document.querySelector("[data-days-tens]"), Math.floor(days / 10));
-  flip(document.querySelector("[data-days-ones]"), days % 10);
-  flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10));
-  flip(document.querySelector("[data-hours-ones]"), hours % 10);
-  flip(document.querySelector("[data-minutes-tens]"), Math.floor(minutes / 10));
-  flip(document.querySelector("[data-minutes-ones]"), minutes % 10);
-  flip(document.querySelector("[data-seconds-tens]"), Math.floor(seconds / 10));
-  flip(document.querySelector("[data-seconds-ones]"), seconds % 10);
+  if (timeLeft >= 0) {
+    flip(document.querySelector("[data-days-tens]"), Math.floor(days / 10));
+    flip(document.querySelector("[data-days-ones]"), days % 10);
+    flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10));
+    flip(document.querySelector("[data-hours-ones]"), hours % 10);
+    flip(
+      document.querySelector("[data-minutes-tens]"),
+      Math.floor(minutes / 10)
+    );
+    flip(document.querySelector("[data-minutes-ones]"), minutes % 10);
+    flip(
+      document.querySelector("[data-seconds-tens]"),
+      Math.floor(seconds / 10)
+    );
+    flip(document.querySelector("[data-seconds-ones]"), seconds % 10);
+  } else {
+    setInterval(() => {
+      // document.querySelector(".container").style.visibility = "hidden";
+      document.querySelector(".container").style.display = "none";
+      document.querySelector("[data-counter-title]").textContent = "On Going";
+    }, 1000);
+  }
+
+  // flip(document.querySelector("[data-days-tens]"), Math.floor(days / 10));
+  // flip(document.querySelector("[data-days-ones]"), days % 10);
+  // flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10));
+  // flip(document.querySelector("[data-hours-ones]"), hours % 10);
+  // flip(document.querySelector("[data-minutes-tens]"), Math.floor(minutes / 10));
+  // flip(document.querySelector("[data-minutes-ones]"), minutes % 10);
+  // flip(document.querySelector("[data-seconds-tens]"), Math.floor(seconds / 10));
+  // flip(document.querySelector("[data-seconds-ones]"), seconds % 10);
 }, 250);
 
 // function flip(flipCard, passedNumber) {
