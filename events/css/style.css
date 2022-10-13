@@ -536,6 +536,17 @@ font-size: 8rem;
 }
 }
 
+.contact-card a{
+  font-size: 16px;
+}
+
+.contact-card i{
+  font-size: 16px;
+}
+
+.footer-wrapper h1{
+  font-size: 40px;
+}
 
 .event4 {
   width: 100%;
