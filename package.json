@@ -1,0 +1,26 @@
+{
+  "name": "ecell-main-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathamskk/ecell-main-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prathamskk/ecell-main-page/issues"
+  },
+  "homepage": "https://github.com/prathamskk/ecell-main-page#readme",
+  "dependencies": {
+    "parcel": "^2.8.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0"
+  }
+}
