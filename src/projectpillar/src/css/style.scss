@@ -22,7 +22,7 @@
     33px 74px 79px -46px rgba(0, 0, 0, 0.08);
 }
 
-article {
+main {
   height: 100%;
   width: 100%;
 }
@@ -33,7 +33,7 @@ h1 {
   color: var(--font-blk);
 }
 
-[data-counter-title]{
+[data-counter-title] {
   text-transform: capitalize;
 }
 
