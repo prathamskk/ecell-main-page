@@ -10,11 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../common/css/reset.scss">
-    <link rel="stylesheet" href="../common/css/footer.scss">
-    <link rel="stylesheet" href="../common/css/nav.scss">
+    <link rel="stylesheet" href="../common/css/footer.scss" />
+    <link rel="stylesheet" href="../common/css/nav.scss" />
+    <link rel="stylesheet" href="../common/css/reset.scss" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>E-CELL | TEAM</title>
 </head>
 
@@ -40,6 +40,7 @@
             <li> <a href="../index.html#testimony">Testimony</a> </li>
             <li> <a href="../index.html#contactus">Contact Us </a> </li>
             <li> <a href="#">Our Team</a> </li>
+            <li> <a id="nav-a" href="../faq/index.html">FAQ</a> </li>
 
 
         </ul>
@@ -52,7 +53,7 @@
 
     <section class="flex-center">
         <div class="slide-bg" data-parallax>
-            <img id="teamphoto" src="./gallery/teampic.JPG"></img>
+            <img id="teamphoto" src="./gallery/teampic.jpg"></img>
         </div>
 
         <div class="slide-data flex-center flex-col">
@@ -74,513 +75,423 @@
     </section>
     <!--team------------------------>
     <section id="team">
-        <!--heading---->
-        <!-- <strong class="team-heading">Our Team</strong> -->
+      <canvas id="c"></canvas>
+      <h1>Our team</h1>
+      <div class="group">
 
-        <!-- <div class="faculty">
-            <div class="container my-2">
-                <h1 class="text-center my-2 my-md-4">Prof. Milind Khairnar (Faculty Incharge)</h1>
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <img src="../common/img/e_cell_logo_BLACK.webp" class="img-fluid millind"
-                            alt="picture of team meeting">
-                    </div>
-                    <div class="col-md-12 col-lg-6 p-4">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </div>
+        <div class="container-block container">
+          <p class="text-blk team-head-text">Heads</p>
+          <div class="responsive-container-block teamcard-container">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+            >
+              <div class="team-card">
+                <div class="team-img-wrapper">
+                  <img
+                    src="gallery/council/BHUMIKA.png"
+                    class="team-img"
+                  />
                 </div>
+                <div class="team-card-content">
+                  <p class="text-blk name">Bhumika Thanvi</p>
+                  <p class="text-blk position">E-CELL HEAD</p>
+                </div>
+              </div>
             </div>
-
-        </div> -->
-        <!--team-container---------->
-        <div class="team-box-container">
-            <strong class="team-head">Core Team</strong>
-            <div class="core-members">
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Core Team/Manav.webp" alt="Manav">
-                        <h2>Manav Khimani</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+            >
+              <div class="team-card">
+                <div class="team-img-wrapper">
+                  <img
+                    src="gallery/council/HARSH.png"
+                    class="team-img"
+                  />
                 </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Core Team/Kush.webp" alt="Kush">
-                        <h2>Kush Vora</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
+                <div class="team-card-content">
+                  <p class="text-blk name">Harsh Patadia</p>
+                  <p class="text-blk position">INNOVATION HEAD</p>
                 </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Core Team/Sanjana.webp" alt="Sanjana">
-                        <h2>Sanjana Suresh</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Core Team/Vibha.webp" alt="Vibha">
-                        <h2>Vibha Manral</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/teamphotos/ishan2.png" alt="ishan2">
-                        <h2>Ishan Kadam</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Core Team/ishita.webp" alt="prathamesh">
-                        <h2>Ishita Jain</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/prathamesh.pandeyy?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/prathamesh-pandey-9b0a191aa" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                
-                
+              </div>
             </div>
-
-            <strong class="team-head">Team</strong>
-            <div class="members">               
-                
-
-
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/bhumika.webp" alt="bhumika">
-                        <h2>Bhumika Thanvi</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/bhumikathanvi57/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/bhumika-thanvi-1a7210216/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/dhara.webp" alt="ashish">
-                        <h2>Dhara Shah</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/_dharaaaaa_?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/dhara-shah-37b920215" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/Yajnesh.webp" alt="Yajnesh">
-                        <h2>Yajnesh Kharayat</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/_yajji_k/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/yajneshkharayat/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/adit.webp" alt="adit">
-                        <h2>Adit Gandhi</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/pratham_g.webp" alt="pratham_g">
-                        <h2>Pratham Gupta</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/harsh.webp" alt="harsh">
-                        <h2>Harsh Patadia</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                
-
-
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/aryan_y.webp" alt="aryan_y">
-                        <h2>Aryan Yadav</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/pratham_k.webp" alt="pratham_k">
-                        <h2>Pratham Kamble</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                    <a href=""  target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                                </li>
-                            <li><a href="https://www.linkedin.com/in/prathamskk" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/nikhil.webp" alt="nikhil">
-                        <h2>Nikhil Pangaonkar</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/nikhil091002/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/nikhil-pangaonkar-125632215/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/sandesh.webp" alt="sandesh">
-                        <h2>Sandesh Lingayat</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/_sandylingayat_?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="http://www.linkedin.com/in/sandy-lingayat" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/varun.webp" alt="varun">
-                        <h2>Varun Rajapure</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/varunrajapure/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/varun-rajapure-112517208/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/rohit.webp" alt="rohit">
-                        <h2>Rohit Jha</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/therohitkumarjha?igshid=YzAyZWRlMzg=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://instagram.com/therohitkumarjha?igshid=YzAyZWRlMzg=" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/varsha.webp" alt="varsha">
-                        <h2>Varsha Ekhande</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/amar.webp" alt="amar">
-                        <h2>Amar Chouhan</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/amarchouhan1709/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/amar-chouhan-8a1989215/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/geetanjali.webp" alt="geetanjali">
-                        <h2>Geetanjali Sahoo</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/geeeeetanjali/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/geetanjali-sahoo-7ab993200/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/shreyans.webp" alt="shreyans">
-                        <h2>Shreyans Chheda</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/shreyans_20902?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/shreyans-chheda-9a59a6207" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/aditya.webp" alt="Aditya">
-                        <h2>Aditya Pyati</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/pyatiii/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/aditya-pyati-a9243519b/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/omkar.webp" alt="Omkar">
-                        <h2>Omkar Shelar</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/omkar_shelar_?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a>
-                            </li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/aryan_p.webp" alt="aryan_p">
-                        <h2>Aryan Pal</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/aryan_03_?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/aryan-pal-74aa5a205" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/aditi.webp" alt="aditi">
-                        <h2>Aditi Kalantre</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/aditiikalantre?igshid=YzAyZWRlMzg=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/aditi-kalantre-764635243" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/aryan_a.webp" alt="aryan_a">
-                        <h2>Aryan Ausekar</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://instagram.com/aryanausekar?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/aryanausekar10" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/nishit.webp" alt="nishit">
-                        <h2>Nishit Shetty</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-                
-                <div class="mcard">
-                    <div class="content">
-                        <img class="profile" width="100%" src="./gallery/Team/shreedhar.webp" alt="shreedhar">
-                        <h2>Shreedhar Joshi</h2>
-                        <!-- <ul class="social-icon">
-                            <li>
-                                <a href="https://www.instagram.com/shreedhar2003/" target="_blank">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li><a href="https://www.instagram.com/shreedhar2003/" target="_blank">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container-block container">
+            <p class="text-blk team-head-text">Co-Heads</p>
+            <div class="responsive-container-block teamcard-container">
+              
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/ADIT.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Adit Gandhi</p>
+                    <p class="text-blk position">E-CELL CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/DHARA.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Dhara Shah</p>
+                    <p class="text-blk position">INNOVATION CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+
+
+        </div>
+
+        <div class="group">
+
+          <div class="container-block container">
+            <p class="text-blk team-head-text">Event</p>
+            <div class="responsive-container-block teamcard-container">
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/PRATHAM(G)-.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Pratham Gupta</p>
+                    <p class="text-blk position">EVENT HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/HUSSAIN.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Husain Lokhandwala</p>
+                    <p class="text-blk position">EVENT HEAD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-block container">
+              <p class="text-blk team-head-text">GFX</p>
+              <div class="responsive-container-block teamcard-container">
+                
+                <div
+                  class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+                >
+                  <div class="team-card">
+                    <div class="team-img-wrapper">
+                      <img
+                        src="gallery/council/SAIGANESH.png"
+                        class="team-img"
+                      />
+                    </div>
+                    <div class="team-card-content">
+                      <p class="text-blk name">Saiganesh Gurrapu</p>
+                      <p class="text-blk position">GFX HEAD</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+                >
+                  <div class="team-card">
+                    <div class="team-img-wrapper">
+                      <img
+                        src="gallery/council/NEERAJ.png"
+                        class="team-img"
+                      />
+                    </div>
+                    <div class="team-card-content">
+                      <p class="text-blk name">Neeraj Meka</p>
+                      <p class="text-blk position">GFX CO-HEAD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="group">
+
+          <div class="container-block container">
+            <p class="text-blk team-head-text">WEBSITE</p>
+            <div class="responsive-container-block teamcard-container">
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/YAJNESHNEW.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Yajnesh Kharayat</p>
+                    <p class="text-blk position">WEBSITE HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/PRATHAM(K).png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Pratham Kamble</p>
+                    <p class="text-blk position">WEBSITE CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/NIKHIL.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Nikhil Pangaonkar</p>
+                    <p class="text-blk position">WEBSITE CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+            
+            
+        </div>
+
+        <div class="group">
+
+          <div class="container-block container">
+            <p class="text-blk team-head-text">Admins</p>
+            <div class="responsive-container-block teamcard-container">
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/GEETANJALI.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Geetanjali Sahoo</p>
+                    <p class="text-blk position">ADMINISTRATION HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/AMAR.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Amar Chouhan</p>
+                    <p class="text-blk position">ADMINISTRATION CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-block container">
+              <p class="text-blk team-head-text">LOGISTICS</p>
+              <div class="responsive-container-block teamcard-container">
+                
+                <div
+                  class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+                >
+                  <div class="team-card">
+                    <div class="team-img-wrapper">
+                      <img
+                        src="gallery/council/ARYAN YADAV.png"
+                        class="team-img"
+                      />
+                    </div>
+                    <div class="team-card-content">
+                      <p class="text-blk name">Aryan Yadav</p>
+                      <p class="text-blk position">LOGISTICS HEAD</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+                >
+                  <div class="team-card">
+                    <div class="team-img-wrapper">
+                      <img
+                        src="gallery/council/ROHIT.png"
+                        class="team-img"
+                      />
+                    </div>
+                    <div class="team-card-content">
+                      <p class="text-blk name">Rohit Kumar Jha</p>
+                      <p class="text-blk position">LOGISTICS CO-HEAD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+        </div>
+ 
+        <div class="group">
+
+          <div class="container-block container">
+            <p class="text-blk team-head-text">PAPARAZZI</p>
+            <div class="responsive-container-block teamcard-container">
+              
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/TANEESH-.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Taneesh Parmar</p>
+                    <p class="text-blk position">PAPARAZZI HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/ADITYA.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aditya Pyati</p>
+                    <p class="text-blk position">PAPARAZZI CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                    
+            
+            
+        </div>
+        <div class="group">
+
+          <div class="container-block container">
+            <p class="text-blk team-head-text ">HOSPITALITY & DISCIPLINE</p>
+            <div class="responsive-container-block teamcard-container">
+              
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/ADITI.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aditi Kalantre</p>
+                    <p class="text-blk position">HOSPITALITY HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/AZIZ.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aziz Lokhandwala</p>
+                    <p class="text-blk position">DISCIPLINE HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="gallery/council/AK.png"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Atharva Kothawade</p>
+                    <p class="text-blk position">TECHNICAL HEAD</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+            
+            
+        </div>
+       
+
+
     </section>
 
 
@@ -602,28 +513,26 @@
                 </div>
 
                 <div class="contact-card">
-                    <h4>Bhumika Thanvi</h4>
+                    <h4>Bhumika Thanvi (Student Council Head)</h4>
                     <div class="contact-content">
-                      <div class="email-area">
-                        <i class="bi bi-envelope-fill"></i>
-                        <a
-                          href="mailto:bhumika.thanvi15931@sakec.ac.in"
-                          style="color: #292f36"
-                          >bhumika.thanvi15931@sakec.ac.in</a
-                        >
-                      </div>
-                      <!-- <div class="phone-area">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <p>+91 70218 63966</p>
-                                </div> -->
+                        <div class="email-area">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:bhumika.thanvi15931@sakec.ac.in"
+                                style="color: #292f36;">bhumika.thanvi15931@sakec.ac.in</a>
+                        </div>
+                        <!-- <div class="phone-area">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>+91 70218 63966</p>
+                        </div> -->
                     </div>
-                  </div>
+
+                </div>
 
                 <div class="contact-card">
                     <h4>For Other Queries Contact Us At :</h4>
                     <div class="email-area">
                         <i class="bi bi-envelope-fill"></i>
-                        <a href="mailto:ecell@sakec.ac.in" style="color: #292f36;">ecell@sakec.ac.in</a>
+                        <a href="mailto:info@ecellsakec.in" style="color: #292f36;">info@ecellsakec.in</a>
                     </div>
                     <div class="phone-area">
                         <!-- <i class="bi bi-telephone-fill"></i> -->
@@ -657,8 +566,270 @@
             </h5>
         </div>
     </footer>
+    <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+<!-- <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Pratham Gupta</p>
+                    <p class="text-blk position">EVENT HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Husain Lokhandwala</p>
+                    <p class="text-blk position">EVENT HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Saiganesh Gurrapu</p>
+                    <p class="text-blk position">GFX HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Neeraj Meka</p>
+                    <p class="text-blk position">GFX CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Yajnesh Kharayat</p>
+                    <p class="text-blk position">WEBSITE HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Pratham Kamble</p>
+                    <p class="text-blk position">WEBSITE CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Nikhil Pangaonkar</p>
+                    <p class="text-blk position">WEBSITE CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Geetanjali Sahoo</p>
+                    <p class="text-blk position">ADMINISTRATION HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Amar Chauhan</p>
+                    <p class="text-blk position">ADMINISTRATION CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aryan Yadav</p>
+                    <p class="text-blk position">LOGISTICS HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Rohit Kumar Jha</p>
+                    <p class="text-blk position">Logistics Co-Head</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Taneesh Parmar</p>
+                    <p class="text-blk position">PAPARAZZI HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aditya Pyati</p>
+                    <p class="text-blk position">PAPARAZZI CO-HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aditi Kalantre</p>
+                    <p class="text-blk position">HOSPITALITY HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Atharva Kothawade</p>
+                    <p class="text-blk position">TECHNICAL HEAD</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container"
+              >
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
+                      class="team-img"
+                    />
+                  </div>
+                  <div class="team-card-content">
+                    <p class="text-blk name">Aziz Indorewala</p>
+                    <p class="text-blk position">Discipline Head</p>
+                  </div>
+                </div>
+              </div> -->
