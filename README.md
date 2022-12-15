@@ -7,3 +7,5 @@ How to View the Website Locally?
 3. CD to the root directory where you your ecell-main-page folder is located
 4. type "npm install" to install needed node_modules
 5. lastly use "npm run start" to start a local server displaying the website
+
+by default the website will be displayed at http://localhost:1234
