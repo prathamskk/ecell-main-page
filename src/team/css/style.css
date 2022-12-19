@@ -143,9 +143,10 @@ section {
   margin-left: 5%;
   margin-bottom: 50px;
   border-radius: 50px;
+  background-color: whitesmoke;
   /* background-color: rgb(240, 248, 255); */
   /* filter: blur(40%); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     315deg,
     rgba(101, 0, 94, 1) 3%,
     rgba(60, 132, 206, 1) 38%,
@@ -153,7 +154,7 @@ section {
     rgba(255, 25, 25, 1) 98%
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -165,7 +166,7 @@ section {
   gap: 0 1em;
   backdrop-filter: blur(14px);
 }
-@keyframes gradient {
+/* @keyframes gradient {
   0% {
     background-position: 0% 0%;
   }
@@ -175,7 +176,7 @@ section {
   100% {
     background-position: 0% 0%;
   }
-}
+} */
 canvas {
   display: block;
 }
