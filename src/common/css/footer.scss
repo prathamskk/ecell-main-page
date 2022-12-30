@@ -1,127 +1,175 @@
-footer {
-  // width: 100%;
-  height: auto;
-  background-color: #292f36;
+.footer-wrapper {
+  background-color: #0f0e13;
+
+  padding: 50px 35px;
+}
+.about-us-wrapper {
+  display: none;
+}
+.footer-ecell-logo {
+  width: 150px;
 }
 
-.footer-wrapper {
+.footer-about-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+
+  text-align: justify;
+
+  color: #9896a2;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.contact-follow-wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 75px 100px;
-  background: rgb(255, 255, 255);
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-  }
 }
 
-.footer-ecell {
+.contact-us-wrapper,
+.quick-links-wrapper,
+.emails-list-wrapper,
+.links-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.quick-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-link {
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.follow-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-list-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media-cont {
+  width: 35px;
+  height: 35px;
+  padding: 15px;
+  border: 0.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  a {
-    color: rgb(127, 192, 187);
-    font-size: 16px;
-  }
 }
 
-.social-media {
+.social-media-cont i {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.address-wrapper {
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 50px;
+  gap: 20px;
+  flex-direction: column;
 }
 
-.contact-wrapper {
+.contact-map iframe {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.address-link {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px 60px;
-  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  /* or 150% */
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.75);
 }
-
-.contact-card {
+.copyright-wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  h4 {
-    color: rgb(67, 105, 113);
-    font-size: 14px;
-    text-align: left;
-  }
+  align-items: center;
 }
-.social-media-cont .bi {
-  font-size: 32px;
+.footer-rule {
+  border: 1px solid #3b3944;
+  // margin: 0px;
+  width: 100%;
 }
 
-.phone-area,
-.email-area {
-  display: flex;
-  flex-direction: row;
-  gap: 0 1em;
-}
-
-.footer-ecell {
-  text-align: center;
+.copyright-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 32px;
+  /* or 320% */
   text-transform: capitalize;
-  color: rgb(127, 192, 187);
-  padding: 20px 16px;
-  h5 {
-    font-weight: 500;
-    font-size: 14px;
+
+  color: #888499;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 240px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  h1 {
-    font-size: 2.5rem;
-    color: var(--font-blk);
+@media screen and (min-width: 500px) {
+  .address-wrapper,
+  .contact-map iframe {
+    max-width: 300px;
   }
 
-  .footer-wrapper {
-    h1 {
-      color: var(--font-blk);
-      font-size: 2rem;
-    }
-  }
-  .contact-wrapper {
-    justify-content: center;
-  }
-}
 
-@media screen and (max-width: 550px) {
-  h1 {
-    font-size: 2.5rem;
-    color: var(--font-blk);
-  }
-
-  .footer-wrapper {
-    padding: 25px 10px;
-    h1 {
-      color: var(--font-blk);
-      font-size: 1.5rem;
-    }
-  }
-  .contact-wrapper {
-    justify-content: center;
-  }
-
-  .contact-card {
-    h4 {
-      font-size: 14px;
-    }
-  }
-  .footer-ecell {
-    h5 {
-      font-weight: 400;
-      font-size: 12px;
-    }
-  }
 }

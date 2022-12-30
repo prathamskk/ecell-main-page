@@ -38,7 +38,6 @@
     <link rel="stylesheet" href="./common/css/nav.scss" />
     <link rel="stylesheet" href="./common/css/reset.scss" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/contact.css" />
     <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/testim.css" />
     <link rel="stylesheet" href="./src/css/reg.css" />
@@ -116,7 +115,7 @@
         </div>
     </section> -->
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <!-- Video -->
       <video
         autoplay
@@ -371,161 +370,119 @@
         </div>
       </div>
     </section>
-    <!-- CONTACT FORM SECTION  -->
 
-    <section class="contact-info" id="contactus">
-      <h1 data-aos="fade-up" style="font-size: 2.5em">Contact Us</h1>
-      <div class="contact-in">
-        <div class="contact-map animate__animated wow animate__fadeIn">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3528973387993!2d72.90946941490083!3d19.048215687103834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f39a7d77d1%3A0x9ebbdeaea9ec24ae!2sShah%20%26%20Anchor%20Kutchhi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1655890311868!5m2!1sen!2sin"
-            width="100%"
-            height="auto"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <form
-          class="contact-form"
-          action="https://zbba6bfl4k.execute-api.ap-south-1.amazonaws.com/dev/contact/"
-          method="POST"
-        >
-          <input
-            class="form-input"
-            id="name"
-            type="text"
-            for="name"
-            placeholder="Name"
-            required
-          />
-          <!-- <label for="name" class="form-label">Name</label> -->
-          <input
-            class="form-input"
-            id="email"
-            type="email"
-            for="email"
-            placeholder="Email"
-            required
-          />
-          <!-- <label for="email" class="form-label">Email</label> -->
-          <textarea
-            class="form-inputarea"
-            id="message"
-            type="text"
-            for="message"
-            placeholder="Message"
-            required
-          ></textarea>
-          <!-- <label for="message" class="form-label">Message</label> -->
-          <div
-            id="recaptcha"
-            class="g-recaptcha"
-            data-sitekey="6Lekeo0gAAAAANQn_eAw4gHugk-P_V8sdFex94e9"
-          ></div>
-          <button
-            class="contact-form-button"
-            id="submitbtn"
-            name="submit"
-            type="button"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <footer id="contact">
+    <footer id="contactus">
       <div class="footer-wrapper">
-        <h1>Get in touch with us</h1>
-        <div class="contact-wrapper">
-          <div class="contact-card">
-            <h4>Prof. Milind Khairnar (Faculty Incharge)</h4>
-            <div class="email-area">
-              <i class="bi bi-envelope-fill"></i>
-              <a
-                href="mailto:milind.khairnar@sakec.ac.in"
-                style="color: #292f36"
-                >milind.khairnar@sakec.ac.in</a
-              >
-            </div>
-            <!-- <div class="phone-area">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p>+91 93223 19066</p>
-                    </div> -->
+        <div class="footer-container">
+          <div class="about-us-wrapper">
+            <img src="./common/img/e_cell_logo_WHITE.webp" alt="ecell-logo" class="footer-ecell-logo">
+            <div class="footer-about-text">E-CELL SAKEC strongly believes in industriousness to bring prosperity. Our aim is to help students become vivacious entrepreneurs and lead their ideas into successful business ventures. </div>
           </div>
-
-          <div class="contact-card">
-            <h4>Bhumika Thanvi (E-CELL Head)</h4>
-            <div class="contact-content">
-              <div class="email-area">
-                <i class="bi bi-envelope-fill"></i>
-                <a
-                  href="mailto:bhumika.thanvi15931@sakec.ac.in"
-                  style="color: #292f36"
-                  >bhumika.thanvi15931@sakec.ac.in</a
-                >
+          <div class="quick-links-wrapper">
+            <div class="footer-heading">Quick Links</div>
+            <div class="links-wrapper">
+              <a href="#home" class="quick-link">Home</a>
+              <a href="#about" class="quick-link">About Us</a>
+              <a href="#objective" class="quick-link">Objectives</a>
+              <a href="./events/index.html" class="quick-link">Events</a>
+              <a href="./team/index.html" class="quick-link">Our Team</a>
+              <a href="./faq/index.html" class="quick-link">FAQ</a>
+            </div>
+          </div>
+          <div class="contact-follow-wrapper">
+            <div class="contact-us-wrapper">
+              <div class="footer-heading">Contact Us</div>
+              <div class="emails-list-wrapper">
+                <div class="email-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <a class="email-link" href="mailto:ecell@sakec.ac.in"
+                    >ecell@sakec.ac.in</a
+                  >
+                </div>
+                <div class="email-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <a
+                    class="email-link"
+                    href="mailto:milind.khairnar@sakec.ac.in"
+                    >milind.khairnar@sakec.ac.in</a
+                  >
+                </div>
+                <div class="email-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <a
+                    class="email-link"
+                    href="mailto:bhumika.thanvi15931@sakec.ac.in"
+                    >bhumika.thanvi15931@sakec.ac.in</a
+                  >
+                </div>
               </div>
-              <!-- <div class="phone-area">
-                            <i class="bi bi-telephone-fill"></i>
-                            <p>+91 70218 63966</p>
-                        </div> -->
+            </div>
+            <div class="follow-us-wrapper">
+              <div class="footer-heading">Follow Us</div>
+              <div class="icon-list-wrapper">
+                <a
+                  class="social-media-cont"
+                  href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a
+                  class="social-media-cont"
+                  href="https://m.facebook.com/100410025256433/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <!-- <a href=""></a> -->
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a
+                  class="social-media-cont"
+                  href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-youtube"></i>
+                </a>
+                <a
+                  class="social-media-cont"
+                  href="https://www.linkedin.com/showcase/e-cell-sakec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="contact-card">
-            <h4>For Other Queries Contact Us At :</h4>
-            <div class="email-area">
-              <i class="bi bi-envelope-fill"></i>
-              <a href="mailto:ecell@sakec.ac.in" style="color: #292f36"
-                >ecell@sakec.ac.in</a
-              >
+          <div class="address-wrapper">
+            <div class="footer-heading">Address</div>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3528973387993!2d72.90946941490083!3d19.048215687103834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f39a7d77d1%3A0x9ebbdeaea9ec24ae!2sShah%20%26%20Anchor%20Kutchhi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1655890311868!5m2!1sen!2sin"
+                width="100%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-            <div class="phone-area">
-              <!-- <i class="bi bi-telephone-fill"></i> -->
-              <!-- <p>+91 93223 19066</p> -->
+            <div class="address-link">
+              <i class="bi bi-geo-alt"></i>
+              <p>
+                Shah & Anchor Kutchhi Engineering College, Mahavir Education
+                Trust Chowk, W. T. Patil Marg, Near Dukes Company, Chembur,
+                Mumbai- 400 088.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-ecell">
-        <div class="social-media">
-          <a
-            class="social-media-cont"
-            href="https://instagram.com/ecellsakec?igshid=YmMyMTA2M2Y"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a
-            class="social-media-cont"
-            href="https://m.facebook.com/100410025256433/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <!-- <a href=""></a> -->
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a
-            class="social-media-cont"
-            href="https://youtube.com/channel/UCX5-UquwzBkftEEtLlJQyeQ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="bi bi-youtube"></i>
-          </a>
-          <a
-            class="social-media-cont"
-            href="https://www.linkedin.com/showcase/e-cell-sakec"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
+        <div class="copyright-wrapper">
+          <hr class="footer-rule" />
+          <div class="copyright-text">
+            Entrepreneurship And Innovation Cell | SAKEC
+          </div>
         </div>
-        <h5>entrepreneurship and innovation cell | SAKEC</h5>
       </div>
     </footer>
     <script>
@@ -547,7 +504,6 @@
       });
     </script>
     <script src="./common/js/nav.js"></script>
-    <script src="./src/javascript/contactus.js"></script>
     <script src="./src/javascript/testim.js"></script>
     <script type="module" src="./src/javascript/video.js"></script>
   </body>
