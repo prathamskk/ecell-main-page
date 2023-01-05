@@ -9,7 +9,7 @@
 
 html{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 
 body , html {
@@ -27,7 +27,7 @@ body , html {
 
 ::-webkit-scrollbar-thumb {
   background-color: #c9c8c8;
-  border-radius: 1rem;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -58,9 +58,9 @@ nav{
   font-size: 140px;
   color: black;
   background-color: rgba(255, 253, 253, 0.932);
-  background-size: 90rem;
+  background-size: 900px;
   box-shadow: black;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 20px 20px 20px 20px;
   font-weight: 600;
 }
 
@@ -104,30 +104,30 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background-color: #F1F1F1;
-  margin-top: 8rem;
-  margin-bottom: 18rem;
+  margin-top: 80px;
+  margin-bottom: 180px;
 }
 
 
 
 .FoodFiesta{
   width: 100%;
-  max-width: 130rem;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 50px;
   background-image: linear-gradient(to right,#f82f2f 0%, #800000 70%);
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 30px;
 }
 
 .FoodFiesta_img{
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  transform: translateX(-80px);
   position: relative;
 }
 
@@ -136,7 +136,7 @@ width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 15px;
 }
 
 .FoodFiesta_img::before{
@@ -146,37 +146,37 @@ width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
-  border-radius: 8rem;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 80px;
 }
 
 .FoodFiesta_info p{
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  margin: .5rem 0;
+  margin: 5px 0;
 }
 
 .FoodFiesta_title{
-  font-size: 5.5rem;
+  font-size: 55px;
   font-weight: 600;
-  margin: 1.5rem 0 2rem;
+  margin: 5px 0 20px;
   text-transform: uppercase;
   color: #fefe00;
 }
 
 .FoodFiesta_cta{
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 15px 30px;
   margin-top: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 15px;
   font:bold;
   color: whitesmoke;
   background-color:black;
-  border-radius: .8rem;
+  border-radius: 8px;
 }
 
 .FoodFiesta_cta:hover{
@@ -192,24 +192,24 @@ width: 100%;
 
 @media screen and (max-width:1068px){
   .FoodFiesta{
-    max-width: 80rem;
+    max-width: 800px;
   }
 
   .FoodFiesta_img{
-    min-width: 30rem;
-    max-width: 30rem;
+    min-width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:868px){
   .FoodFiesta{
-   max-width: 70rem;
+   max-width: 700px;
   }
 }
 
 @media screen and (max-width:768px){
   .FoodFiesta{
-   padding: 2rem;
+   padding: 20px;
    flex-direction: column;
   }
 
@@ -221,12 +221,12 @@ width: 100%;
   .FoodFiesta_img{
     min-width: 80%;
     max-width: 90%;
-    transform: translate(0,-6rem);
+    transform: translate(0,-60px);
   }
   
   .FoodFiesta_title{
-    font-size: 2.8rem;
-    margin: .1rem 0 .1rem;
+    font-size: 28px;
+    margin: 1px 0 1px;
   }
 
   .FoodFiesta_info p{
@@ -241,28 +241,28 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background-color: #F1F1F1;
-  margin-top: 8rem;
-  margin-bottom: 18rem;
+  margin-top: 80px;
+  margin-bottom: 180px;
 }
 
 .sharktank{
   width: 100%;
-  max-width: 130rem;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 50px;
   background-image: linear-gradient(to right,#07c4b7 0%, #022679 80%);
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 30px;
 }
 
 .sharktank_img{
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  transform: translateX(-80px);
   position: relative;
 }
 
@@ -271,7 +271,7 @@ width: 100%;
   height: 100%;
   object-fit:fill;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 15px;
   background-color: rgb(255, 255, 255)
 }
 
@@ -282,21 +282,21 @@ width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
-  border-radius: 1rem;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
 .sharktank_info p{
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  margin: .5rem 0;
+  margin: 5px 0;
 }
 
 .sharktank_title{
-  font-size: 5.5rem;
-  margin: 1.5rem 0 2rem;
+  font-size: 55px;
+  margin: 15px 0 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: #f3e039;
@@ -305,15 +305,15 @@ width: 100%;
 
 .sharktank_cta{
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 15px 30px;
   margin-top: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 15px;
   font:bold;
   color: whitesmoke;
   background-color:black;
-  border-radius: .8rem;
+  border-radius: .80px;
 }
 
 .sharktank_cta:hover{
@@ -330,24 +330,24 @@ width: 100%;
 
 @media screen and (max-width:1068px){
   .sharktank{
-    max-width: 80rem;
+    max-width: 800px;
   }
 
   .sharktank_img{
-    min-width: 30rem;
-    max-width: 30rem;
+    min-width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:868px){
   .sharktank{
-   max-width: 70rem;
+   max-width: 700px;
   }
 }
 
 @media screen and (max-width:768px){
   .sharktank{
-    padding: 2rem;
+    padding: 20px;
     flex-direction: column;
    }
  
@@ -360,18 +360,18 @@ width: 100%;
    .sharktank_img::before{
     width: 100%;
     height: 100%;
-    border-radius: 1.5rem;
+    border-radius: 15px;
   }
 
    .sharktank_img{
       min-width: 80%;
      max-width: 90%;
-     transform: translate(0,-6rem);
+     transform: translate(0,-60px);
    }
    
    .sharktank_title{
-     font-size: 2.8rem;
-     margin: .1rem 0 .1rem;
+     font-size: 28px;
+     margin: 1px 0 1px;
    }
  
    .sharktank_info p{
@@ -387,28 +387,28 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background-color: #F1F1F1;
-  margin-top: 8rem;
-  margin-bottom: 18rem;
+  margin-top: 80px;
+  margin-bottom: 180px;
 }
 
 .podcast{
   width: 100%;
-  max-width: 130rem;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 50px;
   background-image: linear-gradient(to right,#6a50d1 0%, #0C003D 100%);
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 30px;
 }
 
 .podcast_img{
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  transform: translateX(-80px);
   position: relative;
 }
 
@@ -417,7 +417,7 @@ width: 100%;
   height: 100%;
   object-fit:fill;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 15px;
 }
 
 .podcast_img::before{
@@ -427,21 +427,21 @@ width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
-  border-radius: 8rem;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 80px;
 }
 
 .podcast_info p{
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  margin: .5rem 0;
+  margin: 5px 0;
 }
 
 .podcast_title{
-  font-size: 5.5rem;
-  margin: 1.5rem 0 2rem;
+  font-size: 55px;
+  margin: 15px 0 20px;
   text-transform: uppercase;
   color: #f3e039;
   font-weight: 600;
@@ -450,15 +450,15 @@ width: 100%;
 
 .podcast_cta{
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 15px 30px;
   margin-top: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 15px;
   font:bold;
   color: whitesmoke;
   background-color:black;
-  border-radius: .8rem;
+  border-radius: 8px;
 }
 
 .podcast_cta:hover{
@@ -475,24 +475,24 @@ width: 100%;
 
 @media screen and (max-width:1068px){
   .podcast{
-    max-width: 80rem;
+    max-width: 800px;
   }
 
   .podcast_img{
-    min-width: 30rem;
-    max-width: 30rem;
+    min-width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:868px){
   .podcast{
-   max-width: 70rem;
+   max-width: 700px;
   }
 }
 
 @media screen and (max-width:768px){
   .podcast{
-    padding: 2rem;
+    padding: 20px;
     flex-direction: column;
    }
  
@@ -506,12 +506,12 @@ width: 100%;
    .podcast_img{
      min-width: 80%;
      max-width: 90%;
-     transform: translate(0,-6rem);
+     transform: translate(0,-60px);
    }
    
    .podcast_title{
-     font-size: 2.8rem;
-     margin: .1rem 0 .1rem;
+     font-size: 28px;
+     margin: 1px 0 1px;
    }
  
    .podcast_info p{
@@ -525,12 +525,12 @@ width: 100%;
   height: 30vh;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(to right,#28ff07c8 0%,   #037907 100%);
+  background-color: black;
 }
 
 .hed h1{
 color: #fff;
-font-size: 8rem;
+font-size: 80px;
 }
 
 @media screen and (max-width:768px){
@@ -556,28 +556,28 @@ font-size: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background-color: #F1F1F1;
-  margin-top: 8rem;
-  margin-bottom: 18rem;
+  margin-top: 80px;
+  margin-bottom: 180px;
 }
 
 .women{
   width: 100%;
-  max-width: 130rem;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 50px;
   background-image: linear-gradient(to right,#4eabdd 0%, #c82339 80%);
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 30px;
 }
 
 .women_img{
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  transform: translateX(-80px);
   position: relative;
 }
 
@@ -586,7 +586,7 @@ font-size: 8rem;
   height: 100%;
   object-fit:fill;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 15px;
 }
 
 .women_img::before{
@@ -596,21 +596,21 @@ font-size: 8rem;
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
-  border-radius: 8rem;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 80px;
 }
 
 .women_info p{
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  margin: .5rem 0;
+  margin: 5px 0;
 }
 
 .women_title{
-  font-size: 4.5rem;
-  margin: 1.5rem 0 2rem;
+  font-size: 45px;
+  margin: 15px 0 20px;
   text-transform: uppercase;
   color: #f3e039;
   font-weight: 600;
@@ -624,29 +624,29 @@ font-size: 8rem;
 
 @media screen and (max-width:1068px){
   .women{
-    max-width: 80rem;
+    max-width: 800px;
   }
 
   .women_img{
-    min-width: 30rem;
-    max-width: 30rem;
+    min-width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:868px){
   .women{
-   max-width: 70rem;
+   max-width: 700px;
   }
 
   .women_title{
-    font-size: 3.5rem;
+    font-size: 35px;
     
   }
 }
 
 @media screen and (max-width:768px){
   .women{
-    padding: 2rem;
+    padding: 20px;
     flex-direction: column;
    }
  
@@ -658,12 +658,12 @@ font-size: 8rem;
    .women_img{
     min-width: 80%;
     max-width: 90%;
-     transform: translate(0,-6rem);
+     transform: translate(0,-60px);
    }
    
    .women_title{
-     font-size: 2.8rem;
-     margin: .1rem 0 .1rem;
+     font-size: 28px;
+     margin: 1px 0 1px;
    }
  
    .women_info p{
@@ -679,28 +679,28 @@ font-size: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background-color: #F1F1F1;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .beach{
   width: 100%;
-  max-width: 130rem;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 50px;
   background-image: linear-gradient(to right,#4E65FF 0%, 	#62b0bc 80%);
-  box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+  box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 30px;
 }
 
 .beach_img{
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
+  min-width: 350px;
+  max-width: 350px;
+  height: 300px;
+  transform: translateX(-80px);
   position: relative;
 }
 
@@ -709,21 +709,21 @@ font-size: 8rem;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 15px;
 }
 
 
 .beach_info p{
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  margin: .5rem 0;
+  margin: 5px 0;
 }
 
 .beach_title{
-  font-size: 4.5rem;
-  margin: 1.5rem 0 2rem;
+  font-size: 45px;
+  margin: 15px 0 20px;
   text-transform: uppercase;
   color: #f3e039;
   font-weight: 600;
@@ -738,24 +738,24 @@ font-size: 8rem;
 
 @media screen and (max-width:1068px){
   .beach{
-    max-width: 80rem;
+    max-width: 800px;
   }
 
   .beach_img{
-    min-width: 30rem;
-    max-width: 30rem;
+    min-width: 300px;
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:868px){
   .beach{
-   max-width: 70rem;
+   max-width: 700px;
   }
 }
 
 @media screen and (max-width:768px){
   .beach{
-    padding: 2rem;
+    padding: 20px;
     flex-direction: column;
    }
  
@@ -767,18 +767,18 @@ font-size: 8rem;
    .beach_img::before{
     width: 100%;
     height: 100%;
-    border-radius: 1.5rem;
+    border-radius: 15px;
   }
    
    .beach_img{
     min-width: 80%;
     max-width: 90%;
-     transform: translate(0,-6rem);
+     transform: translate(0,-60px);
    }
    
    .beach_title{
-     font-size: 2.8rem;
-     margin: .1rem 0 .1rem;
+     font-size: 28px;
+     margin: 1px 0 1px;
    }
  
    .beach_info p{
