@@ -6,14 +6,14 @@
   display: none;
 }
 .footer-ecell-logo {
-  width: 150px;
+  width: 170px;
 }
 
 .footer-about-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8125rem;
+  font-size: 0.82rem;
   // line-height: 15px;
   /* or 125% */
 
@@ -46,7 +46,7 @@
 .contact-follow-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
 }
 
 .contact-us-wrapper,
@@ -61,6 +61,11 @@
 .links-wrapper,
 .emails-list-wrapper {
   gap: 20px;
+}
+
+.links-wrapper {
+  height: 100%;
+  justify-content: space-between;
 }
 
 .quick-link,
@@ -107,12 +112,12 @@
 
 .icon-list-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .social-media-cont {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 15px;
   border: 0.5px solid rgba(255, 255, 255, 0.75);
   border-radius: 50%;
@@ -120,18 +125,26 @@
   justify-content: center;
   align-items: center;
   i {
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
+  }
+
+  &:nth-of-type(2) {
+    i {
+      font-size: 20px;
+    }
+  }
+  &:nth-of-type(3) {
+    i {
+      font-size: 20px;
+    }
   }
 }
 
 .social-media-cont:hover {
-  width: 37.5px;
-  height: 37.5px;
   border: 1px solid rgb(255, 255, 255);
   i {
     color: #ffffff;
-    font-size: 16px;
   }
 }
 
@@ -143,7 +156,7 @@
 
 .contact-map iframe {
   border-radius: 10px;
-  height: 160px;
+  height: 175px;
 }
 
 .address-link {
@@ -159,11 +172,11 @@
   color: rgba(255, 255, 255, 0.75);
   margin-top: 1rem;
   i {
-    font-size: 16px;
+    font-size: 20px;
   }
   p {
     margin-bottom: 0;
-    font-size: 10.5px;
+    font-size: 12px;
   }
 }
 .copyright-wrapper {
@@ -197,15 +210,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5625rem;
-    max-width: 15.625rem;
+    gap: 1.563rem;
+    max-width: 15.75rem;
+    justify-content: space-evenly;
   }
 }
 
 @media screen and (min-width: 500px) {
   .address-wrapper,
   .contact-map iframe {
-    max-width: 18.75rem;
+    max-width: 19rem;
   }
 }
 
