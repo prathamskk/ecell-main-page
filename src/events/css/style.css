@@ -91,9 +91,6 @@ width: 100%;
 }
 
 @media screen and (max-width:768px){
-  .content h3 {
-    font-size: 800%;
-  }
   
 }
 
