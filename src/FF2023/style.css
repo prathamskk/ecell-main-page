@@ -9,7 +9,7 @@
 body , html {
     overflow-x: hidden;
     overflow-y:auto;
-    scroll-behavior: 4rem;
+    scroll-behavior: 2rem;
     height: 100%;
   }
 
@@ -65,6 +65,7 @@ body , html {
 
 
 
+
 .fhero h1{
     font-family: 'Zoika';
     font-size: 6rem;
@@ -73,6 +74,8 @@ body , html {
     justify-content: center;
     align-content: center;
     text-align: center;
+    text-shadow: 0px 0px 100px #af0b0b,0px 0px 60px #a00a0a ;
+    /*filter: drop-shadow(0px 0px 100px #0b1fd3);*/
 }
 
 .fhero h2{
@@ -88,7 +91,7 @@ body , html {
 .separator {
   height: 24%;
   width: 110%;
-  background: url(./assets/images/separator.png);
+  background: url(./assets/images/ffpapert.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -96,6 +99,47 @@ body , html {
   z-index: 20;
 }
 
+@media screen and (max-width:1250px){
+
+  .separator {
+    height: 24%;
+    width: 110%;
+    bottom: -19%;
+    z-index: 20;
+  }
+
+}
+@media screen and (max-width:850px){
+  .separator {
+    height: 24%;
+    width: 110%;
+    bottom: -20.6%;
+    z-index: 20;
+  }
+}
+@media screen and (max-width:570px){
+  .separator {
+    height: 24%;
+    width: 110%;
+    bottom: -21.7%;
+  }
+
+  .fhero img{
+    height: 45%;
+    width: 45%;   
+    margin-top: 100px;
+}
+
+  .fhero h1{
+    font-size: 320%;
+}
+
+.fhero h2{
+    font-size: 100%;
+    padding-left: 14px;
+    padding-right: 14px; 
+}
+}
 
 
 .judge{
@@ -156,15 +200,37 @@ body , html {
     z-index: 9s;
 }
 
-.jud h2{
-    margin-left: 40px;
-    margin-top: 20px;
-    font-size: 20px;
-    cursor: pointer;
+@media screen and (max-width:775px){
+  .judge .judtitle h1{
+    font-size: 400%;
+}
+.judge{
+  height: auto;
+  width: 100%;
+  background-image: url(./assets/images/wall.png);
 }
 
+.jud{
+  width: 90%;
+  margin: -20px;
+  justify-content: center;
+  transition: 0s;
+ /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);*/
+}
+.jud img{
+  display: block;
+  width:150%;
+  height: 100%;
+}
+.judge .container{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;	 
+}
 
-.winner{
+}
+
+.spon{
     height: 100%;
     width: 100%;
     background-image: url(./assets/images/horizontalwallred.png);
@@ -172,10 +238,10 @@ body , html {
     align-items: center;
     position: relative;
   }
-
+ 
  
 
- .winner h1{
+ .spon h1{
     font-size: 7rem;
     text-align: center;
     padding-top: 100px;
@@ -221,6 +287,37 @@ body , html {
 }
 
 
+@media(max-width: 1120px){
+  .spon{
+    height: auto;
+    width: 100%;
+  }
+  .spon-in ul li {
+    width: 40%;
+  height: 40%;
+  }
+  .spon h1{
+    font-size: 600%;
+  }
+}
+
+@media(max-width: 530px){
+  .spon{
+    height: auto;
+    width: 100%;
+  }
+  .spon-in ul li {
+    width: 50%;
+  height: 50%;
+  display: inline-block;
+  margin-bottom: 0px;
+  }
+
+  .spon h1{
+    padding-top: 50px;
+    font-size: 400%;
+  }
+}
 
 
 
@@ -230,7 +327,6 @@ body , html {
     background-color: rgb(128,129,133);
     position: relative;
     height: 170%;
-
  }
 .register .regimg{
     position: center;
@@ -238,6 +334,7 @@ body , html {
     width: 100%;
     padding-bottom: 0;
     padding-right: 0;
+    object-fit: contain;
 }
 
 .register .regcontainer .button{
@@ -253,7 +350,7 @@ body , html {
 
 .register .regcontainer .button a{
   background-color: #ED1B25;
-  padding: 17px 40px;
+  padding: 1rem 3rem;
   text-decoration: none;
   color: aliceblue;
   font-size: 2rem;
@@ -270,7 +367,7 @@ body , html {
 .regseparator {
   height: 24%;
   width: 110%;
-  background: url(./assets/images/separator.png);
+  background: url(./assets/images/ffpapert.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -278,9 +375,52 @@ body , html {
   z-index: 20;
 }
 
+@media screen and (max-width:1043px){
 
+  .regseparator {
+    height: 24%;
+    width: 110%;
+    bottom: -21%;
+    z-index: 20;
+  }
+
+}
+@media screen and (max-width:750px){
+  .regseparator {
+    height: 24%;
+    width: 110%;
+    bottom: -20%;
+    z-index: 20;
+  }
+}
+@media screen and (max-width:505px){
+  .regseparator {
+    height: 24%;
+    width: 110%;
+    bottom: -19%;
+  }
+}
+@media screen and (max-width:1250px){
+  .register{
+    height:auto;
+ }
+}
+@media screen and (max-width:700px){
+  .register{
+    height:auto;
+ }
+ .register .regcontainer .button a{
+  padding: 0.3rem 1rem;
+  font-size: 100%;
+  letter-spacing: .8px;
+  border-radius: 12px;
+}
+.register .regcontainer .button{
+  top: 92%;
+}
+}
 .zaika{
-  min-height: 100%;
+    height: 100%;
     width: 100%;
     position: relative;
     background: url(./assets/images/zaika/WhatsApp\ Image\ 2023-02-09\ at\ 12.24.00\ PM.jpeg);
@@ -382,6 +522,54 @@ body , html {
   background-color: aliceblue;
   color: #960001;
 }
+@media screen and (max-width:950px){
+  .content-section .title h1{
+    margin-top: 10%;
+    font-size: 450%;
+}
+.image-section img{
+  width: 125%;
+  margin-top: 25%;
+}
+.content-section .content .button a{
+  padding: 0.8rem 1.9rem;
+  font-size: 150%;
+  letter-spacing: .8px;
+  border-radius: 12px;
+}
+
+
+}
+@media screen and (max-width:500px){
+
+  .content-section .title h1{
+    margin-top: 10%;
+    font-size: 450%;
+}
+
+
+.content-section .content p{
+  font-size: 100%;
+}
+.content-section .content .button a{
+  padding: 0.8rem 1.5rem;
+  font-size: 100%;
+  letter-spacing: .8px;
+  border-radius: 12px;
+}
+.zaikacontainer .image-section {
+  float: right;
+  width: 30%;
+  right: 0%;
+}
+
+.image-section img{
+  width: 300%;
+  height: auto;
+}
+}
+
+
 
 /** Gallery **/
 .Gallery{
