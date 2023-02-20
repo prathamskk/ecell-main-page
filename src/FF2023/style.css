@@ -529,7 +529,7 @@ body , html {
 }
 .image-section img{
   width: 125%;
-  margin-top: 25%;
+  margin-top: 150px;
 }
 .content-section .content .button a{
   padding: 0.8rem 1.9rem;
