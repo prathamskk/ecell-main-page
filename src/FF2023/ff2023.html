@@ -44,14 +44,70 @@
   <!-- page specific  -->
 
   <link rel="stylesheet" href="../common/css/footer.scss" />
+
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "puff",
+        duration: 1000
+      },
+      hide: {
+        effect: "fold",
+        duration: 1000
+      }
+    });
  
-
-
-  
+    $( "#button" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
 
 </head>
 
 <body>
+  
+  <nav>
+    <input id="nav-toggle" type="checkbox" />
+    <div class="logo-wrapper">
+      <a href="https://www.shahandanchor.com/home/" target="_self">
+        <img
+          src="../common/img/sakec_logo_WHITE.webp"
+          alt="logo"
+          class="logo sakec-logo"
+        />
+      </a>
+      <a href="../index.html">
+        <img
+          src="../common/img/e_cell_logo_WHITE.webp"
+          alt="logo"
+          class="logo"
+        />
+      </a>
+    </div>
+
+    <ul class="links">
+      <li><a href="../index.html#home">Home </a></li>
+      <li><a href="#judge">Our JUDGES</a></li>
+      <li><a href="#register">Register Now </a></li>
+      <li><a href="#zaika">Zaika</a></li>
+      <li><a href="#Gallery">Glimpse of FF</a></li>
+      <!-- <li><a href="../team/index.html">Our Team</a></li> -->
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+
     
     <div class="fhero">
         <div> 
@@ -73,19 +129,9 @@
     <section class="judge" id="judge">
         <div> 
                     
-           <div class="judtitle"> <h1>OUR JUDGES</h1>    </div>
+          <!-- <div class="judtitle"> <h1><span style="color: #af0b0b;">OUR</span> JUDGES</h1>    </div>-->
                 <div class="container">
-                    <div class="jud">
-                        <a href="https://www.elcabopepes.com/"><img src="./assets/images/judge/nikhil2.png">
-                        </a>
-                    </div>
-                    <div class="jud">
-                        <a href="https://www.elcabopepes.com/"><img src="./assets/images/judge/pratham2.png">
-                        </a>
-                    </div>
-                    <div class="jud">
-                        <a href="https://www.elcabopepes.com/"><img src="./assets/images/judge/sandesh2.png">
-                        </a>
+                 <!--<h1>Stay Tunned...</h1>-->
                     </div>
                     
         </div>      
@@ -95,7 +141,7 @@
 
 
 
-
+<!--
     <section class="spon" id="spon">
 
       <div class="spontitle">   
@@ -138,14 +184,14 @@
         
             <div class="separator"></div>
     </section>
+-->
 
 
-
-    <section class="register" id="register">
+    <section class="register">
         <div class="regcontainer">
-            <img class="regimg" src="./assets/images/stall.png">  
+            <img class="regimg" id="register" src="./assets/images/Register/registerstall.png">  
             <div class="button">
-              <a href="">Register Now</a>
+              <a href="https://www.shahandanchor.com/ce/food-fiesta/">Register Now</a>
             </div>           
         </div>
         <div class="regseparator"></div>
@@ -175,8 +221,11 @@
               <p>
                 Savor the taste of convenience with Zaika - the food ordering app crafted by Ecell! Order from your favorite restaurants with just a few taps and have delicious meals delivered straight to your door. No more waiting in lines or settling for less, experience hassle-free dining with Zaika.
               </p>
-              <div class="button">
-                <a href="">Order Now</a>
+              <div id="dialog" style="background-color:#960001; color: rgb(246, 248, 249);">
+                <p style="font-size: 2rem; font-family: 'Times New Roman';">" Launching On 10th March </b> Place an Order with us at Food Fiesta 2023 &apos;&apos;</p>
+              </div>
+              <div class="button" id="button">
+                <a>Order Now</a>
               </div>
             </div>
           </div>
@@ -190,7 +239,7 @@
 
 
     <section class="Gallery" id="Gallery">
-      <div><h1 class="main-heading">Gallery</h1> </div>
+      <div><h1 class="main-heading">Glimpse of FoodFiesta</h1> </div>
       <div class="gallery">
         <div class="gallery-item item-3x4">
           <img
@@ -363,7 +412,6 @@
         
       </div>
     </section>
-    
     <script src="./gallery.js"></script>
 
     <!--  Footer section  -->

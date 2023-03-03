@@ -42,11 +42,131 @@ body , html {
 }
 
 
+nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+  font-family: "Norwester";
+	z-index: 30;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 70px;
+	background-color: #DF0808;
+}
+nav .logo {
+	height: 70px;
+	padding: 10px 0px;
+}
+
+nav .logo-wrapper{
+display: flex;
+gap: 20px;
+
+}
+
+@media screen and (max-width: 500px) {
+	.logo{
+		padding: 10px 10px;
+	}
+}
+
+nav .links {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav .links a:hover {
+  opacity: 0.7;
+}
+
+
+#nav-toggle {
+	position: absolute;
+	display: none;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: rgb(255, 255, 255);
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 1025px) {
+	nav .links a {
+		font-size: 13.5px;
+	}
+}
+@media screen and (max-width: 900px) {
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 29;
+		left: 0;
+		right: 0;
+		top: 70px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #DF0808;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+    color: rgb(255, 255, 255);
+	}
+	nav :checked ~ .links {
+		bottom: -10px;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
 
 .fhero{
     width: 100%;
     height: 100%;
-    background-image: url(./assets/images/ecellwalltext.png); 
+    background-image: url(./assets/images/hero_section/fading-ecell-text-slightlyahead.png); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +180,6 @@ body , html {
     height: 25%;
     width: 25%;
     position: center;
-    
 }
 
 
@@ -142,15 +261,28 @@ body , html {
 }
 
 
+/* .ui-widget-header,.ui-state-default, ui-button{  
+  background:crimson;  
+  border: 2px solid brown;  
+  color: white;  
+  font-weight: bold;  
+}  */
+/**ui-dialog-titlebar
+ui-dialog-content **/
 .judge{
-  height: 100%;
-  width: 100%;
-  background-image: url(./assets/images/horizontalwallyellow.png);
+  height: 120%;
+  width: auto;
+  background-image: url(./assets/images/judge/ourjudgeweb.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: block;
   justify-content: center;
   align-items: center;
   position: relative;
 }
+
+
 .judge img{
     height: 100%;
     width: 100%;
@@ -169,6 +301,18 @@ body , html {
     text-align: center;
 }
 
+.judge .container h1{
+  padding-top: 14.4rem;
+    margin-left: 50px;
+    font-family: 'Zoika';
+    font-size: 8rem;
+    float: left;
+    color: aliceblue;
+    position: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
 .judge .container{
     width: 90%;
     padding: 20px;
@@ -202,14 +346,21 @@ body , html {
 
 @media screen and (max-width:775px){
   .judge .judtitle h1{
-    font-size: 400%;
+    font-size: 450%;
+    padding-top: 25px;
+
 }
 .judge{
-  height: auto;
+  height: 66vh;
   width: 100%;
-  background-image: url(./assets/images/wall.png);
+  background-image: url(./assets/images/judge/ourjudgemob.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
-
+.judge .container h1{
+  font-size: 350%;
+  padding-top: 10.4rem;
+}
 .jud{
   width: 90%;
   margin: -20px;
@@ -230,6 +381,7 @@ body , html {
 
 }
 
+/**
 .spon{
     height: 100%;
     width: 100%;
@@ -319,14 +471,14 @@ body , html {
   }
 }
 
-
+**/
 
 
 
  .register{
     background-color: rgb(128,129,133);
     position: relative;
-    height: 170%;
+    height: auto;
  }
 .register .regimg{
     position: center;
@@ -420,7 +572,7 @@ body , html {
 }
 }
 .zaika{
-    height: 100%;
+    height: 110vh;
     width: 100%;
     position: relative;
     background: url(./assets/images/zaika/WhatsApp\ Image\ 2023-02-09\ at\ 12.24.00\ PM.jpeg);
@@ -471,8 +623,8 @@ body , html {
 
 .image-section img{
   width: 100%;
- margin-top: 10%;
-  padding: 20%;
+ margin-top: 5%;
+  padding: 21%;
 }
 
 .content-section .title {
@@ -522,6 +674,7 @@ body , html {
   background-color: aliceblue;
   color: #960001;
 }
+
 @media screen and (max-width:950px){
   .content-section .title h1{
     margin-top: 10%;
@@ -584,6 +737,11 @@ body , html {
 	color: rgb(255, 255, 255);
 	font-weight: 700;
   font-family: 'Zoika';
+}
+@media screen and (max-width:500px){
+  .Gallery h1{
+    font-size: 350%;
+  }
 }
 
 .gallery {
@@ -789,6 +947,7 @@ body , html {
 .lightbox .spinner {
   display: none;
 }
+
 
 
 /* only overriding footer color here   */
