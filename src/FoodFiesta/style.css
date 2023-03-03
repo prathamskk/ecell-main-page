@@ -270,11 +270,10 @@ nav .icon-burger .line {
 /**ui-dialog-titlebar
 ui-dialog-content **/
 .judge{
-  height: 120%;
+  height: 100%;
   width: auto;
   background-image: url(./assets/images/judge/ourjudgeweb.png);
   background-size: 100%;
-  background-position: bottom;
   background-repeat: no-repeat;
   display: block;
   justify-content: center;
@@ -354,13 +353,14 @@ ui-dialog-content **/
   height: 66vh;
   width: 100%;
   background-image: url(./assets/images/judge/ourjudgemob.png);
-  background-position: bottom;
+  
   background-repeat: no-repeat;
 }
 .judge .container h1{
   font-size: 350%;
   padding-top: 10.4rem;
 }
+
 .jud{
   width: 90%;
   margin: -20px;
