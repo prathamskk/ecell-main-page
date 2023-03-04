@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="../common/css/footer.scss" />
 
 
-
+<!--
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -68,7 +68,7 @@
       $( "#dialog" ).dialog( "open" );
     });
   } );
-  </script>
+  </script>-->
 
 </head>
 
@@ -221,12 +221,21 @@
               <p>
                 Savor the taste of convenience with Zaika - the food ordering app crafted by Ecell! Order from your favorite restaurants with just a few taps and have delicious meals delivered straight to your door. No more waiting in lines or settling for less, experience hassle-free dining with Zaika.
               </p>
-              <div id="dialog" style="background-color:#960001; color: rgb(246, 248, 249);">
+              <!--<div id="dialog" style="background-color:#960001; color: rgb(246, 248, 249);">
                 <p style="font-size: 2rem; font-family: 'Times New Roman';">" Launching On 10th March </b> Place an Order with us at Food Fiesta 2023 &apos;&apos;</p>
               </div>
               <div class="button" id="button">
                 <a>Order Now</a>
-              </div>
+              </div>-->
+              <a class="button" href="#openModal">Order Now</a>
+
+<div id="openModal" class="modalbg">
+  <div class="dialog">
+    <a href="#close" title="Close" class="close">X</a>
+		<p>Launching On 10th March Place an Order with us at Food Fiesta 2023</p>
+    
+	</div>
+</div>
             </div>
           </div>
           <div class="image-section">
