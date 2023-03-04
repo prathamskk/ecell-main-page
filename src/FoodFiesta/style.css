@@ -28,13 +28,13 @@ body , html {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #c9c8c8;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -647,6 +647,7 @@ ui-dialog-content **/
 .content-section .content p{
   color: #fff;
   margin-top: 5px;
+  margin-bottom: 2rem;
   font-size: 1.3rem;
   line-height: 1.5;
   justify-content: center;
