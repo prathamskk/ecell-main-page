@@ -210,7 +210,7 @@ nav .icon-burger .line {
 .separator {
   height: 24%;
   width: 110%;
-  background: url(./assets/images/ffpapert.png);
+  background: url(./assets/images/common/ffpapert.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -232,7 +232,7 @@ nav .icon-burger .line {
   .separator {
     height: 24%;
     width: 110%;
-    bottom: -20.6%;
+    bottom: -20.7%;
     z-index: 20;
   }
 }
@@ -240,7 +240,7 @@ nav .icon-burger .line {
   .separator {
     height: 24%;
     width: 110%;
-    bottom: -21.7%;
+    bottom: -21%;
   }
 
   .fhero img{
@@ -272,7 +272,7 @@ ui-dialog-content **/
 .judge{
   height: 100%;
   width: auto;
-  background-image: url(./assets/images/judge/ourjudgeweb.png);
+  background-image: url(./assets/images/judge/backjudge.png);
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
@@ -300,42 +300,30 @@ ui-dialog-content **/
     text-align: center;
 }
 
-.judge .container h1{
-  padding-top: 14.4rem;
-    margin-left: 50px;
-    font-family: 'Zoika';
-    font-size: 8rem;
-    float: left;
-    color: aliceblue;
-    position: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
 .judge .container{
-    width: 90%;
-    padding: 20px;
-    margin: 10px auto;	 
+    width: 55%;
+    padding: 0px;
+    margin: 0px auto;	 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    bottom: 0%;
 }
 
 
 .jud{
-    width: 150px;
-    margin: 0 25px;
-    transition: 1s;
-   /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);*/
+  
+    padding: 0px;
+    margin: 0px -75px;
+    transition: .4s;
+   /**box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);**/
 }
 
 .jud img{
     display: block;
-    width:200%;
-    height: 100%;
+    margin-top: 0%;
     border-radius: 5px;
-    cursor: pointer;
-    transform-origin: bottom;
+    cursor: pointer;  
 
 }
 .jud:hover{
@@ -345,43 +333,44 @@ ui-dialog-content **/
 
 @media screen and (max-width:775px){
   .judge .judtitle h1{
-    font-size: 450%;
+    font-size: 350%;
     padding-top: 25px;
+    padding-bottom: 0%;
+    
 
 }
 .judge{
   height: 66vh;
-  width: 100%;
-  background-image: url(./assets/images/judge/ourjudgemob.png);
-  
+  width: auto;
+  background-image: url(./assets/images/judge/backjudgemob.png);
   background-repeat: no-repeat;
-}
-.judge .container h1{
-  font-size: 350%;
-  padding-top: 10.4rem;
 }
 
 .jud{
-  width: 90%;
-  margin: -20px;
+  width: 80%;
+  margin: -35px;
   justify-content: center;
   transition: 0s;
  /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);*/
 }
 .jud img{
+  margin-top: 2%;
+  margin-bottom: 100%;
   display: block;
-  width:150%;
-  height: 100%;
+  width:160%;
+
 }
 .judge .container{
-  width: 100%;
+  height: 70%;
+  width: 80%;
   padding: 0px;
-  margin: 0px;	 
+  margin: 0px;	
+  position: bottom; 
+  align-items:bottom;
 }
 
 }
 
-/**
 .spon{
     height: 100%;
     width: 100%;
@@ -454,6 +443,7 @@ ui-dialog-content **/
 }
 
 @media(max-width: 530px){
+
   .spon{
     height: auto;
     width: 100%;
@@ -462,16 +452,18 @@ ui-dialog-content **/
     width: 50%;
   height: 50%;
   display: inline-block;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   }
 
   .spon h1{
     padding-top: 50px;
     font-size: 400%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
 }
 
-**/
+
 
 
 
@@ -519,7 +511,7 @@ ui-dialog-content **/
 .regseparator {
   height: 24%;
   width: 110%;
-  background: url(./assets/images/ffpapert.png);
+  background: url(./assets/images/common/ffpapert.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -568,7 +560,7 @@ ui-dialog-content **/
   border-radius: 12px;
 }
 .register .regcontainer .button{
-  top: 92%;
+  top: 90%;
 }
 }
 .zaika{
