@@ -261,113 +261,106 @@ nav .icon-burger .line {
 }
 
 
-/* .ui-widget-header,.ui-state-default, ui-button{  
-  background:crimson;  
-  border: 2px solid brown;  
-  color: white;  
-  font-weight: bold;  
-}  */
-/**ui-dialog-titlebar
-ui-dialog-content **/
+
+
 .judge{
-  height: 100%;
-  width: auto;
-  background-image: url(./assets/images/judge/backjudge.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: block;
+  height: auto;
+  width: 100%;
+  margin-top: 1%;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
-
 .judge img{
-    height: 100%;
-    width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
-.judge .judtitle h1{
-    padding-top: 55px;
-    margin-left: 50px;
-    font-family: 'Zoika';
-    font-size: 7rem;
-    float: left;
-    color: aliceblue;
-    position: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+.jud1{
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  font-size: 160%;
+  color: aliceblue;
+  position: center;
+  justify-content: center;
+  font-family: 'Norwester';
+  font-weight: normal;
+  text-align: center; 
+  text-decoration: none;
 }
-
-.judge .container{
-    width: 55%;
-    padding: 0px;
-    margin: 0px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    bottom: 0%;
+.jud2{
+  position: absolute;
+  top: 80%;
+  left: 42%;
+  font-size: 160%;
+  color: aliceblue;
+  position: center;
+  justify-content: center;
+  font-family: 'Norwester';
+  font-weight: normal;
+  text-align: center; 
+  text-decoration: none;
 }
-
-
-.jud{
-  
-    padding: 0px;
-    margin: 0px -75px;
-    transition: .4s;
-   /**box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);**/
-}
-
-.jud img{
-    display: block;
-    margin-top: 0%;
-    border-radius: 5px;
-    cursor: pointer;  
-
-}
-.jud:hover{
-    transform: scale(1.3);
-    z-index: 9s;
+.jud3{
+  position: absolute;
+  top: 85%;
+  left: 68%;
+  font-size: 160%;
+  color: aliceblue;
+  position: center;
+  justify-content: center;
+  font-family: 'Norwester';
+  font-weight: normal;
+  text-align: center; 
+  text-decoration: none;
 }
 
 @media screen and (max-width:775px){
-  .judge .judtitle h1{
-    font-size: 350%;
-    padding-top: 25px;
-    padding-bottom: 0%;
-    
-
+  .judge{
+    margin-top: 0%;}
+ .mobjudback{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .jud1{
+    top: 85%;
+    left: 20%;
+    font-size: 100%;
+  }
+  .jud2{
+    top: 80%;
+    left: 42%;
+    font-size: 100%;
+  }
+  .jud3{
+    top: 85%;
+    left: 68%;
+    font-size: 100%;
+  }
+  
 }
-.judge{
-  height: 66vh;
-  width: auto;
-  background-image: url(./assets/images/judge/backjudgemob.png);
-  background-repeat: no-repeat;
-}
-
-.jud{
-  width: 80%;
-  margin: -35px;
-  justify-content: center;
-  transition: 0s;
- /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.973);*/
-}
-.jud img{
-  margin-top: 2%;
-  margin-bottom: 100%;
-  display: block;
-  width:160%;
-
-}
-.judge .container{
-  height: 70%;
-  width: 80%;
-  padding: 0px;
-  margin: 0px;	
-  position: bottom; 
-  align-items:bottom;
-}
+@media screen and (max-width:500px){
+  .judge{
+    margin-top: 0%;}
+  .jud1{
+    top: 90%;
+    left: 8%;
+    font-size: 120%;
+  }
+  .jud2{
+    top: 85%;
+    left: 37%;
+    font-size: 120%;
+  }
+  .jud3{
+    top: 90%;
+    left: 70%;
+    font-size: 120%;
+  }
 
 }
 
@@ -423,10 +416,18 @@ ui-dialog-content **/
   transition: .10s;
 }
 .spon-in ul li img{
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
+  background: #ffffff25;
+  border: 8px solid #ddd;
+  border-radius: 15px;
+  padding: 5px;
+  width: 180px;
 }
-
+.spon-in ul li img:hover{
+  transform: scale(0.8);
+  z-index: 3s;
+}
 
 @media(max-width: 1120px){
   .spon{
@@ -449,10 +450,13 @@ ui-dialog-content **/
     width: 100%;
   }
   .spon-in ul li {
-    width: 50%;
-  height: 50%;
-  display: inline-block;
-  margin-bottom: 20px;
+    width: 55%;
+  height: 55%;
+  margin-bottom: 60px;
+  border: 4px;
+  border-radius: 15px;
+  padding: 2px;
+  width: 180px;
   }
 
   .spon h1{
@@ -461,6 +465,7 @@ ui-dialog-content **/
     margin-bottom: 0%;
     padding-bottom: 0%;
   }
+  
 }
 
 
